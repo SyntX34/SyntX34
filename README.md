@@ -21,8 +21,9 @@ Always learning, always improving 🚀
 
 ---
 
-## 📈 Metrics (Auto-updated)
-![Metrics](https://github.com/SyntX34/SyntX34/blob/main/github-metrics.svg)
+## 📈 Metrics
+![Metrics](https://raw.githubusercontent.com/SyntX34/SyntX34/main/github-metrics.svg)
+
 
 ---
 
