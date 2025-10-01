@@ -22,7 +22,7 @@ Always learning, always improving 🚀
 ---
 
 ## 📈 Metrics
-![Metrics]([https://raw.githubusercontent.com//main/github-metrics.svg](https://raw.githubusercontent.com/SyntX34/SyntX34/83cf14bc0e64b310f7a2d8dacf61adf8fe1ba248/github-metrics.svg))
+![Metrics](https://raw.githubusercontent.com/SyntX34/SyntX34/83cf14bc0e64b310f7a2d8dacf61adf8fe1ba248/github-metrics.svg)
 
 ---
 
