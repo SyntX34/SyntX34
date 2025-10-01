@@ -1,0 +1,38 @@
+# 👋 Hey there
+
+I'm **SyntX**, a developer who loves building cool projects and experimenting with new ideas.  
+I mostly code in **JavaScript, SourcePawn, PHP, C/C++, C#**, and occasionally dabble in **Python**.  
+Always learning, always improving 🚀
+
+---
+
+## 🛠️ Tools & Technologies
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=js,html,css,php,python,cs,cpp,linux,git,vscode,mysql,docker" />
+</p>
+
+---
+
+## 📊 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=SyntX34&show_icons=true&theme=radical" alt="GitHub stats" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SyntX34&layout=compact&theme=radical" alt="Top languages" height="150"/>
+</p>
+
+---
+
+## 📈 Metrics (Auto-updated)
+![Metrics](https://github.com/SyntX34/SyntX34/blob/main/github-metrics.svg)
+
+---
+
+## 🌐 Connect with Me
+- **Discord:** `nh_syntx` *(SyntX#0164)*  
+- **Steam:** [SyntX](https://steamcommunity.com/id/SyntX34)  
+- **Instagram:** [dfa_nh_syntx](https://instagram.com/dfa_nh_syntx)  
+
+---
+
+## 💙 Support My Work
+If you like what I do, consider supporting me:  
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/)
