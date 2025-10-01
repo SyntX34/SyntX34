@@ -22,13 +22,13 @@ Always learning, always improving 🚀
 ---
 
 ## 📈 Metrics
-![Metrics](https://raw.githubusercontent.com/SyntX34/SyntX34/main/github-metrics.svg)
-
+![Metrics](https://raw.githubusercontent.com/NovaHunterZ/.github/main/github-metrics.svg)
 
 ---
 
 ## 🌐 Connect with Me
-- **Discord:** `nh_syntx` *(SyntX#0164)*  
+- **Discord:** `nh_syntx` *(SyntX#0164)*
+- **NovaHunterZ (Discord)**: [Click Here](https://discord.gg/2DjsQ4xdd5)
 - **Steam:** [SyntX](https://steamcommunity.com/id/SyntX34)  
 - **Instagram:** [dfa_nh_syntx](https://instagram.com/dfa_nh_syntx)  
 
