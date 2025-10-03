@@ -30,7 +30,7 @@ Always learning, always improving 🚀
 - **Discord:** `nh_syntx` *(SyntX#0164)*
 - **NovaHunterZ (Discord)**: [Click Here](https://discord.gg/2DjsQ4xdd5)
 - **Steam:** [SyntX](https://steamcommunity.com/id/SyntX34)  
-- **Instagram:** [dfa_nh_syntx](https://instagram.com/dfa_nh_syntx)  
+- **Instagram:** [dfa_nh_syntx](https://instagram.com/dfa.nh_syntx)  
 
 ---
 
