@@ -73,16 +73,36 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 <div align="center">
 
 ### 🌟 Most Starred
-[![Repo](https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true)](https://github.com/SyntX34/CS2-Beacon)
+<a href="https://github.com/SyntX34/CS2-Beacon">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490141" alt="CS2-Beacon" />
+</a>
+
+**[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
+> Beacon plugin for Counter-Strike 2.
 
 ### 💻 Most Active
-[![Repo](https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SyntX34&theme=tokyonight&hide_border=true)](https://github.com/SyntX34/SyntX34)
+<a href="https://github.com/SyntX34/SyntX34">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SyntX34&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490141" alt="SyntX34" />
+</a>
+
+**[SyntX34](https://github.com/SyntX34/SyntX34)** - ⭐ 2 | 🍴 0 | 📝 Python
+> Config files for my GitHub profile.
 
 ### 🔥 Most Popular
-[![Repo](https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true)](https://github.com/SyntX34/CS2-Beacon)
+<a href="https://github.com/SyntX34/CS2-Beacon">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490141" alt="CS2-Beacon" />
+</a>
+
+**[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
+> Beacon plugin for Counter-Strike 2.
 
 ### 🆕 Latest Project
-[![Repo](https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=GetServerInfo&theme=tokyonight&hide_border=true)](https://github.com/SyntX34/GetServerInfo)
+<a href="https://github.com/SyntX34/GetServerInfo">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=GetServerInfo&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490141" alt="GetServerInfo" />
+</a>
+
+**[GetServerInfo](https://github.com/SyntX34/GetServerInfo)** - ⭐ 1 | 🍴 0 | 📝 JavaScript
+> A project to retrieve server info and available players and their scores and other details.
 
 </div>
 <!-- FEATURED_REPOS_END -->
