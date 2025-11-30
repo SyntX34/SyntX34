@@ -4,7 +4,13 @@
 
 ### Developer | Experimenter | Always Learning
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F75C7E&center=true&vCenter=true&width=435&lines=Full+Stack+Developer;Open+Source+Enthusiast;Always+Learning+New+Things" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F75C7E&center=true&vCenter=true&width=435&lines=Full+Stack+Developer;Open+Source+Enthusiast;Always+Learning+New+Things;Game+Server+Developer" alt="Typing SVG" />
+
+---
+
+### 🌍 Coding from Kathmandu, Nepal
+
+[![Time](https://img.shields.io/badge/dynamic/json?style=flat-square&labelColor=1e1e2e&color=cba6f7&label=🕐&query=datetime&url=https%3A%2F%2Fworldtimeapi.org%2Fapi%2Ftimezone%2FAsia%2FKathmandu&logo=clockify&logoColor=white&suffix=+NPT)](https://time.is/Kathmandu)
 
 </div>
 
@@ -18,6 +24,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 - 🌱 Always learning, always improving
 - 🎮 Game development & server-side programming enthusiast
 - 🔧 Love building tools that solve real problems
+- 📍 Based in **Kathmandu, Nepal** 🇳🇵
 
 ---
 
@@ -33,6 +40,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![SourcePawn](https://img.shields.io/badge/SourcePawn-F37A20?style=for-the-badge&logo=sourcemod&logoColor=white)
 
 ### Tools & Technologies
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
@@ -74,35 +82,35 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490141" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true" alt="CS2-Beacon" />
 </a>
 
-**[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
-> Beacon plugin for Counter-Strike 2.
+**[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
+> CS2 server tool
 
 ### 💻 Most Active
 <a href="https://github.com/SyntX34/SyntX34">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SyntX34&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490141" alt="SyntX34" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SyntX34&theme=tokyonight&hide_border=true" alt="SyntX34" />
 </a>
 
-**[SyntX34](https://github.com/SyntX34/SyntX34)** - ⭐ 2 | 🍴 0 | 📝 Python
-> Config files for my GitHub profile.
+**[SyntX34](https://github.com/SyntX34/SyntX34)** - ⭐ 0 | 🍴 0 | 📝 Unknown
+> No description available
 
 ### 🔥 Most Popular
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490141" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true" alt="CS2-Beacon" />
 </a>
 
-**[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
-> Beacon plugin for Counter-Strike 2.
+**[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
+> CS2 server tool
 
 ### 🆕 Latest Project
 <a href="https://github.com/SyntX34/GetServerInfo">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=GetServerInfo&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490141" alt="GetServerInfo" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=GetServerInfo&theme=tokyonight&hide_border=true" alt="GetServerInfo" />
 </a>
 
-**[GetServerInfo](https://github.com/SyntX34/GetServerInfo)** - ⭐ 1 | 🍴 0 | 📝 JavaScript
-> A project to retrieve server info and available players and their scores and other details.
+**[GetServerInfo](https://github.com/SyntX34/GetServerInfo)** - ⭐ 0 | 🍴 0 | 📝 SourcePawn
+> No description available
 
 </div>
 <!-- FEATURED_REPOS_END -->
