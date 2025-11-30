@@ -73,16 +73,16 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 <div align="center">
 
 ### 🌟 Most Starred
-[![Repo](https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SyntX34&theme=tokyonight&hide_border=true)](https://github.com/SyntX34/SyntX34)
+[![Repo](https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true)](https://github.com/SyntX34/CS2-Beacon)
 
 ### 💻 Most Active
 [![Repo](https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SyntX34&theme=tokyonight&hide_border=true)](https://github.com/SyntX34/SyntX34)
 
 ### 🔥 Most Popular
-[![Repo](https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SyntX34&theme=tokyonight&hide_border=true)](https://github.com/SyntX34/SyntX34)
+[![Repo](https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true)](https://github.com/SyntX34/CS2-Beacon)
 
 ### 🆕 Latest Project
-[![Repo](https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SyntX34&theme=tokyonight&hide_border=true)](https://github.com/SyntX34/SyntX34)
+[![Repo](https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=GetServerInfo&theme=tokyonight&hide_border=true)](https://github.com/SyntX34/GetServerInfo)
 
 </div>
 <!-- FEATURED_REPOS_END -->
