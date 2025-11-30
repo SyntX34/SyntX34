@@ -19,12 +19,20 @@ def get_user_repos(username: str) -> List[Dict]:
     
     print(f"📦 Fetching repositories for {username}...")
     
+    headers = {}
+    github_token = os.environ.get('GITHUB_TOKEN')
+    if github_token:
+        headers['Authorization'] = f'token {github_token}'
+        print("✓ Using GitHub token for API requests")
+    
     while True:
         url = f"https://api.github.com/users/{username}/repos?page={page}&per_page=100&sort=updated"
-        response = requests.get(url)
+        response = requests.get(url, headers=headers)
         
         if response.status_code != 200:
             print(f"❌ Error: {response.status_code}")
+            if response.status_code == 403:
+                print("⚠️  Rate limit exceeded. Wait an hour or add GITHUB_TOKEN.")
             break
             
         data = response.json()
@@ -60,32 +68,50 @@ def analyze_repositories(repos: List[Dict]) -> Tuple[Dict, Dict, Dict, Dict]:
     
     return most_starred, most_active, most_popular, latest
 
-def generate_repo_section(username: str, repo: Dict, title: str, emoji: str, theme: str) -> str:
-    """Generate markdown for a repository card"""
+def generate_repo_card(username: str, repo: Dict, title: str, emoji: str, theme: str) -> str:
+    """Generate markdown for a repository card with fallback"""
     repo_name = repo['name']
+    repo_url = repo['html_url']
+    description = repo['description'] or 'No description available'
+    stars = repo['stargazers_count']
+    forks = repo['forks_count']
+    language = repo['language'] or 'Unknown'
+    
+    import time
+    cache_bust = int(time.time() // 3600) 
+    
     return f"""### {emoji} {title}
-[![Repo](https://github-readme-stats.vercel.app/api/pin/?username={username}&repo={repo_name}&theme={theme}&hide_border=true)](https://github.com/{username}/{repo_name})
+<a href="{repo_url}">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username={username}&repo={repo_name}&theme={theme}&hide_border=true&cache_seconds=86400&v={cache_bust}" alt="{repo_name}" />
+</a>
+
+**[{repo_name}]({repo_url})** - ⭐ {stars} | 🍴 {forks} | 📝 {language}
+> {description}
 """
 
 def update_readme(username: str, most_starred: Dict, most_active: Dict, most_popular: Dict, latest: Dict, theme: str):
     """Update README.md with featured repositories"""
     
     print("\n📝 Generating README section...")
+    
     featured_section = f"""<!-- FEATURED_REPOS_START -->
 <div align="center">
 
-{generate_repo_section(username, most_starred, "Most Starred", "🌟", theme)}
-{generate_repo_section(username, most_active, "Most Active", "💻", theme)}
-{generate_repo_section(username, most_popular, "Most Popular", "🔥", theme)}
-{generate_repo_section(username, latest, "Latest Project", "🆕", theme)}
+{generate_repo_card(username, most_starred, "Most Starred", "🌟", theme)}
+{generate_repo_card(username, most_active, "Most Active", "💻", theme)}
+{generate_repo_card(username, most_popular, "Most Popular", "🔥", theme)}
+{generate_repo_card(username, latest, "Latest Project", "🆕", theme)}
 </div>
 <!-- FEATURED_REPOS_END -->"""
+
     try:
         with open(README_PATH, 'r', encoding='utf-8') as f:
             readme_content = f.read()
     except FileNotFoundError:
         print(f"❌ {README_PATH} not found!")
         return False
+    
+    # Replace the section between markers
     pattern = r'<!-- FEATURED_REPOS_START -->.*?<!-- FEATURED_REPOS_END -->'
     
     if re.search(pattern, readme_content, re.DOTALL):
@@ -106,22 +132,25 @@ def main():
     """Main function"""
     print("🚀 Auto README Updater")
     print("=" * 50)
+    
     repos = get_user_repos(GITHUB_USERNAME)
     
     if not repos:
         print("❌ No repositories found. Exiting...")
         return
+    
     most_starred, most_active, most_popular, latest = analyze_repositories(repos)
     
     if not all([most_starred, most_active, most_popular, latest]):
         print("❌ Could not analyze repositories. Exiting...")
         return
+    
     print("\n" + "=" * 50)
     update_readme(GITHUB_USERNAME, most_starred, most_active, most_popular, latest, THEME)
     
     print("\n✨ Done! Your README is now up to date.")
     print(f"📊 Summary:")
-    print(f"   Most Starred: {most_starred['name']}")
+    print(f"   Most Starred: {most_starred['name']} ({most_starred['stargazers_count']} ⭐)")
     print(f"   Most Active: {most_active['name']}")
     print(f"   Most Popular: {most_popular['name']}")
     print(f"   Latest: {latest['name']}")
@@ -131,5 +160,7 @@ if __name__ == "__main__":
         main()
     except Exception as e:
         print(f"❌ Error: {e}")
+        import traceback
+        traceback.print_exc()
         print("\n💡 Make sure you have 'requests' installed:")
         print("   pip install requests")
