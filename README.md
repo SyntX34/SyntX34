@@ -82,7 +82,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490154" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490178" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
@@ -90,7 +90,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 💻 Most Active
 <a href="https://github.com/SyntX34/SyntX34">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SyntX34&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490154" alt="SyntX34" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SyntX34&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490178" alt="SyntX34" />
 </a>
 
 **[SyntX34](https://github.com/SyntX34/SyntX34)** - ⭐ 2 | 🍴 0 | 📝 Python
@@ -98,19 +98,19 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🔥 Most Popular
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490154" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490178" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
 > Beacon plugin for Counter-Strike 2.
 
 ### 🆕 Latest Project
-<a href="https://github.com/SyntX34/GetServerInfo">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=GetServerInfo&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490154" alt="GetServerInfo" />
+<a href="https://github.com/SyntX34/shop_randomquiz">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_randomquiz&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490178" alt="shop_randomquiz" />
 </a>
 
-**[GetServerInfo](https://github.com/SyntX34/GetServerInfo)** - ⭐ 1 | 🍴 0 | 📝 JavaScript
-> A project to retrieve server info and available players and their scores and other details.
+**[shop_randomquiz](https://github.com/SyntX34/shop_randomquiz)** - ⭐ 0 | 🍴 0 | 📝 SourcePawn
+> No description available
 
 </div>
 <!-- FEATURED_REPOS_END -->
