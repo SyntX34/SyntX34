@@ -89,28 +89,28 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 > Beacon plugin for Counter-Strike 2.
 
 ### 💻 Most Active
-<a href="https://github.com/SyntX34/SyntX34">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SyntX34&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490786" alt="SyntX34" />
+<a href="https://github.com/SyntX34/CS2-AdminSounds">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-AdminSounds&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490786" alt="CS2-AdminSounds" />
 </a>
 
-**[SyntX34](https://github.com/SyntX34/SyntX34)** - ⭐ 3 | 🍴 0 | 📝 Python
-> Config files for my GitHub profile.
+**[CS2-AdminSounds](https://github.com/SyntX34/CS2-AdminSounds)** - ⭐ 3 | 🍴 0 | 📝 C#
+> AdminSounds is a CounterStrikeSharp plugin for CS2 that allows server admins to easily play sounds through an in-game menu. It includes a built-in cooldown system to prevent spam and ensure smooth gameplay. Simple, efficient, and customizable for your server's needs.
 
 ### 🔥 Most Popular
-<a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490786" alt="CS2-Beacon" />
-</a>
-
-**[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
-> Beacon plugin for Counter-Strike 2.
-
-### 🆕 Latest Project
 <a href="https://github.com/SyntX34/shop_randomquiz">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_randomquiz&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490786" alt="shop_randomquiz" />
 </a>
 
 **[shop_randomquiz](https://github.com/SyntX34/shop_randomquiz)** - ⭐ 0 | 🍴 0 | 📝 SourcePawn
 > No description available
+
+### 🆕 Latest Project
+<a href="https://github.com/SyntX34/disconnected_logs">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=disconnected_logs&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490786" alt="disconnected_logs" />
+</a>
+
+**[disconnected_logs](https://github.com/SyntX34/disconnected_logs)** - ⭐ 2 | 🍴 0 | 📝 SourcePawn
+> Allows admins to see disconnected players Steamid.
 
 </div>
 <!-- FEATURED_REPOS_END -->
