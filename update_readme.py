@@ -6,6 +6,7 @@ Auto README Updater - Updates featured repositories automatically
 import requests
 import re
 import os
+from datetime import datetime, timedelta
 from typing import List, Dict, Tuple
 
 GITHUB_USERNAME = "SyntX34"
@@ -19,7 +20,7 @@ def get_user_repos(username: str) -> List[Dict]:
     
     print(f"📦 Fetching repositories for {username}...")
     
-    headers = {}
+    headers = {'Accept': 'application/vnd.github.v3+json'}
     github_token = os.environ.get('GITHUB_TOKEN')
     if github_token:
         headers['Authorization'] = f'token {github_token}'
@@ -33,6 +34,12 @@ def get_user_repos(username: str) -> List[Dict]:
             print(f"❌ Error: {response.status_code}")
             if response.status_code == 403:
                 print("⚠️  Rate limit exceeded. Wait an hour or add GITHUB_TOKEN.")
+                if github_token:
+                    print("⚠️  Token might not have proper permissions, trying without...")
+                    headers.pop('Authorization', None)
+                    response = requests.get(url, headers=headers)
+                    if response.status_code == 200:
+                        continue
             break
             
         data = response.json()
@@ -42,10 +49,16 @@ def get_user_repos(username: str) -> List[Dict]:
         repos.extend(data)
         page += 1
     
-    repos = [r for r in repos if not r['fork']]
+    filtered_repos = []
+    for repo in repos:
+        if repo['fork'] or repo['archived']:
+            continue
+        if repo['name'] == username:
+            continue
+        filtered_repos.append(repo)
     
-    print(f"✅ Found {len(repos)} repositories")
-    return repos
+    print(f"✅ Found {len(filtered_repos)} repositories (excluding forks, archived, and profile)")
+    return filtered_repos
 
 def analyze_repositories(repos: List[Dict]) -> Tuple[Dict, Dict, Dict, Dict]:
     """Analyze and categorize repositories"""
@@ -53,18 +66,61 @@ def analyze_repositories(repos: List[Dict]) -> Tuple[Dict, Dict, Dict, Dict]:
     if not repos:
         print("⚠️ No repositories found!")
         return None, None, None, None
-    
+    now = datetime.now()
     most_starred = max(repos, key=lambda x: x['stargazers_count'])
     print(f"⭐ Most Starred: {most_starred['name']} ({most_starred['stargazers_count']} stars)")
+    week_ago = now - timedelta(days=7)
+    recent_repos = [r for r in repos if 
+                    datetime.strptime(r['created_at'], '%Y-%m-%dT%H:%M:%SZ') > week_ago and
+                    (r['stargazers_count'] > 0 or r['forks_count'] > 0)]
     
-    latest = max(repos, key=lambda x: x['created_at'])
-    print(f"🆕 Latest: {latest['name']}")
+    if recent_repos:
+        latest = max(recent_repos, key=lambda x: x['created_at'])
+    else:
+        latest = max(repos, key=lambda x: x['created_at'])
+    print(f"🆕 Latest: {latest['name']} (created: {latest['created_at'][:10]})")
+    for repo in repos:
+        last_update = datetime.strptime(repo['updated_at'], '%Y-%m-%dT%H:%M:%SZ')
+        days_since_update = (now - last_update).days
+        base_score = repo['stargazers_count'] * 2 + repo['forks_count'] * 3
+        
+        if days_since_update <= 30:
+            recency_bonus = (30 - days_since_update) * 2
+            base_score += recency_bonus
+        
+        if repo['description']:
+            base_score += 5
+        if repo['topics']:
+            base_score += len(repo['topics']) * 2
+        
+        repo['popularity_score'] = base_score
     
-    most_popular = max(repos, key=lambda x: x['stargazers_count'] + x['forks_count'] + x['watchers_count'])
-    print(f"🔥 Most Popular: {most_popular['name']}")
+    most_popular = max(repos, key=lambda x: x['popularity_score'])
+    print(f"🔥 Most Popular: {most_popular['name']} (score: {most_popular['popularity_score']})")
     
     most_active = max(repos, key=lambda x: x['updated_at'])
-    print(f"💻 Most Active: {most_active['name']}")
+    selected_repos = [most_starred, most_popular, most_active, latest]
+    repo_names = [r['name'] for r in selected_repos]
+    if len(set(repo_names)) < 4:
+        print("⚠️ Found duplicate repositories, finding alternatives...")
+        repos_sorted_by_stars = sorted(repos, key=lambda x: x['stargazers_count'], reverse=True)
+        new_selections = []
+        used_names = set()
+        new_selections.append(most_starred)
+        used_names.add(most_starred['name'])
+        if most_popular['name'] not in used_names:
+            new_selections.append(most_popular)
+            used_names.add(most_popular['name'])
+        for repo in repos_sorted_by_stars:
+            if repo['name'] not in used_names:
+                new_selections.append(repo)
+                used_names.add(repo['name'])
+            if len(new_selections) >= 4:
+                break
+        
+        most_starred, most_popular, most_active, latest = new_selections[:4]
+    
+    print(f"💻 Most Active: {most_active['name']} (updated: {most_active['updated_at'][:10]})")
     
     return most_starred, most_active, most_popular, latest
 
@@ -110,8 +166,6 @@ def update_readme(username: str, most_starred: Dict, most_active: Dict, most_pop
     except FileNotFoundError:
         print(f"❌ {README_PATH} not found!")
         return False
-    
-    # Replace the section between markers
     pattern = r'<!-- FEATURED_REPOS_START -->.*?<!-- FEATURED_REPOS_END -->'
     
     if re.search(pattern, readme_content, re.DOTALL):
@@ -151,9 +205,9 @@ def main():
     print("\n✨ Done! Your README is now up to date.")
     print(f"📊 Summary:")
     print(f"   Most Starred: {most_starred['name']} ({most_starred['stargazers_count']} ⭐)")
-    print(f"   Most Active: {most_active['name']}")
-    print(f"   Most Popular: {most_popular['name']}")
-    print(f"   Latest: {latest['name']}")
+    print(f"   Most Active: {most_active['name']} (updated: {most_active['updated_at'][:10]})")
+    print(f"   Most Popular: {most_popular['name']} (score: {most_popular['popularity_score']})")
+    print(f"   Latest: {latest['name']} (created: {latest['created_at'][:10]})")
 
 if __name__ == "__main__":
     try:
