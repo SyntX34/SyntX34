@@ -58,6 +58,11 @@ def get_user_repos(username: str) -> List[Dict]:
         filtered_repos.append(repo)
     
     print(f"✅ Found {len(filtered_repos)} repositories (excluding forks, archived, and profile)")
+    
+    print("\n📅 All repositories with creation dates:")
+    for repo in sorted(filtered_repos, key=lambda x: x['created_at'], reverse=True)[:10]:
+        print(f"   {repo['name']}: {repo['created_at'][:10]} (stars: {repo['stargazers_count']})")
+    
     return filtered_repos
 
 def analyze_repositories(repos: List[Dict]) -> Tuple[Dict, Dict, Dict, Dict]:
@@ -68,59 +73,138 @@ def analyze_repositories(repos: List[Dict]) -> Tuple[Dict, Dict, Dict, Dict]:
         return None, None, None, None
     now = datetime.now()
     most_starred = max(repos, key=lambda x: x['stargazers_count'])
-    print(f"⭐ Most Starred: {most_starred['name']} ({most_starred['stargazers_count']} stars)")
-    week_ago = now - timedelta(days=7)
-    recent_repos = [r for r in repos if 
-                    datetime.strptime(r['created_at'], '%Y-%m-%dT%H:%M:%SZ') > week_ago and
-                    (r['stargazers_count'] > 0 or r['forks_count'] > 0)]
+    print(f"\n⭐ Most Starred: {most_starred['name']} ({most_starred['stargazers_count']} stars)")
+    latest = max(repos, key=lambda x: x['created_at'])
+    print(f"🆕 Latest Project: {latest['name']} (created: {latest['created_at'][:10]})")
     
-    if recent_repos:
-        latest = max(recent_repos, key=lambda x: x['created_at'])
-    else:
-        latest = max(repos, key=lambda x: x['created_at'])
-    print(f"🆕 Latest: {latest['name']} (created: {latest['created_at'][:10]})")
     for repo in repos:
         last_update = datetime.strptime(repo['updated_at'], '%Y-%m-%dT%H:%M:%SZ')
+        created_date = datetime.strptime(repo['created_at'], '%Y-%m-%dT%H:%M:%SZ')
         days_since_update = (now - last_update).days
-        base_score = repo['stargazers_count'] * 2 + repo['forks_count'] * 3
+        days_since_created = (now - created_date).days
+        base_score = repo['stargazers_count'] * 3 + repo['forks_count'] * 2
         
         if days_since_update <= 30:
-            recency_bonus = (30 - days_since_update) * 2
+            recency_bonus = max(0, 50 - (days_since_update * 1.5))
             base_score += recency_bonus
         
-        if repo['description']:
-            base_score += 5
-        if repo['topics']:
-            base_score += len(repo['topics']) * 2
+        if days_since_created <= 90:
+            newness_bonus = max(0, 30 - (days_since_created * 0.33))
+            base_score += newness_bonus
         
-        repo['popularity_score'] = base_score
+        if repo['description'] and len(repo['description']) > 10:
+            base_score += 10
+        
+        if repo.get('topics'):
+            base_score += len(repo['topics']) * 3
+        
+        if days_since_update > 365:
+            base_score *= 0.8
+        
+        repo['popularity_score'] = int(base_score)
     
-    most_popular = max(repos, key=lambda x: x['popularity_score'])
+    repos_sorted_by_popularity = sorted(repos, key=lambda x: x['popularity_score'], reverse=True)
+    most_popular = repos_sorted_by_popularity[0]
+    if most_popular['name'] == most_starred['name'] and len(repos_sorted_by_popularity) > 1:
+        most_popular = repos_sorted_by_popularity[1]
+    
     print(f"🔥 Most Popular: {most_popular['name']} (score: {most_popular['popularity_score']})")
-    
-    most_active = max(repos, key=lambda x: x['updated_at'])
-    selected_repos = [most_starred, most_popular, most_active, latest]
-    repo_names = [r['name'] for r in selected_repos]
-    if len(set(repo_names)) < 4:
-        print("⚠️ Found duplicate repositories, finding alternatives...")
-        repos_sorted_by_stars = sorted(repos, key=lambda x: x['stargazers_count'], reverse=True)
-        new_selections = []
-        used_names = set()
-        new_selections.append(most_starred)
-        used_names.add(most_starred['name'])
-        if most_popular['name'] not in used_names:
-            new_selections.append(most_popular)
-            used_names.add(most_popular['name'])
-        for repo in repos_sorted_by_stars:
-            if repo['name'] not in used_names:
-                new_selections.append(repo)
-                used_names.add(repo['name'])
-            if len(new_selections) >= 4:
+    repos_sorted_by_activity = sorted(repos, key=lambda x: x['updated_at'], reverse=True)
+    most_active = repos_sorted_by_activity[0]
+    if most_active['name'] == latest['name'] and len(repos_sorted_by_activity) > 1:
+        for repo in repos_sorted_by_activity[1:]:
+            if repo['name'] != latest['name']:
+                most_active = repo
                 break
-        
-        most_starred, most_popular, most_active, latest = new_selections[:4]
     
     print(f"💻 Most Active: {most_active['name']} (updated: {most_active['updated_at'][:10]})")
+    
+    selected_repos = {
+        'most_starred': most_starred,
+        'latest': latest,
+        'most_popular': most_popular,
+        'most_active': most_active
+    }
+    
+    repo_names = [r['name'] for r in selected_repos.values()]
+    unique_names = set(repo_names)
+    
+    if len(unique_names) < 4:
+        print(f"\n⚠️ Found duplicates ({len(unique_names)} unique repos, need 4). Finding alternatives...")
+        
+        selection_methods = [
+            ('most_starred', lambda r: r['stargazers_count'], True),
+            ('latest', lambda r: r['created_at'], True),
+            ('most_popular', lambda r: r['popularity_score'], True),
+            ('most_active', lambda r: r['updated_at'], True), 
+        ]
+        
+        backup_methods = [
+            ('forks', lambda r: r['forks_count'], True),
+            ('watchers', lambda r: r['watchers_count'], True),
+            ('size', lambda r: r['size'], True),
+            ('open_issues', lambda r: r['open_issues_count'], True),
+        ]
+        
+        all_methods = selection_methods + backup_methods
+        
+        used_repos = set()
+        final_selections = {}
+        
+        for i in range(len(all_methods)):
+            for method_name, sort_key, reverse in all_methods[i:]:
+                sorted_repos = sorted(repos, key=sort_key, reverse=reverse)
+                for repo in sorted_repos:
+                    if repo['name'] not in used_repos:
+                        if 'most_starred' not in final_selections:
+                            final_selections['most_starred'] = repo
+                        elif 'latest' not in final_selections:
+                            final_selections['latest'] = repo
+                        elif 'most_popular' not in final_selections:
+                            final_selections['most_popular'] = repo
+                        elif 'most_active' not in final_selections:
+                            final_selections['most_active'] = repo
+                        
+                        used_repos.add(repo['name'])
+                        break
+
+                if len(final_selections) == 4:
+                    break
+            
+            if len(final_selections) == 4:
+                break
+        
+        if len(final_selections) < 4:
+            unique_repos = []
+            for repo in repos:
+                if repo['name'] not in used_repos:
+                    unique_repos.append(repo)
+                if len(unique_repos) + len(final_selections) >= 4:
+                    break
+            slots = ['most_starred', 'latest', 'most_popular', 'most_active']
+            for slot in slots:
+                if slot not in final_selections:
+                    if unique_repos:
+                        final_selections[slot] = unique_repos.pop(0)
+                    else:
+                        for repo in repos:
+                            if repo['name'] not in [r['name'] for r in final_selections.values()]:
+                                final_selections[slot] = repo
+                                break
+        
+        most_starred = final_selections.get('most_starred', most_starred)
+        latest = final_selections.get('latest', latest)
+        most_popular = final_selections.get('most_popular', most_popular)
+        most_active = final_selections.get('most_active', most_active)
+        
+        print(f"✅ Found unique repos: {', '.join([r['name'] for r in final_selections.values()])}")
+    
+    print("\n" + "=" * 50)
+    print("📊 Final Selection:")
+    print(f"   Most Starred: {most_starred['name']} ({most_starred['stargazers_count']} ⭐)")
+    print(f"   Latest Project: {latest['name']} (created: {latest['created_at'][:10]})")
+    print(f"   Most Popular: {most_popular['name']} (score: {most_popular['popularity_score']})")
+    print(f"   Most Active: {most_active['name']} (updated: {most_active['updated_at'][:10]})")
     
     return most_starred, most_active, most_popular, latest
 
@@ -203,11 +287,6 @@ def main():
     update_readme(GITHUB_USERNAME, most_starred, most_active, most_popular, latest, THEME)
     
     print("\n✨ Done! Your README is now up to date.")
-    print(f"📊 Summary:")
-    print(f"   Most Starred: {most_starred['name']} ({most_starred['stargazers_count']} ⭐)")
-    print(f"   Most Active: {most_active['name']} (updated: {most_active['updated_at'][:10]})")
-    print(f"   Most Popular: {most_popular['name']} (score: {most_popular['popularity_score']})")
-    print(f"   Latest: {latest['name']} (created: {latest['created_at'][:10]})")
 
 if __name__ == "__main__":
     try:
