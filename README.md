@@ -93,7 +93,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490860" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490862" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
@@ -101,26 +101,26 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 💻 Most Active
 <a href="https://github.com/SyntX34/WeaponStats">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=WeaponStats&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490860" alt="WeaponStats" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=WeaponStats&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490862" alt="WeaponStats" />
 </a>
 
 **[WeaponStats](https://github.com/SyntX34/WeaponStats)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
 > WeaponStats is a SourceMod plugin for Counter-Strike: Source that tracks detailed weapon statistics and detects cheats like aimbots, triggerbots, silent aim, and no-recoil. It monitors player behavior in real time, offering both advanced anti-cheat measures and gameplay analytics.
 
 ### 🔥 Most Popular
-<a href="https://github.com/SyntX34/GetServerInfo">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=GetServerInfo&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490860" alt="GetServerInfo" />
-</a>
-
-**[GetServerInfo](https://github.com/SyntX34/GetServerInfo)** - ⭐ 1 | 🍴 0 | 📝 JavaScript
-> A project to retrieve server info and available players and their scores and other details.
-
-### 🆕 Latest Project
 <a href="https://github.com/SyntX34/shop_randomquiz">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_randomquiz&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490860" alt="shop_randomquiz" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_randomquiz&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490862" alt="shop_randomquiz" />
 </a>
 
 **[shop_randomquiz](https://github.com/SyntX34/shop_randomquiz)** - ⭐ 0 | 🍴 0 | 📝 SourcePawn
+> No description available
+
+### 🆕 Latest Project
+<a href="https://github.com/SyntX34/Python-Voice-TTS">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Python-Voice-TTS&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490862" alt="Python-Voice-TTS" />
+</a>
+
+**[Python-Voice-TTS](https://github.com/SyntX34/Python-Voice-TTS)** - ⭐ 0 | 🍴 0 | 📝 Python
 > No description available
 
 </div>
