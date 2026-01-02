@@ -93,31 +93,31 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490932" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490938" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
 > Beacon plugin for Counter-Strike 2.
 
 ### 💻 Most Active
-<a href="https://github.com/SyntX34/WeaponStats">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=WeaponStats&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490932" alt="WeaponStats" />
-</a>
-
-**[WeaponStats](https://github.com/SyntX34/WeaponStats)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
-> WeaponStats is a SourceMod plugin for Counter-Strike: Source that tracks detailed weapon statistics and detects cheats like aimbots, triggerbots, silent aim, and no-recoil. It monitors player behavior in real time, offering both advanced anti-cheat measures and gameplay analytics.
-
-### 🔥 Most Popular
 <a href="https://github.com/SyntX34/shop_randomquiz">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_randomquiz&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490932" alt="shop_randomquiz" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_randomquiz&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490938" alt="shop_randomquiz" />
 </a>
 
 **[shop_randomquiz](https://github.com/SyntX34/shop_randomquiz)** - ⭐ 0 | 🍴 0 | 📝 SourcePawn
 > No description available
 
+### 🔥 Most Popular
+<a href="https://github.com/SyntX34/sm-zombiereloaded-3.2">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=sm-zombiereloaded-3.2&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490938" alt="sm-zombiereloaded-3.2" />
+</a>
+
+**[sm-zombiereloaded-3.2](https://github.com/SyntX34/sm-zombiereloaded-3.2)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
+> Zombie Reloaded Updated 3.6 [NovaHunterZ Edition]
+
 ### 🆕 Latest Project
 <a href="https://github.com/SyntX34/Python-Voice-TTS">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Python-Voice-TTS&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490932" alt="Python-Voice-TTS" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Python-Voice-TTS&theme=tokyonight&hide_border=true&cache_seconds=86400&v=490938" alt="Python-Voice-TTS" />
 </a>
 
 **[Python-Voice-TTS](https://github.com/SyntX34/Python-Voice-TTS)** - ⭐ 0 | 🍴 0 | 📝 Python
