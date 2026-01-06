@@ -93,34 +93,34 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491028" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491034" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
 > Beacon plugin for Counter-Strike 2.
 
 ### 💻 Most Active
-<a href="https://github.com/SyntX34/shop_randomquiz">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_randomquiz&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491028" alt="shop_randomquiz" />
-</a>
-
-**[shop_randomquiz](https://github.com/SyntX34/shop_randomquiz)** - ⭐ 0 | 🍴 0 | 📝 SourcePawn
-> No description available
-
-### 🔥 Most Popular
 <a href="https://github.com/SyntX34/sm-zombiereloaded-3.2">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=sm-zombiereloaded-3.2&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491028" alt="sm-zombiereloaded-3.2" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=sm-zombiereloaded-3.2&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491034" alt="sm-zombiereloaded-3.2" />
 </a>
 
 **[sm-zombiereloaded-3.2](https://github.com/SyntX34/sm-zombiereloaded-3.2)** - ⭐ 2 | 🍴 0 | 📝 SourcePawn
 > Zombie Reloaded Updated 3.6 [NovaHunterZ Edition]
 
-### 🆕 Latest Project
+### 🔥 Most Popular
 <a href="https://github.com/SyntX34/Python-Voice-TTS">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Python-Voice-TTS&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491028" alt="Python-Voice-TTS" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Python-Voice-TTS&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491034" alt="Python-Voice-TTS" />
 </a>
 
 **[Python-Voice-TTS](https://github.com/SyntX34/Python-Voice-TTS)** - ⭐ 0 | 🍴 0 | 📝 Python
+> No description available
+
+### 🆕 Latest Project
+<a href="https://github.com/SyntX34/DiscordBrowserPresence">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=DiscordBrowserPresence&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491034" alt="DiscordBrowserPresence" />
+</a>
+
+**[DiscordBrowserPresence](https://github.com/SyntX34/DiscordBrowserPresence)** - ⭐ 1 | 🍴 0 | 📝 C#
 > No description available
 
 </div>
