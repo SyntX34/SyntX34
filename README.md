@@ -93,34 +93,34 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491694" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491700" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
 > Beacon plugin for Counter-Strike 2.
 
 ### 💻 Most Active
-<a href="https://github.com/SyntX34/sm-zombiereloaded-3.2">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=sm-zombiereloaded-3.2&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491694" alt="sm-zombiereloaded-3.2" />
+<a href="https://github.com/SyntX34/shop_smrpgcredits">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_smrpgcredits&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491700" alt="shop_smrpgcredits" />
 </a>
 
-**[sm-zombiereloaded-3.2](https://github.com/SyntX34/sm-zombiereloaded-3.2)** - ⭐ 2 | 🍴 0 | 📝 SourcePawn
-> Zombie Reloaded Updated 3.6 [NovaHunterZ Edition]
-
-### 🔥 Most Popular
-<a href="https://github.com/SyntX34/shop_randomquiz">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_randomquiz&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491694" alt="shop_randomquiz" />
-</a>
-
-**[shop_randomquiz](https://github.com/SyntX34/shop_randomquiz)** - ⭐ 0 | 🍴 0 | 📝 SourcePawn
+**[shop_smrpgcredits](https://github.com/SyntX34/shop_smrpgcredits)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
 > No description available
 
-### 🆕 Latest Project
-<a href="https://github.com/SyntX34/DiscordBrowserPresence">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=DiscordBrowserPresence&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491694" alt="DiscordBrowserPresence" />
+### 🔥 Most Popular
+<a href="https://github.com/SyntX34/sm-zombiereloaded-3.2">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=sm-zombiereloaded-3.2&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491700" alt="sm-zombiereloaded-3.2" />
 </a>
 
-**[DiscordBrowserPresence](https://github.com/SyntX34/DiscordBrowserPresence)** - ⭐ 1 | 🍴 0 | 📝 C#
+**[sm-zombiereloaded-3.2](https://github.com/SyntX34/sm-zombiereloaded-3.2)** - ⭐ 3 | 🍴 0 | 📝 SourcePawn
+> Zombie Reloaded Updated 3.6 [NovaHunterZ Edition]
+
+### 🆕 Latest Project
+<a href="https://github.com/SyntX34/Shop_CustomWeapon">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Shop_CustomWeapon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491700" alt="Shop_CustomWeapon" />
+</a>
+
+**[Shop_CustomWeapon](https://github.com/SyntX34/Shop_CustomWeapon)** - ⭐ 0 | 🍴 0 | 📝 SourcePawn
 > No description available
 
 </div>
