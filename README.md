@@ -93,7 +93,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491700" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491706" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
@@ -101,7 +101,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 💻 Most Active
 <a href="https://github.com/SyntX34/shop_smrpgcredits">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_smrpgcredits&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491700" alt="shop_smrpgcredits" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_smrpgcredits&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491706" alt="shop_smrpgcredits" />
 </a>
 
 **[shop_smrpgcredits](https://github.com/SyntX34/shop_smrpgcredits)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
@@ -109,7 +109,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🔥 Most Popular
 <a href="https://github.com/SyntX34/sm-zombiereloaded-3.2">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=sm-zombiereloaded-3.2&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491700" alt="sm-zombiereloaded-3.2" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=sm-zombiereloaded-3.2&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491706" alt="sm-zombiereloaded-3.2" />
 </a>
 
 **[sm-zombiereloaded-3.2](https://github.com/SyntX34/sm-zombiereloaded-3.2)** - ⭐ 3 | 🍴 0 | 📝 SourcePawn
@@ -117,10 +117,10 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🆕 Latest Project
 <a href="https://github.com/SyntX34/Shop_CustomWeapon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Shop_CustomWeapon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491700" alt="Shop_CustomWeapon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Shop_CustomWeapon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=491706" alt="Shop_CustomWeapon" />
 </a>
 
-**[Shop_CustomWeapon](https://github.com/SyntX34/Shop_CustomWeapon)** - ⭐ 0 | 🍴 0 | 📝 SourcePawn
+**[Shop_CustomWeapon](https://github.com/SyntX34/Shop_CustomWeapon)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
 > No description available
 
 </div>
