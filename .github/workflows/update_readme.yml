@@ -48,6 +48,11 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+
+          git pull --rebase origin main
+
           git add README.md
-          git commit -m "🤖 Auto-update README with featured repos [skip ci]"
-          git push
+          git commit -m "🤖 Auto-update README with featured repos [skip ci]" || echo "No changes to commit"
+
+          git push origin main
+
