@@ -93,7 +93,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492156" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492162" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
@@ -101,7 +101,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 💻 Most Active
 <a href="https://github.com/SyntX34/shop_randomquiz">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_randomquiz&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492156" alt="shop_randomquiz" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_randomquiz&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492162" alt="shop_randomquiz" />
 </a>
 
 **[shop_randomquiz](https://github.com/SyntX34/shop_randomquiz)** - ⭐ 0 | 🍴 0 | 📝 SourcePawn
@@ -109,7 +109,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🔥 Most Popular
 <a href="https://github.com/SyntX34/Shop_CustomWeapon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Shop_CustomWeapon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492156" alt="Shop_CustomWeapon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Shop_CustomWeapon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492162" alt="Shop_CustomWeapon" />
 </a>
 
 **[Shop_CustomWeapon](https://github.com/SyntX34/Shop_CustomWeapon)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
@@ -117,7 +117,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🆕 Latest Project
 <a href="https://github.com/SyntX34/Radar-Downloader">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Radar-Downloader&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492156" alt="Radar-Downloader" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Radar-Downloader&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492162" alt="Radar-Downloader" />
 </a>
 
 **[Radar-Downloader](https://github.com/SyntX34/Radar-Downloader)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
