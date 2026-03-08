@@ -93,7 +93,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492474" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492482" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
@@ -101,23 +101,23 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 💻 Most Active
 <a href="https://github.com/SyntX34/shop_randomquiz">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_randomquiz&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492474" alt="shop_randomquiz" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shop_randomquiz&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492482" alt="shop_randomquiz" />
 </a>
 
 **[shop_randomquiz](https://github.com/SyntX34/shop_randomquiz)** - ⭐ 0 | 🍴 0 | 📝 SourcePawn
 > No description available
 
 ### 🔥 Most Popular
-<a href="https://github.com/SyntX34/Zombie-Green-Blood">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Zombie-Green-Blood&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492474" alt="Zombie-Green-Blood" />
+<a href="https://github.com/SyntX34/Shop_CustomWeapon">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Shop_CustomWeapon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492482" alt="Shop_CustomWeapon" />
 </a>
 
-**[Zombie-Green-Blood](https://github.com/SyntX34/Zombie-Green-Blood)** - ⭐ 2 | 🍴 0 | 📝 SourcePawn
-> Original: https://forums.alliedmods.net/showthread.php?t=67863
+**[Shop_CustomWeapon](https://github.com/SyntX34/Shop_CustomWeapon)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
+> No description available
 
 ### 🆕 Latest Project
 <a href="https://github.com/SyntX34/Radar-Downloader">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Radar-Downloader&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492474" alt="Radar-Downloader" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Radar-Downloader&theme=tokyonight&hide_border=true&cache_seconds=86400&v=492482" alt="Radar-Downloader" />
 </a>
 
 **[Radar-Downloader](https://github.com/SyntX34/Radar-Downloader)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
