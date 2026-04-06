@@ -93,7 +93,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493189" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493194" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
@@ -101,7 +101,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 💻 Most Active
 <a href="https://github.com/SyntX34/smrpg_vipxpbonus">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=smrpg_vipxpbonus&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493189" alt="smrpg_vipxpbonus" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=smrpg_vipxpbonus&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493194" alt="smrpg_vipxpbonus" />
 </a>
 
 **[smrpg_vipxpbonus](https://github.com/SyntX34/smrpg_vipxpbonus)** - ⭐ 2 | 🍴 1 | 📝 SourcePawn
@@ -109,7 +109,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🔥 Most Popular
 <a href="https://github.com/SyntX34/zombieriot-original">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=zombieriot-original&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493189" alt="zombieriot-original" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=zombieriot-original&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493194" alt="zombieriot-original" />
 </a>
 
 **[zombieriot-original](https://github.com/SyntX34/zombieriot-original)** - ⭐ 0 | 🍴 0 | 📝 SourcePawn
@@ -117,7 +117,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🆕 Latest Project
 <a href="https://github.com/SyntX34/swiftlys2-NoBlock">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=swiftlys2-NoBlock&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493189" alt="swiftlys2-NoBlock" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=swiftlys2-NoBlock&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493194" alt="swiftlys2-NoBlock" />
 </a>
 
 **[swiftlys2-NoBlock](https://github.com/SyntX34/swiftlys2-NoBlock)** - ⭐ 0 | 🍴 0 | 📝 C#
