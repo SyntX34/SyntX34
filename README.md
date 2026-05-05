@@ -93,7 +93,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493874" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493880" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
@@ -101,7 +101,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 💻 Most Active
 <a href="https://github.com/SyntX34/shopkill_core">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shopkill_core&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493874" alt="shopkill_core" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shopkill_core&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493880" alt="shopkill_core" />
 </a>
 
 **[shopkill_core](https://github.com/SyntX34/shopkill_core)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
@@ -109,19 +109,19 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🔥 Most Popular
 <a href="https://github.com/SyntX34/smrpg_vipxpbonus">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=smrpg_vipxpbonus&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493874" alt="smrpg_vipxpbonus" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=smrpg_vipxpbonus&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493880" alt="smrpg_vipxpbonus" />
 </a>
 
 **[smrpg_vipxpbonus](https://github.com/SyntX34/smrpg_vipxpbonus)** - ⭐ 2 | 🍴 1 | 📝 SourcePawn
 > Gives extra XP to VIP players
 
 ### 🆕 Latest Project
-<a href="https://github.com/SyntX34/swiftlys2-AdminSounds">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=swiftlys2-AdminSounds&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493874" alt="swiftlys2-AdminSounds" />
+<a href="https://github.com/SyntX34/AutoFastDL">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=AutoFastDL&theme=tokyonight&hide_border=true&cache_seconds=86400&v=493880" alt="AutoFastDL" />
 </a>
 
-**[swiftlys2-AdminSounds](https://github.com/SyntX34/swiftlys2-AdminSounds)** - ⭐ 0 | 🍴 0 | 📝 C#
-> A CS2 plugin for SwiftlyS2 that allows administrators to play sounds for all players via an in-game menu.
+**[AutoFastDL](https://github.com/SyntX34/AutoFastDL)** - ⭐ 0 | 🍴 0 | 📝 C++
+> High-performance C++ FastDL processor for Source engine games (CS:S, CS:GO, TF2). Monitors game servers, automatically creates BZIP2 compressed copies for web hosting. Multi-threaded, configurable, 10-50x faster than Python versions.
 
 </div>
 <!-- FEATURED_REPOS_END -->
