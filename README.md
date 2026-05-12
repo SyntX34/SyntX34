@@ -93,35 +93,35 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494035" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494042" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
 > Beacon plugin for Counter-Strike 2.
 
 ### 💻 Most Active
-<a href="https://github.com/SyntX34/shopkill_core">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=shopkill_core&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494035" alt="shopkill_core" />
-</a>
-
-**[shopkill_core](https://github.com/SyntX34/shopkill_core)** - ⭐ 1 | 🍴 0 | 📝 SourcePawn
-> No description available
-
-### 🔥 Most Popular
 <a href="https://github.com/SyntX34/smrpg_vipxpbonus">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=smrpg_vipxpbonus&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494035" alt="smrpg_vipxpbonus" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=smrpg_vipxpbonus&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494042" alt="smrpg_vipxpbonus" />
 </a>
 
 **[smrpg_vipxpbonus](https://github.com/SyntX34/smrpg_vipxpbonus)** - ⭐ 2 | 🍴 1 | 📝 SourcePawn
 > Gives extra XP to VIP players
 
-### 🆕 Latest Project
+### 🔥 Most Popular
 <a href="https://github.com/SyntX34/AutoFastDL">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=AutoFastDL&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494035" alt="AutoFastDL" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=AutoFastDL&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494042" alt="AutoFastDL" />
 </a>
 
 **[AutoFastDL](https://github.com/SyntX34/AutoFastDL)** - ⭐ 0 | 🍴 0 | 📝 C++
 > High-performance C++ FastDL processor for Source engine games (CS:S, CS:GO, TF2). Monitors game servers, automatically creates BZIP2 compressed copies for web hosting. Multi-threaded, configurable, 10-50x faster than Python versions.
+
+### 🆕 Latest Project
+<a href="https://github.com/SyntX34/FastDLExtractor">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=FastDLExtractor&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494042" alt="FastDLExtractor" />
+</a>
+
+**[FastDLExtractor](https://github.com/SyntX34/FastDLExtractor)** - ⭐ 0 | 🍴 0 | 📝 C++
+> No description available
 
 </div>
 <!-- FEATURED_REPOS_END -->
