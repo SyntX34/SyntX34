@@ -93,7 +93,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494235" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494241" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
@@ -101,7 +101,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 💻 Most Active
 <a href="https://github.com/SyntX34/smrpg_vipxpbonus">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=smrpg_vipxpbonus&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494235" alt="smrpg_vipxpbonus" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=smrpg_vipxpbonus&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494241" alt="smrpg_vipxpbonus" />
 </a>
 
 **[smrpg_vipxpbonus](https://github.com/SyntX34/smrpg_vipxpbonus)** - ⭐ 2 | 🍴 1 | 📝 SourcePawn
@@ -109,7 +109,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🔥 Most Popular
 <a href="https://github.com/SyntX34/AutoFastDL">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=AutoFastDL&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494235" alt="AutoFastDL" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=AutoFastDL&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494241" alt="AutoFastDL" />
 </a>
 
 **[AutoFastDL](https://github.com/SyntX34/AutoFastDL)** - ⭐ 0 | 🍴 0 | 📝 C++
@@ -117,7 +117,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🆕 Latest Project
 <a href="https://github.com/SyntX34/FastDLExtractor">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=FastDLExtractor&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494235" alt="FastDLExtractor" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=FastDLExtractor&theme=tokyonight&hide_border=true&cache_seconds=86400&v=494241" alt="FastDLExtractor" />
 </a>
 
 **[FastDLExtractor](https://github.com/SyntX34/FastDLExtractor)** - ⭐ 1 | 🍴 0 | 📝 C++
