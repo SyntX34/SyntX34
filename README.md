@@ -93,35 +93,35 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495028" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495035" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
 > Beacon plugin for Counter-Strike 2.
 
 ### 💻 Most Active
-<a href="https://github.com/SyntX34/ExpenseTracker">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=ExpenseTracker&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495028" alt="ExpenseTracker" />
+<a href="https://github.com/SyntX34/SteamIdler">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SteamIdler&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495035" alt="SteamIdler" />
 </a>
 
-**[ExpenseTracker](https://github.com/SyntX34/ExpenseTracker)** - ⭐ 0 | 🍴 0 | 📝 CSS
+**[SteamIdler](https://github.com/SyntX34/SteamIdler)** - ⭐ 0 | 🍴 0 | 📝 C#
 > No description available
 
 ### 🔥 Most Popular
-<a href="https://github.com/SyntX34/BillSplitter">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=BillSplitter&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495028" alt="BillSplitter" />
-</a>
-
-**[BillSplitter](https://github.com/SyntX34/BillSplitter)** - ⭐ 0 | 🍴 0 | 📝 CSS
-> No description available
-
-### 🆕 Latest Project
 <a href="https://github.com/SyntX34/SubtitleTool">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495028" alt="SubtitleTool" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495035" alt="SubtitleTool" />
 </a>
 
 **[SubtitleTool](https://github.com/SyntX34/SubtitleTool)** - ⭐ 0 | 🍴 0 | 📝 C++
 > A high-performance C++ subtitle generator built on whisper.cpp, with automatic GPU acceleration and CPU fallback, multi-format audio/video input via FFmpeg, and built-in translation to English.
+
+### 🆕 Latest Project
+<a href="https://github.com/SyntX34/Portfolio">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Portfolio&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495035" alt="Portfolio" />
+</a>
+
+**[Portfolio](https://github.com/SyntX34/Portfolio)** - ⭐ 0 | 🍴 0 | 📝 HTML
+> No description available
 
 </div>
 <!-- FEATURED_REPOS_END -->
