@@ -93,7 +93,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495086" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495091" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
@@ -101,7 +101,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 💻 Most Active
 <a href="https://github.com/SyntX34/SteamIdler">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SteamIdler&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495086" alt="SteamIdler" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SteamIdler&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495091" alt="SteamIdler" />
 </a>
 
 **[SteamIdler](https://github.com/SyntX34/SteamIdler)** - ⭐ 0 | 🍴 0 | 📝 C#
@@ -109,7 +109,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🔥 Most Popular
 <a href="https://github.com/SyntX34/SubtitleTool">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495086" alt="SubtitleTool" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495091" alt="SubtitleTool" />
 </a>
 
 **[SubtitleTool](https://github.com/SyntX34/SubtitleTool)** - ⭐ 0 | 🍴 0 | 📝 C++
@@ -117,7 +117,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🆕 Latest Project
 <a href="https://github.com/SyntX34/Portfolio">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Portfolio&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495086" alt="Portfolio" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Portfolio&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495091" alt="Portfolio" />
 </a>
 
 **[Portfolio](https://github.com/SyntX34/Portfolio)** - ⭐ 0 | 🍴 0 | 📝 HTML
