@@ -93,35 +93,35 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495290" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495297" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
 > Beacon plugin for Counter-Strike 2.
 
 ### 💻 Most Active
-<a href="https://github.com/SyntX34/Portfolio">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Portfolio&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495290" alt="Portfolio" />
-</a>
-
-**[Portfolio](https://github.com/SyntX34/Portfolio)** - ⭐ 0 | 🍴 0 | 📝 HTML
-> No description available
-
-### 🔥 Most Popular
 <a href="https://github.com/SyntX34/SubtitleTool">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495290" alt="SubtitleTool" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495297" alt="SubtitleTool" />
 </a>
 
 **[SubtitleTool](https://github.com/SyntX34/SubtitleTool)** - ⭐ 1 | 🍴 0 | 📝 C++
 > A high-performance C++ subtitle generator built on whisper.cpp, with automatic GPU acceleration and CPU fallback, multi-format audio/video input via FFmpeg, and built-in translation to English.
 
-### 🆕 Latest Project
+### 🔥 Most Popular
 <a href="https://github.com/SyntX34/Calculator">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495290" alt="Calculator" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495297" alt="Calculator" />
 </a>
 
 **[Calculator](https://github.com/SyntX34/Calculator)** - ⭐ 1 | 🍴 0 | 📝 JavaScript
 > Calculator Hub is a comprehensive web-based calculator application featuring 10 different calculator modes in a single, beautifully designed interface. Built with vanilla JavaScript, PHP, and modern CSS, it offers both functionality and aesthetics.
+
+### 🆕 Latest Project
+<a href="https://github.com/SyntX34/SwiftlyS2-DuckCooldown">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SwiftlyS2-DuckCooldown&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495297" alt="SwiftlyS2-DuckCooldown" />
+</a>
+
+**[SwiftlyS2-DuckCooldown](https://github.com/SyntX34/SwiftlyS2-DuckCooldown)** - ⭐ 0 | 🍴 0 | 📝 C#
+> Punishes duck-spam with a configurable cooldown for SwiftlyS2.
 
 </div>
 <!-- FEATURED_REPOS_END -->
