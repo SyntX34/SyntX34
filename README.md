@@ -93,7 +93,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🌟 Most Starred
 <a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495379" alt="CS2-Beacon" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495387" alt="CS2-Beacon" />
 </a>
 
 **[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
@@ -101,7 +101,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 💻 Most Active
 <a href="https://github.com/SyntX34/SwiftlyS2-DuckCooldown">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SwiftlyS2-DuckCooldown&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495379" alt="SwiftlyS2-DuckCooldown" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SwiftlyS2-DuckCooldown&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495387" alt="SwiftlyS2-DuckCooldown" />
 </a>
 
 **[SwiftlyS2-DuckCooldown](https://github.com/SyntX34/SwiftlyS2-DuckCooldown)** - ⭐ 0 | 🍴 0 | 📝 C#
@@ -109,7 +109,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🔥 Most Popular
 <a href="https://github.com/SyntX34/SubtitleTool">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495379" alt="SubtitleTool" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495387" alt="SubtitleTool" />
 </a>
 
 **[SubtitleTool](https://github.com/SyntX34/SubtitleTool)** - ⭐ 2 | 🍴 0 | 📝 C++
@@ -117,7 +117,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 
 ### 🆕 Latest Project
 <a href="https://github.com/SyntX34/CookieMonster">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495379" alt="CookieMonster" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495387" alt="CookieMonster" />
 </a>
 
 **[CookieMonster](https://github.com/SyntX34/CookieMonster)** - ⭐ 1 | 🍴 0 | 📝 C++
