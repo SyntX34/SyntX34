@@ -98,7 +98,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 ### 🌟 Most Starred
 <div align="center">
   <a href="https://github.com/SyntX34/CS2-Beacon">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495463" alt="CS2-Beacon" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495464" alt="CS2-Beacon" />
   </a>
   <br/>
   <sub>
@@ -114,7 +114,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 ### 💻 Most Active
 <div align="center">
   <a href="https://github.com/SyntX34/SwiftlyS2-DuckCooldown">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SwiftlyS2-DuckCooldown&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495463" alt="SwiftlyS2-DuckCooldown" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SwiftlyS2-DuckCooldown&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495464" alt="SwiftlyS2-DuckCooldown" />
   </a>
   <br/>
   <sub>
@@ -130,7 +130,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 ### 🔥 Most Popular
 <div align="center">
   <a href="https://github.com/SyntX34/SubtitleTool">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495463" alt="SubtitleTool" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495464" alt="SubtitleTool" />
   </a>
   <br/>
   <sub>
@@ -146,7 +146,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 ### 🆕 Latest Project
 <div align="center">
   <a href="https://github.com/SyntX34/CookieMonster">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495463" alt="CookieMonster" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495464" alt="CookieMonster" />
   </a>
   <br/>
   <sub>
