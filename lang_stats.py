@@ -190,10 +190,10 @@ def generate_svg(languages: List[Tuple[str, int, float]]) -> str:
     row_height = 40
     header_height = 50
     padding = 20
-    bar_width = 260
+    bar_width = 240
     label_width = 140
     dot_size = 10
-    total_width = 480
+    total_width = 520
     total_height = header_height + rows * row_height + padding * 2
 
     # Build rows
@@ -240,18 +240,20 @@ def generate_svg(languages: List[Tuple[str, int, float]]) -> str:
                 f'height="{bar_h}" rx="3" ry="3" fill="{color}" opacity="0.9"/>'
             )
 
-        # Percentage text
+        # Percentage text (further right to avoid bar overlap)
         pct_text = f"{pct:.1f}%"
         rows_svg.append(
-            f'  <text x="{bar_x + bar_width + 10}" y="{y + 11}" '
+            f'  <text x="{bar_x + bar_width + 8}" y="{y + 11}" '
             f'font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Helvetica, Arial, sans-serif" '
             f'font-size="13" font-weight="700" fill="{ACCENT_PINK}">{pct_text}</text>'
         )
 
-        # Bytes text
+        # Bytes text (next to percentage)
         bytes_text = format_bytes(bytes_count)
+        pct_width = len(pct_text) * 8  # approximate pixel width
+        bytes_x = bar_x + bar_width + 16 + pct_width
         rows_svg.append(
-            f'  <text x="{bar_x + bar_width + 70}" y="{y + 11}" '
+            f'  <text x="{bytes_x}" y="{y + 11}" '
             f'font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Helvetica, Arial, sans-serif" '
             f'font-size="11" fill="{TEXT_MUTED}">{bytes_text}</text>'
         )
