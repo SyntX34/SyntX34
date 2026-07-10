@@ -41,55 +41,52 @@ def format_date(dt: datetime) -> str:
 
 
 def generate_clock_svg() -> str:
-    """Generate a digital clock SVG with Nepal time."""
+    """Generate a clean digital clock SVG with Nepal time."""
     now = get_nepal_time()
     _, minute, second, ampm = format_digital_time(now)
     date_str = format_date(now)
 
-    # 12-hour format
-    h12 = now.strftime("%I")
+    # 12-hour format (without leading zero, e.g. "1" instead of "01")
+    h12 = now.strftime("%I").lstrip("0") or "12"
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120">
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="420" height="130" viewBox="0 0 420 130">
   <defs>
     <style>
       .bg {{ fill: {COLORS['bg']}; }}
-      .time {{ font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 54px; font-weight: 700; fill: {COLORS['text_primary']}; }}
-      .seconds {{ font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 28px; font-weight: 400; fill: {COLORS['text_accent']}; }}
-      .ampm {{ font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 18px; font-weight: 400; fill: {COLORS['text_secondary']}; }}
+      .time {{ font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 52px; font-weight: 700; fill: {COLORS['text_primary']}; }}
+      .secs {{ font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 52px; font-weight: 600; fill: {COLORS['text_accent']}; }}
+      .ampm {{ font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 22px; font-weight: 700; fill: {COLORS['text_secondary']}; }}
       .date {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; fill: {COLORS['text_secondary']}; }}
       .label {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 11px; fill: #6c7086; }}
     </style>
   </defs>
   
   <!-- Background -->
-  <rect class="bg" x="0" y="0" width="420" height="120" rx="12" ry="12" />
+  <rect class="bg" x="0" y="0" width="420" height="130" rx="12" ry="12" />
   
   <!-- Nepal flag indicator -->
-  <rect x="0" y="0" width="6" height="120" rx="3" ry="3" fill="{COLORS['text_primary']}" opacity="0.6"/>
+  <rect x="0" y="0" width="6" height="130" rx="3" ry="3" fill="{COLORS['text_primary']}" opacity="0.6"/>
   
-  <!-- Timezone label -->
-  <text class="label" x="20" y="22">Nepal Standard Time</text>
-  
-  <!-- Digital Clock: HH:MM -->
-  <text class="time" x="20" y="82">{h12}:{minute}</text>
-  
-  <!-- Seconds -->
-  <text class="seconds" x="222" y="72">:{second}</text>
-  
-  <!-- AM/PM -->
-  <text class="ampm" x="258" y="70">{ampm}</text>
-  
-  <!-- Date -->
-  <text class="date" x="20" y="104">{date_str}</text>
-  
-  <!-- Nepal flag emoji as text -->
-  <text font-size="16" x="385" y="84">🇳🇵</text>
-  
-  <!-- Pulse dots for "live" feel -->
+  <!-- Top row: Timezone label left, LIVE indicator right -->
+  <text class="label" x="20" y="22">Nepal Standard Time (UTC+5:45)</text>
   <circle cx="370" cy="18" r="4" fill="#a6e3a1" opacity="0.9">
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" />
   </circle>
-  <text class="label" x="348" y="22">LIVE</text>
+  <text class="label" x="349" y="22">LIVE</text>
+  
+  <!-- Main digital time: HH:MM:SS AM/PM -->
+  <!-- HH:MM (large) -->
+  <text class="time" x="20" y="80">{h12}:{minute}</text>
+  <!-- :SS (same size as time, different color) -->
+  <text class="secs" x="228" y="80">:{second}</text>
+  <!-- AM/PM (smaller, raised higher to align with top of digits) -->
+  <text class="ampm" x="310" y="68">{ampm}</text>
+  
+  <!-- Bottom row: Date -->
+  <text class="date" x="20" y="112">{date_str}</text>
+  
+  <!-- Nepal flag emoji -->
+  <text font-size="20" x="375" y="108">🇳🇵</text>
 </svg>"""
 
     return svg

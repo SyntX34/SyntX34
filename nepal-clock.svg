@@ -1,42 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="130" viewBox="0 0 420 130">
   <defs>
     <style>
       .bg { fill: #1e1e2e; }
-      .time { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 54px; font-weight: 700; fill: #f5c2e7; }
-      .seconds { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 28px; font-weight: 400; fill: #cba6f7; }
-      .ampm { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 18px; font-weight: 400; fill: #89b4fa; }
+      .time { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 52px; font-weight: 700; fill: #f5c2e7; }
+      .secs { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 52px; font-weight: 600; fill: #cba6f7; }
+      .ampm { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 22px; font-weight: 700; fill: #89b4fa; }
       .date { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; fill: #89b4fa; }
       .label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 11px; fill: #6c7086; }
     </style>
   </defs>
   
   <!-- Background -->
-  <rect class="bg" x="0" y="0" width="420" height="120" rx="12" ry="12" />
+  <rect class="bg" x="0" y="0" width="420" height="130" rx="12" ry="12" />
   
   <!-- Nepal flag indicator -->
-  <rect x="0" y="0" width="6" height="120" rx="3" ry="3" fill="#f5c2e7" opacity="0.6"/>
+  <rect x="0" y="0" width="6" height="130" rx="3" ry="3" fill="#f5c2e7" opacity="0.6"/>
   
-  <!-- Timezone label -->
-  <text class="label" x="20" y="22">Nepal Standard Time</text>
-  
-  <!-- Digital Clock: HH:MM -->
-  <text class="time" x="20" y="82">01:52</text>
-  
-  <!-- Seconds -->
-  <text class="seconds" x="222" y="72">:05</text>
-  
-  <!-- AM/PM -->
-  <text class="ampm" x="258" y="70">PM</text>
-  
-  <!-- Date -->
-  <text class="date" x="20" y="104">Friday, July 10, 2026</text>
-  
-  <!-- Nepal flag emoji as text -->
-  <text font-size="16" x="385" y="84">🇳🇵</text>
-  
-  <!-- Pulse dots for "live" feel -->
+  <!-- Top row: Timezone label left, LIVE indicator right -->
+  <text class="label" x="20" y="22">Nepal Standard Time (UTC+5:45)</text>
   <circle cx="370" cy="18" r="4" fill="#a6e3a1" opacity="0.9">
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" />
   </circle>
-  <text class="label" x="348" y="22">LIVE</text>
+  <text class="label" x="349" y="22">LIVE</text>
+  
+  <!-- Main digital time: HH:MM:SS AM/PM -->
+  <!-- HH:MM (large) -->
+  <text class="time" x="20" y="80">2:07</text>
+  <!-- :SS (same size as time, different color) -->
+  <text class="secs" x="228" y="80">:16</text>
+  <!-- AM/PM (smaller, raised higher to align with top of digits) -->
+  <text class="ampm" x="310" y="68">PM</text>
+  
+  <!-- Bottom row: Date -->
+  <text class="date" x="20" y="112">Friday, July 10, 2026</text>
+  
+  <!-- Nepal flag emoji -->
+  <text font-size="20" x="375" y="108">🇳🇵</text>
 </svg>
