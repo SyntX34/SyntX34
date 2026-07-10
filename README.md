@@ -128,43 +128,6 @@ fun_fact: "Coding at the rooftop of the world 🌏"
   <img src="https://github-profile-trophy.vercel.app/?username=SyntX34&theme=tokyonight&no-frame=true&no-bg=true&row=2&column=4&margin-w=15&margin-h=15" alt="GitHub Trophies" />
 </div>
 
-<details>
-<summary><b>🔧 How to fix Achievements &amp; unlock full Metrics (METRICS_TOKEN setup)</b></summary>
-<br>
-
-The trophies &amp; detailed metrics need a <b>GitHub Personal Access Token</b> to show achievements, languages, and more. Here's how to set it up:
-
-<ol>
-  <li>Go to <b><a href="https://github.com/settings/tokens">github.com/settings/tokens</a></b> → <b>Generate new token (classic)</b></li>
-  <li>Give it a name like <code>METRICS_TOKEN</code></li>
-  <li>Enable these scopes:
-    <ul>
-      <li><b>☑ repo</b> (full control of private repositories)</li>
-      <li><b>☑ user</b> (read all profile data)</li>
-    </ul>
-  </li>
-  <li>Scroll down and click <b>Generate token</b></li>
-  <li><b>Copy the token</b> (it looks like <code>ghp_xxxxxxxxxxxx</code>)</li>
-  <li>Go to this repo's <b><a href="https://github.com/SyntX34/SyntX34/settings/secrets/actions">Settings → Secrets and variables → Actions</a></b></li>
-  <li>Click <b>New repository secret</b>
-    <ul>
-      <li>Name: <code>METRICS_TOKEN</code></li>
-      <li>Value: paste your token</li>
-    </ul>
-  </li>
-  <li>Go to the <b><a href="https://github.com/SyntX34/SyntX34/actions">Actions tab</a></b> and manually run:
-    <ul>
-      <li><b>Metrics</b> workflow → <code>Run workflow</code> (generates achievements + stats)</li>
-      <li><b>Update Language Stats</b> workflow → <code>Run workflow</code> (generates language chart)</li>
-      <li><b>Generate Snake Animation</b> → <code>Run workflow</code> (generates snake)</li>
-      <li><b>Update Nepal Clock</b> → <code>Run workflow</code> (generates clock)</li>
-    </ul>
-  </li>
-</ol>
-
-After that, everything updates automatically on schedule! 🎉
-</details>
-
 ---
 
 ## 📌 Featured Repositories
