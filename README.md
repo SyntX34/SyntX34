@@ -72,8 +72,11 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 </div>
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SyntX34&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&size_weight=0.5&count_weight=0.5" alt="Top Languages" />
-  <img width="49%" src="https://github-readme-activity-graph.vercel.app/graph?username=SyntX34&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" />
+  <img src="https://raw.githubusercontent.com/SyntX34/SyntX34/main/lang-stats.svg" alt="Top Languages" width="100%" />
+</div>
+
+<div align="center">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=SyntX34&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" />
 </div>
 
 ---
