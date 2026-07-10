@@ -67,12 +67,12 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 ## 📊 GitHub Statistics
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=SyntX34&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=SyntX34&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=SyntX34&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+  <img width="49%" src="https://streak-stats.demolab.com?user=SyntX34&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </div>
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SyntX34&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SyntX34&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&size_weight=0.5&count_weight=0.5" alt="Top Languages" />
   <img width="49%" src="https://github-readme-activity-graph.vercel.app/graph?username=SyntX34&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" />
 </div>
 
@@ -81,7 +81,7 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 ## 🏆 GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=SyntX34&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=SyntX34&theme=tokyonight&no-frame=true&no-bg=true&row=2&column=4&margin-w=15&margin-h=15" alt="GitHub Trophies" />
 </div>
 
 ---
@@ -91,37 +91,69 @@ I'm a passionate developer who loves building cool projects and experimenting wi
 <!-- FEATURED_REPOS_START -->
 <div align="center">
 
-### 🌟 Most Starred
-<a href="https://github.com/SyntX34/CS2-Beacon">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495458" alt="CS2-Beacon" />
-</a>
 
-**[CS2-Beacon](https://github.com/SyntX34/CS2-Beacon)** - ⭐ 4 | 🍴 0 | 📝 C#
-> Beacon plugin for Counter-Strike 2.
+### 🌟 Most Starred
+<div align="center">
+  <a href="https://github.com/SyntX34/CS2-Beacon">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495463" alt="CS2-Beacon" />
+  </a>
+  <br/>
+  <sub>
+    <a href="https://github.com/SyntX34/CS2-Beacon"><strong>CS2-Beacon</strong></a>
+    <br/>
+    ⭐ 4 | 🍴 0 | 📝 C#
+  </sub>
+  <br/>
+  <em>Beacon plugin for Counter-Strike 2.</em>
+</div>
+
 
 ### 💻 Most Active
-<a href="https://github.com/SyntX34/SwiftlyS2-DuckCooldown">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SwiftlyS2-DuckCooldown&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495458" alt="SwiftlyS2-DuckCooldown" />
-</a>
+<div align="center">
+  <a href="https://github.com/SyntX34/SwiftlyS2-DuckCooldown">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SwiftlyS2-DuckCooldown&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495463" alt="SwiftlyS2-DuckCooldown" />
+  </a>
+  <br/>
+  <sub>
+    <a href="https://github.com/SyntX34/SwiftlyS2-DuckCooldown"><strong>SwiftlyS2-DuckCooldown</strong></a>
+    <br/>
+    ⭐ 0 | 🍴 0 | 📝 C#
+  </sub>
+  <br/>
+  <em>Punishes duck-spam with a configurable cooldown for SwiftlyS2.</em>
+</div>
 
-**[SwiftlyS2-DuckCooldown](https://github.com/SyntX34/SwiftlyS2-DuckCooldown)** - ⭐ 0 | 🍴 0 | 📝 C#
-> Punishes duck-spam with a configurable cooldown for SwiftlyS2.
 
 ### 🔥 Most Popular
-<a href="https://github.com/SyntX34/SubtitleTool">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495458" alt="SubtitleTool" />
-</a>
+<div align="center">
+  <a href="https://github.com/SyntX34/SubtitleTool">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495463" alt="SubtitleTool" />
+  </a>
+  <br/>
+  <sub>
+    <a href="https://github.com/SyntX34/SubtitleTool"><strong>SubtitleTool</strong></a>
+    <br/>
+    ⭐ 2 | 🍴 0 | 📝 C++
+  </sub>
+  <br/>
+  <em>A high-performance C++ subtitle generator built on whisper.cpp, with automatic GPU acceleration and CPU fallback,...</em>
+</div>
 
-**[SubtitleTool](https://github.com/SyntX34/SubtitleTool)** - ⭐ 2 | 🍴 0 | 📝 C++
-> A high-performance C++ subtitle generator built on whisper.cpp, with automatic GPU acceleration and CPU fallback, multi-format audio/video input via FFmpeg, and built-in translation to English.
 
 ### 🆕 Latest Project
-<a href="https://github.com/SyntX34/CookieMonster">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495458" alt="CookieMonster" />
-</a>
-
-**[CookieMonster](https://github.com/SyntX34/CookieMonster)** - ⭐ 1 | 🍴 0 | 📝 C++
-> Cross-platform browser cookie extractor for yt-dlp. Windows, macOS, Linux.
+<div align="center">
+  <a href="https://github.com/SyntX34/CookieMonster">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495463" alt="CookieMonster" />
+  </a>
+  <br/>
+  <sub>
+    <a href="https://github.com/SyntX34/CookieMonster"><strong>CookieMonster</strong></a>
+    <br/>
+    ⭐ 1 | 🍴 0 | 📝 C++
+  </sub>
+  <br/>
+  <em>Cross-platform browser cookie extractor for yt-dlp. Windows, macOS, Linux.</em>
+</div>
 
 </div>
 <!-- FEATURED_REPOS_END -->

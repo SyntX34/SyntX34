@@ -218,16 +218,35 @@ def generate_repo_card(username: str, repo: Dict, title: str, emoji: str, theme:
     language = repo['language'] or 'Unknown'
     
     import time
-    cache_bust = int(time.time() // 3600) 
-    
-    return f"""### {emoji} {title}
-<a href="{repo_url}">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username={username}&repo={repo_name}&theme={theme}&hide_border=true&cache_seconds=86400&v={cache_bust}" alt="{repo_name}" />
-</a>
+    cache_bust = int(time.time() // 3600)  # Changes every hour
 
-**[{repo_name}]({repo_url})** - ⭐ {stars} | 🍴 {forks} | 📝 {language}
-> {description}
+    # Truncate description at word boundary
+    enriched_desc = description
+    if len(enriched_desc) > 120:
+        truncated = enriched_desc[:117]
+        # Cut at last space to avoid broken words
+        if ' ' in truncated:
+            truncated = truncated.rsplit(' ', 1)[0]
+        enriched_desc = truncated + "..."
+    
+    star_badge = f"""
+### {emoji} {title}
+<div align="center">
+  <a href="{repo_url}">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username={username}&repo={repo_name}&theme={theme}&hide_border=true&cache_seconds=86400&v={cache_bust}" alt="{repo_name}" />
+  </a>
+  <br/>
+  <sub>
+    <a href="{repo_url}"><strong>{repo_name}</strong></a>
+    <br/>
+    ⭐ {stars} | 🍴 {forks} | 📝 {language}
+  </sub>
+  <br/>
+  <em>{enriched_desc}</em>
+</div>
 """
+
+    return star_badge
 
 def update_readme(username: str, most_starred: Dict, most_active: Dict, most_popular: Dict, latest: Dict, theme: str):
     """Update README.md with featured repositories"""

@@ -1,22 +1,73 @@
 name: Metrics
 on:
   schedule: 
-    - cron: "0 * * * *"
-  workflow_dispatch:     
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/metrics.yml"
+
+concurrency:
+  group: metrics
+  cancel-in-progress: true
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Metrics generator
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          filename: github-metrics.svg
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           base: header, activity, community, repositories, metadata
+          base_indepth: yes
           config_timezone: Asia/Kathmandu
+          config_padding: 10%
+          
+          # Calendar / ISO
           plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          
+          # Languages
           plugin_languages: yes
           plugin_languages_details: percentage, bytes-size, lines
           plugin_languages_limit: 8
+          plugin_languages_indepth: yes
+          plugin_languages_recent_load: 500
+          plugin_languages_recent_days: 365
+          
+          # Achievements
           plugin_achievements: yes
           plugin_achievements_display: detailed
-          plugin_achievements_threshold: A
+          plugin_achievements_threshold: C
+          plugin_achievements_secret: yes
+          plugin_achievements_limit: 10
+          
+          # Additional plugins for more data
+          plugin_followup: yes
+          plugin_followup_sections: repositories
+
+      - name: Check for changes
+        id: verify_diff
+        run: |
+          git diff --quiet github-metrics.svg || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changed
+        if: steps.verify_diff.outputs.changed == 'true'
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add github-metrics.svg
+          git commit -m "Update github-metrics.svg [skip ci]" || exit 0
+          git push origin HEAD:main
