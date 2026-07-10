@@ -15,9 +15,9 @@
 
 ### 🕐 Nepal Standard Time (NPT)
 
-[![Current Time](https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=1e1e2e&color=F75C7E&label=🕐%20Live%20Clock&query=datetime&url=https%3A%2F%2Fworldtimeapi.org%2Fapi%2Ftimezone%2FAsia%2FKathmandu&logo=clockify&logoColor=white)](https://time.is/Kathmandu)
+<img src="https://raw.githubusercontent.com/SyntX34/SyntX34/main/nepal-clock.svg" alt="Nepal Clock" width="100%" />
 
-[![Date & Time](https://img.shields.io/badge/dynamic/json?style=for-the-badge&color=89b4fa&labelColor=1e1e2e&query=%24.datetime&url=https%3A%2F%2Fworldtimeapi.org%2Fapi%2Ftimezone%2FAsia%2FKathmandu&label=📅%20Date%20%26%20Time&logo=calendar-clock&logoColor=white)](https://time.is/Kathmandu)
+*⏰ Clock updates every 30 minutes via GitHub Actions — [time.is/Kathmandu](https://time.is/Kathmandu)*
 
 [![Timezone](https://img.shields.io/badge/Timezone-NPT%20(UTC%2B5:45)-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=timezone&logoColor=white)](https://time.is/Kathmandu)
 

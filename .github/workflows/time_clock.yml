@@ -1,0 +1,50 @@
+name: Update Nepal Clock
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "time_svg.py"
+      - ".github/workflows/time_clock.yml"
+
+concurrency:
+  group: nepal-clock
+  cancel-in-progress: true
+
+jobs:
+  generate-clock:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate clock SVG
+        run: python time_svg.py
+
+      - name: Check for changes
+        id: verify_diff
+        run: |
+          git diff --quiet nepal-clock.svg || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changed
+        if: steps.verify_diff.outputs.changed == 'true'
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add nepal-clock.svg
+          git commit -m "🕐 Update Nepal clock SVG [skip ci]" || exit 0
+          git push origin HEAD:main
