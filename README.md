@@ -139,7 +139,7 @@ fun_fact: "Coding at the rooftop of the world 🌏"
 ### 🌟 Most Starred
 <div align="center">
   <a href="https://github.com/SyntX34/CS2-Beacon">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495560" alt="CS2-Beacon" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495565" alt="CS2-Beacon" />
   </a>
   <br/>
   <sub>
@@ -154,40 +154,40 @@ fun_fact: "Coding at the rooftop of the world 🌏"
 
 ### 💻 Most Active
 <div align="center">
+  <a href="https://github.com/SyntX34/SwiftlyS2-DuckCooldown">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SwiftlyS2-DuckCooldown&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495565" alt="SwiftlyS2-DuckCooldown" />
+  </a>
+  <br/>
+  <sub>
+    <a href="https://github.com/SyntX34/SwiftlyS2-DuckCooldown"><strong>SwiftlyS2-DuckCooldown</strong></a>
+    <br/>
+    ⭐ 0 | 🍴 0 | 📝 C#
+  </sub>
+  <br/>
+  <em>Punishes duck-spam with a configurable cooldown for SwiftlyS2.</em>
+</div>
+
+
+### 🔥 Most Popular
+<div align="center">
   <a href="https://github.com/SyntX34/SubtitleTool">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495560" alt="SubtitleTool" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495565" alt="SubtitleTool" />
   </a>
   <br/>
   <sub>
     <a href="https://github.com/SyntX34/SubtitleTool"><strong>SubtitleTool</strong></a>
     <br/>
-    ⭐ 2 | 🍴 0 | 📝 C++
+    ⭐ 3 | 🍴 0 | 📝 C++
   </sub>
   <br/>
   <em>A high-performance C++ subtitle generator built on whisper.cpp, with automatic GPU acceleration and CPU fallback,...</em>
 </div>
 
 
-### 🔥 Most Popular
-<div align="center">
-  <a href="https://github.com/SyntX34/Calculator">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495560" alt="Calculator" />
-  </a>
-  <br/>
-  <sub>
-    <a href="https://github.com/SyntX34/Calculator"><strong>Calculator</strong></a>
-    <br/>
-    ⭐ 1 | 🍴 0 | 📝 JavaScript
-  </sub>
-  <br/>
-  <em>Calculator Hub is a comprehensive web-based calculator application featuring 10 different calculator modes in a...</em>
-</div>
-
-
 ### 🆕 Latest Project
 <div align="center">
   <a href="https://github.com/SyntX34/CookieMonster">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495560" alt="CookieMonster" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495565" alt="CookieMonster" />
   </a>
   <br/>
   <sub>
