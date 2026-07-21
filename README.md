@@ -139,7 +139,7 @@ fun_fact: "Coding at the rooftop of the world 🌏"
 ### 🌟 Most Starred
 <div align="center">
   <a href="https://github.com/SyntX34/CS2-Beacon">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495722" alt="CS2-Beacon" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495728" alt="CS2-Beacon" />
   </a>
   <br/>
   <sub>
@@ -155,7 +155,7 @@ fun_fact: "Coding at the rooftop of the world 🌏"
 ### 💻 Most Active
 <div align="center">
   <a href="https://github.com/SyntX34/SteamIdler">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SteamIdler&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495722" alt="SteamIdler" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SteamIdler&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495728" alt="SteamIdler" />
   </a>
   <br/>
   <sub>
@@ -170,24 +170,24 @@ fun_fact: "Coding at the rooftop of the world 🌏"
 
 ### 🔥 Most Popular
 <div align="center">
-  <a href="https://github.com/SyntX34/SubtitleTool">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495722" alt="SubtitleTool" />
+  <a href="https://github.com/SyntX34/Calculator">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495728" alt="Calculator" />
   </a>
   <br/>
   <sub>
-    <a href="https://github.com/SyntX34/SubtitleTool"><strong>SubtitleTool</strong></a>
+    <a href="https://github.com/SyntX34/Calculator"><strong>Calculator</strong></a>
     <br/>
-    ⭐ 3 | 🍴 0 | 📝 C++
+    ⭐ 1 | 🍴 0 | 📝 JavaScript
   </sub>
   <br/>
-  <em>A high-performance C++ subtitle generator built on whisper.cpp, with automatic GPU acceleration and CPU fallback,...</em>
+  <em>Calculator Hub is a comprehensive web-based calculator application featuring 10 different calculator modes in a...</em>
 </div>
 
 
 ### 🆕 Latest Project
 <div align="center">
   <a href="https://github.com/SyntX34/CookieMonster">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495722" alt="CookieMonster" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495728" alt="CookieMonster" />
   </a>
   <br/>
   <sub>
