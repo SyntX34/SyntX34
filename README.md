@@ -139,7 +139,7 @@ fun_fact: "Coding at the rooftop of the world 🌏"
 ### 🌟 Most Starred
 <div align="center">
   <a href="https://github.com/SyntX34/CS2-Beacon">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495902" alt="CS2-Beacon" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495907" alt="CS2-Beacon" />
   </a>
   <br/>
   <sub>
@@ -154,24 +154,24 @@ fun_fact: "Coding at the rooftop of the world 🌏"
 
 ### 💻 Most Active
 <div align="center">
-  <a href="https://github.com/SyntX34/SteamIdler">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SteamIdler&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495902" alt="SteamIdler" />
+  <a href="https://github.com/SyntX34/swiftlys2-AdminSounds">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=swiftlys2-AdminSounds&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495907" alt="swiftlys2-AdminSounds" />
   </a>
   <br/>
   <sub>
-    <a href="https://github.com/SyntX34/SteamIdler"><strong>SteamIdler</strong></a>
+    <a href="https://github.com/SyntX34/swiftlys2-AdminSounds"><strong>swiftlys2-AdminSounds</strong></a>
     <br/>
-    ⭐ 0 | 🍴 0 | 📝 C#
+    ⭐ 1 | 🍴 0 | 📝 C#
   </sub>
   <br/>
-  <em>A lightweight, memory-efficient tool to automatically idle your Steam games and collect hours, cards, and...</em>
+  <em>A CS2 plugin for SwiftlyS2 that allows administrators to play sounds for all players via an in-game menu.</em>
 </div>
 
 
 ### 🔥 Most Popular
 <div align="center">
   <a href="https://github.com/SyntX34/Calculator">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495902" alt="Calculator" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495907" alt="Calculator" />
   </a>
   <br/>
   <sub>
@@ -187,7 +187,7 @@ fun_fact: "Coding at the rooftop of the world 🌏"
 ### 🆕 Latest Project
 <div align="center">
   <a href="https://github.com/SyntX34/CookieMonster">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495902" alt="CookieMonster" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495907" alt="CookieMonster" />
   </a>
   <br/>
   <sub>
