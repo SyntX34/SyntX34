@@ -20,13 +20,13 @@
   <text class="label" x="20" y="22">Nepal Standard Time</text>
   
   <!-- Digital Clock: HH:MM -->
-  <text class="time" x="20" y="82">10:19</text>
+  <text class="time" x="20" y="82">12:49</text>
   
   <!-- Seconds -->
-  <text class="seconds" x="222" y="72">:00</text>
+  <text class="seconds" x="222" y="72">:53</text>
   
   <!-- AM/PM -->
-  <text class="ampm" x="258" y="70">AM</text>
+  <text class="ampm" x="258" y="70">PM</text>
   
   <!-- Date -->
   <text class="date" x="20" y="104">Saturday, August 01, 2026</text>
