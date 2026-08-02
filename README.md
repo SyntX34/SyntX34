@@ -139,7 +139,7 @@ fun_fact: "Coding at the rooftop of the world 🌏"
 ### 🌟 Most Starred
 <div align="center">
   <a href="https://github.com/SyntX34/CS2-Beacon">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496010" alt="CS2-Beacon" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496016" alt="CS2-Beacon" />
   </a>
   <br/>
   <sub>
@@ -155,7 +155,7 @@ fun_fact: "Coding at the rooftop of the world 🌏"
 ### 💻 Most Active
 <div align="center">
   <a href="https://github.com/SyntX34/swiftlys2-AdminSounds">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=swiftlys2-AdminSounds&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496010" alt="swiftlys2-AdminSounds" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=swiftlys2-AdminSounds&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496016" alt="swiftlys2-AdminSounds" />
   </a>
   <br/>
   <sub>
@@ -171,7 +171,7 @@ fun_fact: "Coding at the rooftop of the world 🌏"
 ### 🔥 Most Popular
 <div align="center">
   <a href="https://github.com/SyntX34/Calculator">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496010" alt="Calculator" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496016" alt="Calculator" />
   </a>
   <br/>
   <sub>
@@ -187,7 +187,7 @@ fun_fact: "Coding at the rooftop of the world 🌏"
 ### 🆕 Latest Project
 <div align="center">
   <a href="https://github.com/SyntX34/CookieMonster">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496010" alt="CookieMonster" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496016" alt="CookieMonster" />
   </a>
   <br/>
   <sub>
