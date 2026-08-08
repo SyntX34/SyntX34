@@ -21,14 +21,14 @@
   <text x="45" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">SourcePawn</text>
   <rect x="160" y="52" width="240" height="6" rx="3" ry="3" fill="#313244"/>
   <rect x="160" y="52" width="124" height="6" rx="3" ry="3" fill="#f69e1d" opacity="0.9"/>
-  <text x="408" y="61" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">52.0%</text>
+  <text x="408" y="61" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">51.9%</text>
   <text x="456" y="61" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">1.5MB</text>
   <circle cx="30" cy="98" r="5" fill="#178600"/>
   <text x="45" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">C#</text>
   <rect x="160" y="92" width="240" height="6" rx="3" ry="3" fill="#313244"/>
   <rect x="160" y="92" width="22" height="6" rx="3" ry="3" fill="#178600" opacity="0.9"/>
-  <text x="408" y="101" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">9.3%</text>
-  <text x="448" y="101" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">273KB</text>
+  <text x="408" y="101" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">9.5%</text>
+  <text x="448" y="101" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">279KB</text>
   <rect x="0" y="122" width="520" height="40" rx="6" ry="6" fill="#181825" opacity="0.5"/>
   <circle cx="30" cy="138" r="5" fill="#f34b7d"/>
   <text x="45" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">C++</text>
