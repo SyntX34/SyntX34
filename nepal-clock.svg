@@ -20,16 +20,16 @@
   <text class="label" x="20" y="22">Nepal Standard Time</text>
   
   <!-- Digital Clock: HH:MM -->
-  <text class="time" x="20" y="82">11:58</text>
+  <text class="time" x="20" y="82">01:04</text>
   
   <!-- Seconds -->
-  <text class="seconds" x="222" y="72">:47</text>
+  <text class="seconds" x="222" y="72">:50</text>
   
   <!-- AM/PM -->
-  <text class="ampm" x="258" y="70">PM</text>
+  <text class="ampm" x="258" y="70">AM</text>
   
   <!-- Date -->
-  <text class="date" x="20" y="104">Tuesday, August 11, 2026</text>
+  <text class="date" x="20" y="104">Wednesday, August 12, 2026</text>
   
   <!-- Nepal flag emoji as text -->
   <text font-size="16" x="385" y="84">🇳🇵</text>
