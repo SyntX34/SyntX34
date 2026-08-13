@@ -20,7 +20,7 @@
   <text class="label" x="20" y="22">Nepal Standard Time</text>
   
   <!-- Digital Clock: HH:MM -->
-  <text class="time" x="20" y="82">10:12</text>
+  <text class="time" x="20" y="82">11:39</text>
   
   <!-- Seconds -->
   <text class="seconds" x="222" y="72">:05</text>
