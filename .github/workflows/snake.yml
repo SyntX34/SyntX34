@@ -29,8 +29,8 @@ jobs:
         with:
           github_user_name: SyntX34
           outputs: |
-            dist/github-snake.svg?color_snake=#89b4fa&color_dots=#181825,#313244,#a6e3a1,#f9e2af,#f38ba8
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#f5c2e7&color_dots=#11111b,#1e1e2e,#89b4fa,#cba6f7,#f5c2e7
+            dist/github-snake.svg?color_snake=#00ff88&color_dots=#181825,#313244,#00b4d8,#0077b6,#00ff88
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#00ff88&color_dots=#11111b,#1e1e2e,#0077b6,#00b4d8,#00ff88
 
       - name: Move snake SVGs to root
         run: |
