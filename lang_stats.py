@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import sys
+import html
 import requests
 from pathlib import Path
 from typing import Dict, List, Tuple, Any
@@ -107,7 +108,8 @@ def fetch_all_repos(username: str, token: str) -> Tuple[List[Dict[str, Any]], in
         else:
             public_count += 1
 
-        if not r.get("fork") and not r.get("archived") and r.get("name") != username:
+        # Check all repositories owned by user (exclude only empty or self-readme repo)
+        if not r.get("archived") and r.get("name") != username:
             filtered.append(r)
 
     return filtered, public_count, private_count
@@ -210,6 +212,7 @@ def render_language_section(
             f'<circle cx="{x_base + 12:.1f}" cy="{y_pos + 6}" r="4" fill="{color}"/>'
         )
         display_name = lang if len(lang) <= 12 else lang[:10] + ".."
+        display_name = html.escape(display_name)
         row_elements.append(
             f'<text x="{x_base + 24:.1f}" y="{y_pos + 10}" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="{THEME["text_primary"]}">{display_name}</text>'
         )
@@ -225,16 +228,20 @@ def render_language_section(
     calc_rows = (len(displayed_langs) + 1) // 2
     section_height = 58 + (calc_rows * 38) + 16
 
+    safe_title = html.escape(title)
+    safe_subtitle = html.escape(subtitle)
+    safe_badge = html.escape(badge_text)
+
     section_xml = f"""
-  <!-- {title} Section -->
+  <!-- {safe_title} Section -->
   <g transform="translate({padding}, {y_offset + 18})">
-    <text class="font-title" font-size="15" font-weight="800" fill="{THEME['text_primary']}">{title}</text>
-    <text class="font-title" font-size="11" font-weight="500" fill="{THEME['text_muted']}" y="14">{subtitle}</text>
+    <text class="font-title" font-size="15" font-weight="800" fill="{THEME['text_primary']}">{safe_title}</text>
+    <text class="font-title" font-size="11" font-weight="500" fill="{THEME['text_muted']}" y="14">{safe_subtitle}</text>
   </g>
   <g transform="translate({card_width - padding - 100}, {y_offset + 4})">
     <rect x="0" y="0" width="100" height="22" rx="6" fill="#1e1e2e" stroke="{THEME['card_border']}" stroke-width="1"/>
     <circle cx="10" cy="11" r="3" fill="{badge_color}"/>
-    <text class="font-mono" font-size="10" font-weight="700" fill="{THEME['text_primary']}" x="18" y="15">{badge_text}</text>
+    <text class="font-mono" font-size="10" font-weight="700" fill="{THEME['text_primary']}" x="18" y="15">{safe_badge}</text>
   </g>
   <rect x="{padding}" y="{y_offset + 36}" width="{stack_width}" height="{stack_bar_height}" rx="3" fill="{THEME['bar_track']}"/>
   <g>
