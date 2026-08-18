@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 254" width="100%" height="254" style="max-width: 650px; background: transparent;">
+  <defs>
+    <linearGradient id="actCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f17" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#181825" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#11111b" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="actBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#89b4fa" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#cba6f7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f5c2e7" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&amp;family=Outfit:wght@500;600;700;800&amp;display=swap');
+      .font-title { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="646" height="250" rx="16" ry="16" fill="url(#actCardBg)" stroke="url(#actBorderGrad)" stroke-width="1.5"/>
+  <rect x="10" y="16" width="3" height="222" rx="1.5" fill="#cba6f7"/>
+
+  <!-- Main Title -->
+  <g transform="translate(24, 32)">
+    <text class="font-title" font-size="18" font-weight="800" fill="#cdd6f4">⚡ Lifetime GitHub Activity</text>
+    <text class="font-title" font-size="11" font-weight="500" fill="#6c7086" y="17">All-time open source contributions, pull requests, and code impact</text>
+  </g>
+
+  <g transform="translate(531, 24)">
+    <rect x="0" y="0" width="95" height="24" rx="6" fill="#1e1e2e" stroke="#313244" stroke-width="1"/>
+    <circle cx="12" cy="12" r="3.5" fill="#a6e3a1"/>
+    <text class="font-mono" font-size="10.5" font-weight="700" fill="#cdd6f4" x="22" y="16">All-Time</text>
+  </g>
+
+  <g>
+    
+    <rect x="24.0" y="80.0" width="293.0" height="56" rx="10" fill="#181825" stroke="#313244" stroke-width="1"/>
+    <circle cx="40.0" cy="100.0" r="4.5" fill="#89b4fa"/>
+    <text x="52.0" y="104.0" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">🔀 Pull Requests Created</text>
+    <text x="303.0" y="106.0" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="16" font-weight="800" fill="#89b4fa">16</text>
+    <text x="52.0" y="124.0" font-family="Outfit, -apple-system, sans-serif" font-size="10" fill="#6c7086">All contributions submitted across GitHub</text>
+
+
+    <rect x="333.0" y="80.0" width="293.0" height="56" rx="10" fill="#181825" stroke="#313244" stroke-width="1"/>
+    <circle cx="349.0" cy="100.0" r="4.5" fill="#a6e3a1"/>
+    <text x="361.0" y="104.0" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">🚀 Pull Requests Merged</text>
+    <text x="612.0" y="106.0" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="16" font-weight="800" fill="#a6e3a1">7</text>
+    <text x="361.0" y="124.0" font-family="Outfit, -apple-system, sans-serif" font-size="10" fill="#6c7086">Merged into upstream &amp; repositories</text>
+
+
+    <rect x="24.0" y="148.0" width="293.0" height="56" rx="10" fill="#181825" stroke="#313244" stroke-width="1"/>
+    <circle cx="40.0" cy="168.0" r="4.5" fill="#f9e2af"/>
+    <text x="52.0" y="172.0" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">🐛 Issues Opened &amp; Tracked</text>
+    <text x="303.0" y="174.0" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="16" font-weight="800" fill="#f9e2af">10</text>
+    <text x="52.0" y="192.0" font-family="Outfit, -apple-system, sans-serif" font-size="10" fill="#6c7086">Bug reports, RFCs, and features</text>
+
+
+    <rect x="333.0" y="148.0" width="293.0" height="56" rx="10" fill="#181825" stroke="#313244" stroke-width="1"/>
+    <circle cx="349.0" cy="168.0" r="4.5" fill="#f5c2e7"/>
+    <text x="361.0" y="172.0" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">📦 Lifetime Commits Tracked</text>
+    <text x="612.0" y="174.0" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="16" font-weight="800" fill="#f5c2e7">398</text>
+    <text x="361.0" y="192.0" font-family="Outfit, -apple-system, sans-serif" font-size="10" fill="#6c7086">Code commits across active branches</text>
+
+  </g>
+
+  <!-- Footer Summary -->
+  <line x1="24" y1="230" x2="626" y2="230" stroke="#313244" stroke-width="0.75" opacity="0.6"/>
+  <text class="font-title" font-size="10" fill="#6c7086" x="24" y="244">
+    Queried live via GitHub GraphQL &amp; Search APIs
+  </text>
+  <text class="font-mono" font-size="10" font-weight="700" fill="#89b4fa" x="626" y="244" text-anchor="end">
+    SyntX34
+  </text>
+</svg>

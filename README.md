@@ -97,6 +97,12 @@ philosophy: "Build things that actually solve problems and run efficiently."
   <img src="https://raw.githubusercontent.com/SyntX34/SyntX34/main/lang-stats.svg" alt="Languages and Repository Stats" width="100%" style="max-width: 650px;" />
 </div>
 
+<br/>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/SyntX34/SyntX34/main/lifetime-activity.svg" alt="Lifetime GitHub Activity" width="100%" style="max-width: 650px;" />
+</div>
+
 ## 🐍 Contribution Graph
 
 <div align="center">
