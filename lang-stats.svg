@@ -34,67 +34,67 @@
 
     <rect x="115" y="0" width="115" height="24" rx="6" fill="#1e1e2e" stroke="#313244" stroke-width="1"/>
     <circle cx="127" cy="12" r="3.5" fill="#f9e2af"/>
-    <text class="font-mono" font-size="10.5" font-weight="700" fill="#cdd6f4" x="137" y="16">Private: 0</text>
+    <text class="font-mono" font-size="10.5" font-weight="700" fill="#cdd6f4" x="137" y="16">Private: 49</text>
   </g>
 
   <rect x="24" y="88" width="602" height="14" rx="4" fill="#232336"/>
   <g>
-    <rect x="24.0" y="88" width="312.4" height="14" fill="#f69e1d" rx="2"/>
-    <rect x="336.4" y="88" width="57.2" height="14" fill="#178600" rx="2"/>
-    <rect x="393.6" y="88" width="54.2" height="14" fill="#f34b7d" rx="2"/>
-    <rect x="447.8" y="88" width="42.1" height="14" fill="#e34c26" rx="2"/>
-    <rect x="489.9" y="88" width="40.3" height="14" fill="#dbb284" rx="2"/>
-    <rect x="530.3" y="88" width="34.9" height="14" fill="#f1e05a" rx="2"/>
-    <rect x="565.2" y="88" width="21.1" height="14" fill="#3572A5" rx="2"/>
-    <rect x="586.3" y="88" width="17.5" height="14" fill="#563d7c" rx="2"/>
+    <rect x="24.0" y="88" width="374.6" height="14" fill="#f69e1d" rx="2"/>
+    <rect x="398.6" y="88" width="83.6" height="14" fill="#3572A5" rx="2"/>
+    <rect x="482.2" y="88" width="37.7" height="14" fill="#4F5D95" rx="2"/>
+    <rect x="519.9" y="88" width="24.5" height="14" fill="#3178c6" rx="2"/>
+    <rect x="544.3" y="88" width="14.8" height="14" fill="#dbb284" rx="2"/>
+    <rect x="559.2" y="88" width="12.2" height="14" fill="#f34b7d" rx="2"/>
+    <rect x="571.4" y="88" width="11.6" height="14" fill="#178600" rx="2"/>
+    <rect x="583.0" y="88" width="10.2" height="14" fill="#89b4fa" rx="2"/>
   </g>
 
   <g>
     <rect x="24.0" y="112" width="293.0" height="32" rx="8" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="36.0" cy="128" r="4.5" fill="#f69e1d"/>
     <text x="48.0" y="132" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">SourcePawn</text>
-    <text x="252.0" y="132" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">51.9%</text>
-    <text x="307.0" y="132" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">1.4 MB</text>
+    <text x="252.0" y="132" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">62.2%</text>
+    <text x="307.0" y="132" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">16.9 MB</text>
     <rect x="333.0" y="112" width="293.0" height="32" rx="8" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="345.0" cy="128" r="4.5" fill="#178600"/>
-    <text x="357.0" y="132" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">C#</text>
-    <text x="561.0" y="132" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">9.5%</text>
-    <text x="616.0" y="132" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">267 KB</text>
+    <circle cx="345.0" cy="128" r="4.5" fill="#3572A5"/>
+    <text x="357.0" y="132" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">Python</text>
+    <text x="561.0" y="132" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">13.9%</text>
+    <text x="616.0" y="132" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">3.8 MB</text>
     <rect x="24.0" y="152" width="293.0" height="32" rx="8" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="36.0" cy="168" r="4.5" fill="#f34b7d"/>
-    <text x="48.0" y="172" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">C++</text>
-    <text x="252.0" y="172" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">9.0%</text>
-    <text x="307.0" y="172" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">253 KB</text>
+    <circle cx="36.0" cy="168" r="4.5" fill="#4F5D95"/>
+    <text x="48.0" y="172" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">PHP</text>
+    <text x="252.0" y="172" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">6.3%</text>
+    <text x="307.0" y="172" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">1.7 MB</text>
     <rect x="333.0" y="152" width="293.0" height="32" rx="8" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="345.0" cy="168" r="4.5" fill="#e34c26"/>
-    <text x="357.0" y="172" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">HTML</text>
-    <text x="561.0" y="172" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">7.0%</text>
-    <text x="616.0" y="172" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">195 KB</text>
+    <circle cx="345.0" cy="168" r="4.5" fill="#3178c6"/>
+    <text x="357.0" y="172" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">TypeScript</text>
+    <text x="561.0" y="172" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">4.1%</text>
+    <text x="616.0" y="172" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">1.1 MB</text>
     <rect x="24.0" y="192" width="293.0" height="32" rx="8" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="36.0" cy="208" r="4.5" fill="#dbb284"/>
     <text x="48.0" y="212" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">Pawn</text>
-    <text x="252.0" y="212" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">6.7%</text>
-    <text x="307.0" y="212" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">188 KB</text>
+    <text x="252.0" y="212" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">2.5%</text>
+    <text x="307.0" y="212" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">686 KB</text>
     <rect x="333.0" y="192" width="293.0" height="32" rx="8" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="345.0" cy="208" r="4.5" fill="#f1e05a"/>
-    <text x="357.0" y="212" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">JavaScript</text>
-    <text x="561.0" y="212" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">5.8%</text>
-    <text x="616.0" y="212" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">163 KB</text>
+    <circle cx="345.0" cy="208" r="4.5" fill="#f34b7d"/>
+    <text x="357.0" y="212" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">C++</text>
+    <text x="561.0" y="212" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">2.0%</text>
+    <text x="616.0" y="212" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">562 KB</text>
     <rect x="24.0" y="232" width="293.0" height="32" rx="8" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="36.0" cy="248" r="4.5" fill="#3572A5"/>
-    <text x="48.0" y="252" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">Python</text>
-    <text x="252.0" y="252" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">3.5%</text>
-    <text x="307.0" y="252" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">98 KB</text>
+    <circle cx="36.0" cy="248" r="4.5" fill="#178600"/>
+    <text x="48.0" y="252" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">C#</text>
+    <text x="252.0" y="252" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">1.9%</text>
+    <text x="307.0" y="252" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">538 KB</text>
     <rect x="333.0" y="232" width="293.0" height="32" rx="8" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="345.0" cy="248" r="4.5" fill="#563d7c"/>
-    <text x="357.0" y="252" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">CSS</text>
-    <text x="561.0" y="252" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">2.9%</text>
-    <text x="616.0" y="252" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">81 KB</text>
+    <circle cx="345.0" cy="248" r="4.5" fill="#89b4fa"/>
+    <text x="357.0" y="252" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="#cdd6f4">Smarty</text>
+    <text x="561.0" y="252" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#f5c2e7">1.7%</text>
+    <text x="616.0" y="252" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">469 KB</text>
   </g>
 
   <line x1="24" y1="296" x2="626" y2="296" stroke="#313244" stroke-width="0.75" opacity="0.6"/>
   <text class="font-title" font-size="10" fill="#6c7086" x="24" y="310">
-    Analyzed 2.7 MB of code across 118 repositories
+    Analyzed 27.1 MB of code across 167 repositories
   </text>
   <text class="font-mono" font-size="10" font-weight="700" fill="#89b4fa" x="626" y="310" text-anchor="end">
     SyntX34
