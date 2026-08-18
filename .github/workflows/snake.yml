@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate GitHub contribution snake
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk@v3
         with:
           github_user_name: SyntX34
           outputs: |
@@ -34,21 +34,28 @@ jobs:
 
       - name: Move snake SVGs to root
         run: |
-          cp dist/github-snake.svg github-snake.svg
-          cp dist/github-snake-dark.svg github-snake-dark.svg
-          ls -la *.svg
+          mkdir -p dist
+          cp dist/github-snake.svg ./github-snake.svg || true
+          cp dist/github-snake-dark.svg ./github-snake-dark.svg || true
 
-      - name: Check for changes
+      - name: Push snake animation to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check for changes in main
         id: verify_diff
         run: |
           git diff --quiet github-snake.svg || echo "changed=true" >> $GITHUB_OUTPUT
 
-      - name: Commit and push if changed
+      - name: Commit and push to main if changed
         if: steps.verify_diff.outputs.changed == 'true'
         run: |
           git config --local user.email "97087641+SyntX34@users.noreply.github.com"
           git config --local user.name "SyntX34"
-          git add github-snake.svg
-          (test -f github-snake-dark.svg && git add github-snake-dark.svg) || true
+          git add github-snake.svg github-snake-dark.svg || true
           git commit -m "🐍 Update contribution snake animation [skip ci]" || exit 0
           git push origin HEAD:main

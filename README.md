@@ -75,10 +75,10 @@ philosophy: "Build things that actually solve problems and run efficiently."
 
 <div align="center">
   <a href="https://github.com/SyntX34">
-    <img width="49.5%" src="https://github-readme-stats.vercel.app/api?username=SyntX34&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&border_radius=12" alt="GitHub Stats" />
+    <img width="49.5%" src="https://github-readme-stats-sigma-five.vercel.app/api?username=SyntX34&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&border_radius=12" alt="GitHub Stats" />
   </a>
   <a href="https://github.com/SyntX34">
-    <img width="49.5%" src="https://streak-stats.demolab.com?user=SyntX34&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&border_radius=12" alt="Streak Stats" />
+    <img width="49.5%" src="https://github-readme-streak-stats.herokuapp.com?user=SyntX34&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&border_radius=12" alt="Streak Stats" />
   </a>
 </div>
 
@@ -92,9 +92,9 @@ philosophy: "Build things that actually solve problems and run efficiently."
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SyntX34/SyntX34/main/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SyntX34/SyntX34/main/github-snake.svg" />
-    <img alt="GitHub Snake" src="https://raw.githubusercontent.com/SyntX34/SyntX34/main/github-snake.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SyntX34/SyntX34/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SyntX34/SyntX34/output/github-snake.svg" />
+    <img alt="GitHub Snake" src="https://raw.githubusercontent.com/SyntX34/SyntX34/output/github-snake-dark.svg" width="100%" />
   </picture>
 </div>
 
@@ -102,12 +102,6 @@ philosophy: "Build things that actually solve problems and run efficiently."
 
 <div align="center">
   <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=SyntX34&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Graph&border_radius=12" alt="Activity Graph" />
-</div>
-
-## 🏆 Achievements
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=SyntX34&theme=tokyonight&no-frame=true&no-bg=true&row=2&column=4&margin-w=15&margin-h=15" alt="Trophies" />
 </div>
 
 ## 📌 Featured Projects
@@ -118,61 +112,49 @@ philosophy: "Build things that actually solve problems and run efficiently."
 ### 🌟 Most Starred
 <div align="center">
   <a href="https://github.com/SyntX34/CS2-Beacon">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&border_radius=8" alt="CS2-Beacon" />
+    <img src="https://img.shields.io/badge/CS2--Beacon-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-Beacon" />
   </a>
   <br/>
-  <sub>
-    <a href="https://github.com/SyntX34/CS2-Beacon"><strong>CS2-Beacon</strong></a>
-    <br/>
-    ⭐ 4 | 🍴 0 | 📝 C#
-  </sub>
-  <br/>
-  <em>Beacon plugin for Counter-Strike 2.</em>
+  <img src="https://img.shields.io/badge/Stars-⭐%204-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
+  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
+  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>Beacon plugin for Counter-Strike 2.</em></p>
 </div>
 
 ### 💻 Most Active
 <div align="center">
   <a href="https://github.com/SyntX34/swiftlys2-AdminSounds">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=swiftlys2-AdminSounds&theme=tokyonight&hide_border=true&border_radius=8" alt="swiftlys2-AdminSounds" />
+    <img src="https://img.shields.io/badge/swiftlys2--AdminSounds-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="swiftlys2-AdminSounds" />
   </a>
   <br/>
-  <sub>
-    <a href="https://github.com/SyntX34/swiftlys2-AdminSounds"><strong>swiftlys2-AdminSounds</strong></a>
-    <br/>
-    ⭐ 1 | 🍴 0 | 📝 C#
-  </sub>
-  <br/>
-  <em>A CS2 plugin for SwiftlyS2 that allows administrators to play sounds for all players via an in-game menu.</em>
+  <img src="https://img.shields.io/badge/Stars-⭐%201-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
+  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
+  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>A CS2 plugin for SwiftlyS2 that allows administrators to play sounds for all players via an in-game menu.</em></p>
 </div>
 
 ### 🔥 Most Popular
 <div align="center">
-  <a href="https://github.com/SyntX34/Calculator">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&border_radius=8" alt="Calculator" />
+  <a href="https://github.com/SyntX34/SubtitleTool">
+    <img src="https://img.shields.io/badge/SubtitleTool-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="SubtitleTool" />
   </a>
   <br/>
-  <sub>
-    <a href="https://github.com/SyntX34/Calculator"><strong>Calculator</strong></a>
-    <br/>
-    ⭐ 1 | 🍴 0 | 📝 JavaScript
-  </sub>
-  <br/>
-  <em>Calculator Hub is a comprehensive web-based calculator application featuring 10 different calculator modes...</em>
+  <img src="https://img.shields.io/badge/Stars-⭐%202-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
+  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>A high-performance C++ subtitle generator built on whisper.cpp, with GPU acceleration and CPU fallback.</em></p>
 </div>
 
 ### 🆕 Latest Project
 <div align="center">
-  <a href="https://github.com/SyntX34/CS2-SwiftlyS2_SimpleAdvertisements">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-SwiftlyS2_SimpleAdvertisements&theme=tokyonight&hide_border=true&border_radius=8" alt="CS2-SwiftlyS2_SimpleAdvertisements" />
+  <a href="https://github.com/SyntX34/CookieMonster">
+    <img src="https://img.shields.io/badge/CookieMonster-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CookieMonster" />
   </a>
   <br/>
-  <sub>
-    <a href="https://github.com/SyntX34/CS2-SwiftlyS2_SimpleAdvertisements"><strong>CS2-SwiftlyS2_SimpleAdvertisements</strong></a>
-    <br/>
-    ⭐ 2 | 🍴 0 | 📝 C#
-  </sub>
-  <br/>
-  <em>A simple advertisements plugin for SwiftlyS2 CS2 servers.</em>
+  <img src="https://img.shields.io/badge/Stars-⭐%201-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
+  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>Cross-platform browser cookie extractor for yt-dlp. Windows, macOS, Linux.</em></p>
 </div>
 
 </div>

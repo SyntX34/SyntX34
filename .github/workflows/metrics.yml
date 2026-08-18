@@ -47,14 +47,7 @@ jobs:
           plugin_languages_recent_load: 500
           plugin_languages_recent_days: 365
           
-          # Achievements
-          plugin_achievements: yes
-          plugin_achievements_display: detailed
-          plugin_achievements_threshold: C
-          plugin_achievements_secret: yes
-          plugin_achievements_limit: 10
-          
-          # Additional plugins for more data
+          # Additional plugins
           plugin_followup: yes
           plugin_followup_sections: repositories
 
@@ -66,8 +59,8 @@ jobs:
       - name: Commit and push if changed
         if: steps.verify_diff.outputs.changed == 'true'
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "97087641+SyntX34@users.noreply.github.com"
+          git config --local user.name "SyntX34"
           git add github-metrics.svg
           git commit -m "Update github-metrics.svg [skip ci]" || exit 0
           git push origin HEAD:main
