@@ -115,11 +115,10 @@ philosophy: "Build things that actually solve problems and run efficiently."
 <!-- FEATURED_REPOS_START -->
 <div align="center">
 
-
 ### 🌟 Most Starred
 <div align="center">
   <a href="https://github.com/SyntX34/CS2-Beacon">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496405" alt="CS2-Beacon" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&border_radius=8" alt="CS2-Beacon" />
   </a>
   <br/>
   <sub>
@@ -131,11 +130,10 @@ philosophy: "Build things that actually solve problems and run efficiently."
   <em>Beacon plugin for Counter-Strike 2.</em>
 </div>
 
-
 ### 💻 Most Active
 <div align="center">
   <a href="https://github.com/SyntX34/swiftlys2-AdminSounds">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=swiftlys2-AdminSounds&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496405" alt="swiftlys2-AdminSounds" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=swiftlys2-AdminSounds&theme=tokyonight&hide_border=true&border_radius=8" alt="swiftlys2-AdminSounds" />
   </a>
   <br/>
   <sub>
@@ -147,11 +145,10 @@ philosophy: "Build things that actually solve problems and run efficiently."
   <em>A CS2 plugin for SwiftlyS2 that allows administrators to play sounds for all players via an in-game menu.</em>
 </div>
 
-
 ### 🔥 Most Popular
 <div align="center">
   <a href="https://github.com/SyntX34/Calculator">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496405" alt="Calculator" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&border_radius=8" alt="Calculator" />
   </a>
   <br/>
   <sub>
@@ -160,14 +157,13 @@ philosophy: "Build things that actually solve problems and run efficiently."
     ⭐ 1 | 🍴 0 | 📝 JavaScript
   </sub>
   <br/>
-  <em>Calculator Hub is a comprehensive web-based calculator application featuring 10 different calculator modes in a...</em>
+  <em>Calculator Hub is a comprehensive web-based calculator application featuring 10 different calculator modes...</em>
 </div>
-
 
 ### 🆕 Latest Project
 <div align="center">
   <a href="https://github.com/SyntX34/CS2-SwiftlyS2_SimpleAdvertisements">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-SwiftlyS2_SimpleAdvertisements&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496405" alt="CS2-SwiftlyS2_SimpleAdvertisements" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-SwiftlyS2_SimpleAdvertisements&theme=tokyonight&hide_border=true&border_radius=8" alt="CS2-SwiftlyS2_SimpleAdvertisements" />
   </a>
   <br/>
   <sub>
