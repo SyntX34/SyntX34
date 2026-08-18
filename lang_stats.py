@@ -113,8 +113,11 @@ def fetch_all_repos(username: str, token: str) -> Tuple[List[Dict[str, Any]], in
     return filtered, public_count, private_count
 
 
-def fetch_languages(repos: List[Dict[str, Any]], token: str) -> Dict[str, int]:
-    lang_data: Dict[str, int] = {}
+def fetch_languages_split(repos: List[Dict[str, Any]], token: str) -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int]]:
+    total_lang: Dict[str, int] = {}
+    public_lang: Dict[str, int] = {}
+    private_lang: Dict[str, int] = {}
+
     headers = {"Accept": "application/vnd.github.v3+json"}
     if token:
         headers["Authorization"] = f"token {token}"
@@ -123,15 +126,20 @@ def fetch_languages(repos: List[Dict[str, Any]], token: str) -> Dict[str, int]:
         lang_url = repo.get("languages_url")
         if not lang_url:
             continue
+        is_private = repo.get("private", False)
         try:
             resp = requests.get(lang_url, headers=headers, timeout=10)
             if resp.status_code == 200:
                 for lang, bytes_count in resp.json().items():
-                    lang_data[lang] = lang_data.get(lang, 0) + bytes_count
+                    total_lang[lang] = total_lang.get(lang, 0) + bytes_count
+                    if is_private:
+                        private_lang[lang] = private_lang.get(lang, 0) + bytes_count
+                    else:
+                        public_lang[lang] = public_lang.get(lang, 0) + bytes_count
         except Exception:
             pass
 
-    return lang_data
+    return total_lang, public_lang, private_lang
 
 
 def sort_languages(lang_data: Dict[str, int]) -> List[Tuple[str, int, float]]:
@@ -156,29 +164,29 @@ def format_bytes(bytes_count: int) -> str:
     return f"{bytes_count} B"
 
 
-def generate_svg(
+def render_language_section(
+    title: str,
+    subtitle: str,
+    badge_text: str,
+    badge_color: str,
     languages: List[Tuple[str, int, float]],
-    public_count: int,
-    private_count: int,
-) -> str:
-    displayed_langs = languages[:8]
-    card_width = 650
-    stack_bar_height = 14
-    padding = 24
-
-    total_bytes = sum(b for _, b, _ in languages)
-    total_repos = public_count + private_count
+    y_offset: int,
+    card_width: int,
+    padding: int
+) -> Tuple[str, int]:
+    displayed_langs = languages[:6]
+    stack_bar_height = 12
+    stack_width = card_width - (padding * 2)
 
     stack_segments = []
     curr_x = padding
-    stack_width = card_width - (padding * 2)
 
     for lang, _, pct in displayed_langs:
         seg_w = (pct / 100) * stack_width
         if seg_w > 0.5:
             color = get_language_color(lang)
             stack_segments.append(
-                f'<rect x="{curr_x:.1f}" y="88" width="{seg_w:.1f}" height="{stack_bar_height}" fill="{color}" rx="2"/>'
+                f'<rect x="{curr_x:.1f}" y="{y_offset + 36}" width="{seg_w:.1f}" height="{stack_bar_height}" fill="{color}" rx="2"/>'
             )
             curr_x += seg_w
 
@@ -186,40 +194,107 @@ def generate_svg(
 
     col_width = (card_width - (padding * 2) - 16) / 2
     row_elements = []
-    y_start = 122
+    y_start = y_offset + 58
 
     for i, (lang, bytes_count, pct) in enumerate(displayed_langs):
         col = i % 2
         row_idx = i // 2
         x_base = padding + col * (col_width + 16)
-        y_pos = y_start + (row_idx * 40)
+        y_pos = y_start + (row_idx * 38)
         color = get_language_color(lang)
 
         row_elements.append(
-            f'<rect x="{x_base:.1f}" y="{y_pos - 10}" width="{col_width:.1f}" height="32" rx="8" fill="#181825" stroke="#313244" stroke-width="0.75"/>'
+            f'<rect x="{x_base:.1f}" y="{y_pos - 9}" width="{col_width:.1f}" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>'
         )
         row_elements.append(
-            f'<circle cx="{x_base + 12:.1f}" cy="{y_pos + 6}" r="4.5" fill="{color}"/>'
+            f'<circle cx="{x_base + 12:.1f}" cy="{y_pos + 6}" r="4" fill="{color}"/>'
         )
-        # Truncate lang name if too long
         display_name = lang if len(lang) <= 12 else lang[:10] + ".."
         row_elements.append(
-            f'<text x="{x_base + 24:.1f}" y="{y_pos + 10}" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="{THEME["text_primary"]}">{display_name}</text>'
+            f'<text x="{x_base + 24:.1f}" y="{y_pos + 10}" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="{THEME["text_primary"]}">{display_name}</text>'
         )
-        
-        # Percentage (Right aligned at column center-right)
         row_elements.append(
-            f'<text x="{x_base + col_width - 64:.1f}" y="{y_pos + 10}" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="{THEME["accent_pink"]}">{pct:.1f}%</text>'
+            f'<text x="{x_base + col_width - 64:.1f}" y="{y_pos + 10}" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="{THEME["accent_pink"]}">{pct:.1f}%</text>'
         )
-        # Byte size (Right aligned at right edge with clean separation)
         bytes_str = format_bytes(bytes_count)
         row_elements.append(
-            f'<text x="{x_base + col_width - 10:.1f}" y="{y_pos + 10}" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10.5" fill="{THEME["text_muted"]}">{bytes_str}</text>'
+            f'<text x="{x_base + col_width - 10:.1f}" y="{y_pos + 10}" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="{THEME["text_muted"]}">{bytes_str}</text>'
         )
 
     rows_xml = "\n    ".join(row_elements)
     calc_rows = (len(displayed_langs) + 1) // 2
-    final_height = y_start + (calc_rows * 40) + 38
+    section_height = 58 + (calc_rows * 38) + 16
+
+    section_xml = f"""
+  <!-- {title} Section -->
+  <g transform="translate({padding}, {y_offset + 18})">
+    <text class="font-title" font-size="15" font-weight="800" fill="{THEME['text_primary']}">{title}</text>
+    <text class="font-title" font-size="11" font-weight="500" fill="{THEME['text_muted']}" y="14">{subtitle}</text>
+  </g>
+  <g transform="translate({card_width - padding - 100}, {y_offset + 4})">
+    <rect x="0" y="0" width="100" height="22" rx="6" fill="#1e1e2e" stroke="{THEME['card_border']}" stroke-width="1"/>
+    <circle cx="10" cy="11" r="3" fill="{badge_color}"/>
+    <text class="font-mono" font-size="10" font-weight="700" fill="{THEME['text_primary']}" x="18" y="15">{badge_text}</text>
+  </g>
+  <rect x="{padding}" y="{y_offset + 36}" width="{stack_width}" height="{stack_bar_height}" rx="3" fill="{THEME['bar_track']}"/>
+  <g>
+    {stack_xml}
+  </g>
+  <g>
+    {rows_xml}
+  </g>
+"""
+    return section_xml, section_height
+
+
+def generate_svg(
+    public_langs: List[Tuple[str, int, float]],
+    private_langs: List[Tuple[str, int, float]],
+    public_count: int,
+    private_count: int,
+) -> str:
+    card_width = 650
+    padding = 24
+
+    total_public_bytes = sum(b for _, b, _ in public_langs)
+    total_private_bytes = sum(b for _, b, _ in private_langs)
+    total_all_bytes = total_public_bytes + total_private_bytes
+    total_repos = public_count + private_count
+
+    # Header
+    current_y = 52
+
+    # Public Section
+    public_xml, pub_h = render_language_section(
+        "🌐 Public Repositories",
+        f"Aggregated {format_bytes(total_public_bytes)} across open-source work",
+        f"Public: {public_count}",
+        THEME["accent_green"],
+        public_langs,
+        current_y,
+        card_width,
+        padding
+    )
+    current_y += pub_h
+
+    # Divider
+    divider_xml = f'<line x1="{padding}" y1="{current_y}" x2="{card_width - padding}" y2="{current_y}" stroke="{THEME["card_border"]}" stroke-width="0.75" opacity="0.6"/>'
+    current_y += 12
+
+    # Private Section
+    private_xml, priv_h = render_language_section(
+        "🔒 Private Repositories",
+        f"Aggregated {format_bytes(total_private_bytes)} across private projects & servers",
+        f"Private: {private_count}",
+        THEME["accent_yellow"],
+        private_langs,
+        current_y,
+        card_width,
+        padding
+    )
+    current_y += priv_h
+
+    final_height = current_y + 36
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {card_width} {final_height}" width="100%" height="{final_height}" style="max-width: {card_width}px; background: transparent;">
   <defs>
@@ -245,33 +320,22 @@ def generate_svg(
   <rect x="2" y="2" width="{card_width - 4}" height="{final_height - 4}" rx="16" ry="16" fill="url(#langCardBg)" stroke="url(#langBorderGrad)" stroke-width="1.5"/>
   <rect x="10" y="16" width="3" height="{final_height - 32}" rx="1.5" fill="{THEME['accent_mauve']}"/>
 
-  <g transform="translate({padding}, 32)">
+  <!-- Main Title -->
+  <g transform="translate({padding}, 30)">
     <text class="font-title" font-size="18" font-weight="800" fill="{THEME['text_primary']}">💻 Language Ecosystem</text>
-    <text class="font-title" font-size="11.5" font-weight="500" fill="{THEME['text_muted']}" y="18">Aggregated bytes across all public and active repositories</text>
+    <text class="font-title" font-size="11" font-weight="500" fill="{THEME['text_muted']}" y="17">Comprehensive language breakdown across all repositories</text>
   </g>
 
-  <g transform="translate({card_width - padding - 230}, 24)">
-    <rect x="0" y="0" width="105" height="24" rx="6" fill="#1e1e2e" stroke="{THEME['card_border']}" stroke-width="1"/>
-    <circle cx="12" cy="12" r="3.5" fill="{THEME['accent_green']}"/>
-    <text class="font-mono" font-size="10.5" font-weight="700" fill="{THEME['text_primary']}" x="22" y="16">Public: {public_count}</text>
+  {public_xml}
 
-    <rect x="115" y="0" width="115" height="24" rx="6" fill="#1e1e2e" stroke="{THEME['card_border']}" stroke-width="1"/>
-    <circle cx="127" cy="12" r="3.5" fill="{THEME['accent_yellow']}"/>
-    <text class="font-mono" font-size="10.5" font-weight="700" fill="{THEME['text_primary']}" x="137" y="16">Private: {private_count}</text>
-  </g>
+  {divider_xml}
 
-  <rect x="{padding}" y="88" width="{stack_width}" height="{stack_bar_height}" rx="4" fill="{THEME['bar_track']}"/>
-  <g>
-    {stack_xml}
-  </g>
+  {private_xml}
 
-  <g>
-    {rows_xml}
-  </g>
-
+  <!-- Footer Summary -->
   <line x1="{padding}" y1="{final_height - 24}" x2="{card_width - padding}" y2="{final_height - 24}" stroke="{THEME['card_border']}" stroke-width="0.75" opacity="0.6"/>
   <text class="font-title" font-size="10" fill="{THEME['text_muted']}" x="{padding}" y="{final_height - 10}">
-    Analyzed {format_bytes(total_bytes)} of code across {total_repos} repositories
+    Total Analyzed: {format_bytes(total_all_bytes)} across {total_repos} repositories ({public_count} public · {private_count} private)
   </text>
   <text class="font-mono" font-size="10" font-weight="700" fill="{THEME['accent_blue']}" x="{card_width - padding}" y="{final_height - 10}" text-anchor="end">
     SyntX34
@@ -284,39 +348,48 @@ def main():
     repos, public_count, private_count = fetch_all_repos(GITHUB_USERNAME, token)
 
     if not repos:
-        default_langs = [
-            ("SourcePawn", 16800000, 62.1),
-            ("Python", 3760000, 13.9),
-            ("PHP", 1700000, 6.3),
-            ("TypeScript", 1110000, 4.1),
-            ("Pawn", 677000, 2.5),
-            ("C++", 542000, 2.0),
-            ("C#", 515000, 1.9),
-            ("Smarty", 460000, 1.7),
+        default_public_langs = [
+            ("SourcePawn", 14200000, 68.2),
+            ("C#", 1820000, 8.7),
+            ("C++", 1640000, 7.9),
+            ("JavaScript", 1210000, 5.8),
+            ("Python", 1100000, 5.3),
+            ("PHP", 850000, 4.1),
         ]
-        svg = generate_svg(default_langs, 118, 49)
+        default_private_langs = [
+            ("Python", 2660000, 42.5),
+            ("SourcePawn", 2600000, 41.6),
+            ("PHP", 850000, 13.6),
+            ("TypeScript", 140000, 2.3),
+        ]
+        svg = generate_svg(default_public_langs, default_private_langs, 118, 49)
         Path(OUTPUT_PATH).write_text(svg, encoding="utf-8")
         return
 
-    lang_data = fetch_languages(repos, token)
-    sorted_langs = sort_languages(lang_data)
-    if not sorted_langs:
-        default_langs = [
-            ("SourcePawn", 16800000, 62.1),
-            ("Python", 3760000, 13.9),
-            ("PHP", 1700000, 6.3),
-            ("TypeScript", 1110000, 4.1),
-            ("Pawn", 677000, 2.5),
-            ("C++", 542000, 2.0),
-            ("C#", 515000, 1.9),
-            ("Smarty", 460000, 1.7),
-        ]
-        svg = generate_svg(default_langs, public_count or 118, private_count or 49)
-    else:
-        svg = generate_svg(sorted_langs, public_count, private_count)
+    _, public_lang_dict, private_lang_dict = fetch_languages_split(repos, token)
+    sorted_public = sort_languages(public_lang_dict)
+    sorted_private = sort_languages(private_lang_dict)
 
+    if not sorted_public:
+        sorted_public = [
+            ("SourcePawn", 14200000, 68.2),
+            ("C#", 1820000, 8.7),
+            ("C++", 1640000, 7.9),
+            ("JavaScript", 1210000, 5.8),
+            ("Python", 1100000, 5.3),
+            ("PHP", 850000, 4.1),
+        ]
+    if not sorted_private:
+        sorted_private = [
+            ("Python", 2660000, 42.5),
+            ("SourcePawn", 2600000, 41.6),
+            ("PHP", 850000, 13.6),
+            ("TypeScript", 140000, 2.3),
+        ]
+
+    svg = generate_svg(sorted_public, sorted_private, public_count or 118, private_count or 49)
     Path(OUTPUT_PATH).write_text(svg, encoding="utf-8")
-    print("Language stats SVG generated successfully")
+    print("Split Public/Private language stats SVG generated successfully")
 
 
 if __name__ == "__main__":

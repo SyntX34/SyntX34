@@ -24,20 +24,22 @@
 
 <div align="center">
 
-### 🕐 Nepal Standard Time (NPT · UTC +5:45) 🇳🇵
+### 🕐 Nepal Standard Time (UTC +5:45) 🇳🇵
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Timezone-Asia%2FKathmandu%20(UTC%20%2B5%3A45)-181825?style=for-the-badge&logo=googleearth&logoColor=89b4fa&labelColor=11111b" alt="Timezone"/>
-  <img src="https://img.shields.io/badge/Status-Coding%20%26%20Building-a6e3a1?style=for-the-badge&logo=statuspage&logoColor=black&labelColor=1e1e2e" alt="Status"/>
-</p>
-
-<a href="https://time.is/Kathmandu">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=800&size=28&duration=2500&pause=600&color=F5C2E7&center=true&vCenter=true&width=560&height=55&lines=TIMEZONE%3A+KATHMANDU+NPT+🇳🇵;UTC+%2B5%3A45+STANDARD+TIME;ACTIVE+AT+THE+ROOFTOP+OF+THE+WORLD" alt="Kathmandu Time" />
+<a href="https://time.is/Kathmandu" target="_blank">
+  <img src="https://img.shields.io/badge/📍%20KATHMANDU-NPT%20(UTC%20%2B5%3A45)-181825?style=for-the-badge&logo=clockify&logoColor=f5c2e7&labelColor=11111b" alt="Kathmandu Timezone"/>
+  <img src="https://img.shields.io/badge/🏔️%20ROOFTOP%20OF%20THE%20WORLD-NEPAL%20🇳🇵-181825?style=for-the-badge&logo=mountains&logoColor=89b4fa&labelColor=11111b" alt="Nepal"/>
 </a>
 
 <br/>
 
-<sub>⚡ Synced with Kathmandu, Nepal Standard Time · Always active</sub>
+<a href="https://time.is/Kathmandu" target="_blank">
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=800&size=24&duration=2400&pause=600&color=89B4FA&center=true&vCenter=true&width=580&height=50&lines=⚡+NEPAL+STANDARD+TIME+%3A+UTC+%2B5%3A45;🏔️+CODING+FROM+KATHMANDU%2C+NEPAL;⏱️+CLICK+HERE+FOR+LIVE+ATOMIC+TIME" alt="Live Nepal Time" />
+</a>
+
+<p align="center">
+  <sub>🌐 Official NPT timekeeper · Click banner to inspect live real-time seconds</sub>
+</p>
 
 </div>
 
