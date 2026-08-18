@@ -75,7 +75,7 @@ philosophy: "Build things that actually solve problems and run efficiently."
 
 <div align="center">
   <a href="https://github.com/SyntX34">
-    <img width="49.5%" src="https://github-readme-stats.vercel.app/api?username=SyntX34&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&border_radius=12" alt="GitHub Stats" />
+    <img width="49.5%" src="https://github-readme-stats-fast.vercel.app/api?username=SyntX34&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&border_radius=12" alt="GitHub Stats" />
   </a>
   <a href="https://github.com/SyntX34">
     <img width="49.5%" src="https://streak-stats.demolab.com?user=SyntX34&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&border_radius=12" alt="Streak Stats" />
