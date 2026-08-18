@@ -22,18 +22,22 @@
 
 </div>
 
-<!-- Real-time Live Digital Clock (No Action Workflow Required) -->
 <div align="center">
 
-### 🕐 Live Nepal Standard Time (UTC +5:45) 🇳🇵
-
-<a href="https://time.is/Kathmandu">
-  <img src="https://clock.as93.net/api/Asia/Kathmandu?theme=matrix&size=200&padding=10" alt="Live Digital Clock - Asia/Kathmandu" />
-</a>
+### 🕐 Nepal Standard Time (NPT · UTC +5:45) 🇳🇵
 
 <p align="center">
-  <sub>⚡ Live running digital clock (Kathmandu, Nepal) · Auto-updated on every page load</sub>
+  <img src="https://img.shields.io/badge/Timezone-Asia%2FKathmandu%20(UTC%20%2B5%3A45)-181825?style=for-the-badge&logo=googleearth&logoColor=89b4fa&labelColor=11111b" alt="Timezone"/>
+  <img src="https://img.shields.io/badge/Status-Coding%20%26%20Building-a6e3a1?style=for-the-badge&logo=statuspage&logoColor=black&labelColor=1e1e2e" alt="Status"/>
 </p>
+
+<a href="https://time.is/Kathmandu">
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=800&size=28&duration=2500&pause=600&color=F5C2E7&center=true&vCenter=true&width=560&height=55&lines=TIMEZONE%3A+KATHMANDU+NPT+🇳🇵;UTC+%2B5%3A45+STANDARD+TIME;ACTIVE+AT+THE+ROOFTOP+OF+THE+WORLD" alt="Kathmandu Time" />
+</a>
+
+<br/>
+
+<sub>⚡ Synced with Kathmandu, Nepal Standard Time · Always active</sub>
 
 </div>
 
