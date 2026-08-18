@@ -1,24 +1,19 @@
 #!/usr/bin/env python3
-"""
-Language Statistics SVG Generator
-Fetches language data from all user repos via GitHub API and generates
-a beautiful SVG showing language distribution with colored progress bars,
-percentages, and byte counts.
-
-Data source: GitHub API /repos/{owner}/{repo}/languages
-This returns bytes of code per language for each repo, which is then
-aggregated across ALL repos (not just the most recent).
-"""
-
 import os
+import sys
 import requests
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Any
+
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
 
 GITHUB_USERNAME = "SyntX34"
 OUTPUT_PATH = "lang-stats.svg"
 
-# Official GitHub language colors
 LANGUAGE_COLORS = {
     "JavaScript": "#f1e05a",
     "TypeScript": "#3178c6",
@@ -74,284 +69,257 @@ LANGUAGE_COLORS = {
     "Jupyter Notebook": "#DA5B0B",
 }
 
-# TokyoNight color scheme (matching README)
-BG_COLOR = "#1e1e2e"
-CARD_BG = "#181825"
-TEXT_PRIMARY = "#cdd6f4"
-TEXT_SECONDARY = "#a6adc8"
-TEXT_MUTED = "#6c7086"
-ACCENT_PINK = "#f5c2e7"
-ACCENT_BLUE = "#89b4fa"
-ACCENT_MAUVE = "#cba6f7"
-ACCENT_GREEN = "#a6e3a1"
-BORDER_COLOR = "#313244"
-LABEL_COLOR = "#45475a"
+THEME = {
+    "bg_start": "#0f0f17",
+    "bg_mid": "#181825",
+    "bg_end": "#11111b",
+    "card_border": "#313244",
+    "text_primary": "#cdd6f4",
+    "text_muted": "#6c7086",
+    "accent_pink": "#f5c2e7",
+    "accent_blue": "#89b4fa",
+    "accent_mauve": "#cba6f7",
+    "accent_green": "#a6e3a1",
+    "accent_yellow": "#f9e2af",
+    "bar_track": "#232336",
+}
 
 
 def get_github_token() -> str:
-    """Get GitHub token from environment."""
-    return os.environ.get("GITHUB_TOKEN") or os.environ.get("METRICS_TOKEN") or ""
+    return (
+        os.environ.get("METRICS_TOKEN")
+        or os.environ.get("GH_PAT")
+        or os.environ.get("GITHUB_TOKEN")
+        or ""
+    )
 
 
-def fetch_all_repos(username: str, token: str) -> List[Dict]:
-    """Fetch all non-fork, non-archived repos for a user."""
+def fetch_all_repos(username: str, token: str) -> Tuple[List[Dict[str, Any]], int, int]:
     repos = []
-    page = 1
     headers = {"Accept": "application/vnd.github.v3+json"}
     if token:
         headers["Authorization"] = f"token {token}"
 
-    print(f"📦 Fetching repos for {username}...")
+    page = 1
+    has_user_endpoint = bool(token)
+
     while True:
-        url = f"https://api.github.com/users/{username}/repos?page={page}&per_page=100&sort=updated"
-        resp = requests.get(url, headers=headers)
-        if resp.status_code != 200:
-            print(f"⚠️  API error: {resp.status_code} - {resp.text[:100]}")
+        if has_user_endpoint:
+            url = f"https://api.github.com/user/repos?page={page}&per_page=100&affiliation=owner&sort=updated"
+        else:
+            url = f"https://api.github.com/users/{username}/repos?page={page}&per_page=100&sort=updated"
+
+        try:
+            resp = requests.get(url, headers=headers, timeout=15)
+            if resp.status_code in (401, 403) and has_user_endpoint:
+                has_user_endpoint = False
+                page = 1
+                continue
+            if resp.status_code != 200:
+                break
+            data = resp.json()
+            if not data:
+                break
+            repos.extend(data)
+            page += 1
+        except Exception:
             break
-        data = resp.json()
-        if not data:
-            break
-        repos.extend(data)
-        page += 1
 
-    # Filter: exclude forks, archived, and the profile repo itself
-    filtered = [
-        r for r in repos
-        if not r.get("fork") and not r.get("archived") and r["name"] != username
-    ]
-    print(f"✅ Found {len(filtered)} repos (filtered from {len(repos)})")
-    return filtered
+    public_count = 0
+    private_count = 0
+    filtered = []
+
+    for r in repos:
+        if r.get("private", False):
+            private_count += 1
+        else:
+            public_count += 1
+
+        if not r.get("fork") and not r.get("archived") and r.get("name") != username:
+            filtered.append(r)
+
+    return filtered, public_count, private_count
 
 
-def fetch_languages(repos: List[Dict], token: str) -> Dict[str, int]:
-    """Fetch language breakdown for each repo and aggregate."""
+def fetch_languages(repos: List[Dict[str, Any]], token: str) -> Dict[str, int]:
     lang_data: Dict[str, int] = {}
     headers = {"Accept": "application/vnd.github.v3+json"}
     if token:
         headers["Authorization"] = f"token {token}"
 
     for repo in repos:
-        name = repo["name"]
-        lang_url = repo["languages_url"]
+        lang_url = repo.get("languages_url")
+        if not lang_url:
+            continue
         try:
-            resp = requests.get(lang_url, headers=headers, timeout=15)
+            resp = requests.get(lang_url, headers=headers, timeout=10)
             if resp.status_code == 200:
-                data = resp.json()
-                if data:
-                    langs = ", ".join(data.keys())
-                    print(f"  📁 {name}: {langs}")
-                    for lang, bytes_count in data.items():
-                        lang_data[lang] = lang_data.get(lang, 0) + bytes_count
-                else:
-                    print(f"  📁 {name}: (no language data)")
-            else:
-                print(f"  ⚠️  {name}: HTTP {resp.status_code}")
-        except Exception as e:
-            print(f"  ❌ {name}: {e}")
+                for lang, bytes_count in resp.json().items():
+                    lang_data[lang] = lang_data.get(lang, 0) + bytes_count
+        except Exception:
+            pass
 
     return lang_data
 
 
 def sort_languages(lang_data: Dict[str, int]) -> List[Tuple[str, int, float]]:
-    """Sort languages by bytes descending, return list of (name, bytes, percentage)."""
     total = sum(lang_data.values())
     if total == 0:
         return []
-
     sorted_items = sorted(lang_data.items(), key=lambda x: x[1], reverse=True)
-    result = []
-    for lang, bytes_count in sorted_items:
-        pct = (bytes_count / total) * 100
-        result.append((lang, bytes_count, pct))
-    return result
+    return [(lang, b, (b / total) * 100) for lang, b in sorted_items]
 
 
 def get_language_color(lang: str) -> str:
-    """Get the official GitHub color for a language."""
-    return LANGUAGE_COLORS.get(lang, "#6c7086")
+    return LANGUAGE_COLORS.get(lang, "#89b4fa")
 
 
 def format_bytes(bytes_count: int) -> str:
-    """Format byte count to human-readable string."""
-    if bytes_count >= 1_000_000:
-        return f"{bytes_count / 1_000_000:.1f}MB"
-    elif bytes_count >= 1_000:
-        return f"{bytes_count / 1_000:.0f}KB"
-    else:
-        return f"{bytes_count}B"
+    if bytes_count >= 1_073_741_824:
+        return f"{bytes_count / 1_073_741_824:.2f} GB"
+    elif bytes_count >= 1_048_576:
+        return f"{bytes_count / 1_048_576:.1f} MB"
+    elif bytes_count >= 1024:
+        return f"{bytes_count / 1024:.0f} KB"
+    return f"{bytes_count} B"
 
 
-def generate_svg(languages: List[Tuple[str, int, float]]) -> str:
-    """Generate a beautiful SVG showing language distribution."""
-    max_langs = 10
-    languages = languages[:max_langs]
+def generate_svg(
+    languages: List[Tuple[str, int, float]],
+    public_count: int,
+    private_count: int,
+) -> str:
+    displayed_langs = languages[:8]
+    card_width = 650
+    stack_bar_height = 14
+    padding = 24
 
-    rows = len(languages)
-    row_height = 40
-    header_height = 50
-    padding = 20
-    bar_width = 240
-    label_width = 140
-    dot_size = 10
-    total_width = 520
-    total_height = header_height + rows * row_height + padding * 2
+    total_bytes = sum(b for _, b, _ in languages)
+    total_repos = public_count + private_count
 
-    # Build rows
-    rows_svg = []
-    y_start = header_height
+    stack_segments = []
+    curr_x = padding
+    stack_width = card_width - (padding * 2)
 
-    for i, (lang, bytes_count, pct) in enumerate(languages):
-        y = y_start + i * row_height
+    for lang, _, pct in displayed_langs:
+        seg_w = (pct / 100) * stack_width
+        if seg_w > 0.5:
+            color = get_language_color(lang)
+            stack_segments.append(
+                f'<rect x="{curr_x:.1f}" y="88" width="{seg_w:.1f}" height="{stack_bar_height}" fill="{color}" rx="2"/>'
+            )
+            curr_x += seg_w
+
+    stack_xml = "\n    ".join(stack_segments)
+
+    col_width = (card_width - (padding * 2) - 16) / 2
+    row_elements = []
+    y_start = 122
+
+    for i, (lang, bytes_count, pct) in enumerate(displayed_langs):
+        col = i % 2
+        row_idx = i // 2
+        x_base = padding + col * (col_width + 16)
+        y_pos = y_start + (row_idx * 40)
         color = get_language_color(lang)
 
-        # Row background (alternating)
-        if i % 2 == 0:
-            rows_svg.append(
-                f'  <rect x="0" y="{y - 8}" width="{total_width}" height="{row_height}" '
-                f'rx="6" ry="6" fill="{CARD_BG}" opacity="0.5"/>'
-            )
-
-        # Colored dot
-        rows_svg.append(
-            f'  <circle cx="30" cy="{y + 8}" r="{dot_size // 2}" fill="{color}"/>'
+        row_elements.append(
+            f'<rect x="{x_base:.1f}" y="{y_pos - 10}" width="{col_width:.1f}" height="32" rx="8" fill="#181825" stroke="#313244" stroke-width="0.75"/>'
+        )
+        row_elements.append(
+            f'<circle cx="{x_base + 12:.1f}" cy="{y_pos + 6}" r="4.5" fill="{color}"/>'
+        )
+        row_elements.append(
+            f'<text x="{x_base + 24:.1f}" y="{y_pos + 10}" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="{THEME["text_primary"]}">{lang}</text>'
+        )
+        row_elements.append(
+            f'<text x="{x_base + col_width - 65:.1f}" y="{y_pos + 10}" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="{THEME["accent_pink"]}">{pct:.1f}%</text>'
+        )
+        bytes_str = format_bytes(bytes_count)
+        row_elements.append(
+            f'<text x="{x_base + col_width - 10:.1f}" y="{y_pos + 10}" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="{THEME["text_muted"]}">{bytes_str}</text>'
         )
 
-        # Language name
-        rows_svg.append(
-            f'  <text x="45" y="{y + 12}" font-family="-apple-system, BlinkMacSystemFont, '
-            f'\'Segoe UI\', Helvetica, Arial, sans-serif" font-size="13" '
-            f'font-weight="600" fill="{TEXT_PRIMARY}">{lang}</text>'
-        )
+    rows_xml = "\n    ".join(row_elements)
+    calc_rows = (len(displayed_langs) + 1) // 2
+    final_height = y_start + (calc_rows * 40) + 38
 
-        # Progress bar background
-        bar_x = 160
-        bar_y = y
-        bar_h = 6
-        rows_svg.append(
-            f'  <rect x="{bar_x}" y="{bar_y + 2}" width="{bar_width}" height="{bar_h}" '
-            f'rx="3" ry="3" fill="{BORDER_COLOR}"/>'
-        )
-
-        # Progress bar fill
-        fill_width = int(bar_width * pct / 100)
-        if fill_width > 0:
-            rows_svg.append(
-                f'  <rect x="{bar_x}" y="{bar_y + 2}" width="{fill_width}" '
-                f'height="{bar_h}" rx="3" ry="3" fill="{color}" opacity="0.9"/>'
-            )
-
-        # Percentage text (further right to avoid bar overlap)
-        pct_text = f"{pct:.1f}%"
-        rows_svg.append(
-            f'  <text x="{bar_x + bar_width + 8}" y="{y + 11}" '
-            f'font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Helvetica, Arial, sans-serif" '
-            f'font-size="13" font-weight="700" fill="{ACCENT_PINK}">{pct_text}</text>'
-        )
-
-        # Bytes text (next to percentage)
-        bytes_text = format_bytes(bytes_count)
-        pct_width = len(pct_text) * 8  # approximate pixel width
-        bytes_x = bar_x + bar_width + 16 + pct_width
-        rows_svg.append(
-            f'  <text x="{bytes_x}" y="{y + 11}" '
-            f'font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Helvetica, Arial, sans-serif" '
-            f'font-size="11" fill="{TEXT_MUTED}">{bytes_text}</text>'
-        )
-
-    rows_xml = "\n".join(rows_svg)
-
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{total_width}" height="{total_height + 20}" viewBox="0 0 {total_width} {total_height + 20}">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {card_width} {final_height}" width="100%" height="{final_height}" style="max-width: {card_width}px; background: transparent;">
   <defs>
+    <linearGradient id="langCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="{THEME['bg_start']}" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="{THEME['bg_mid']}" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="{THEME['bg_end']}" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="langBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="{THEME['accent_blue']}" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="{THEME['accent_mauve']}" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="{THEME['accent_pink']}" stop-opacity="0.8"/>
+    </linearGradient>
+
     <style>
-      .header {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }}
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&amp;family=Outfit:wght@500;600;700;800&amp;display=swap');
+      .font-title {{ font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }}
+      .font-mono {{ font-family: 'JetBrains Mono', monospace; }}
     </style>
   </defs>
 
-  <!-- Background -->
-  <rect x="0" y="0" width="{total_width}" height="{total_height + 20}" rx="12" ry="12" fill="{BG_COLOR}"/>
+  <rect x="2" y="2" width="{card_width - 4}" height="{final_height - 4}" rx="16" ry="16" fill="url(#langCardBg)" stroke="url(#langBorderGrad)" stroke-width="1.5"/>
+  <rect x="10" y="16" width="3" height="{final_height - 32}" rx="1.5" fill="{THEME['accent_mauve']}"/>
 
-  <!-- Header -->
-  <text x="20" y="28" class="header" font-size="16" font-weight="700" fill="{TEXT_PRIMARY}">💻 Most Used Languages</text>
-  <text x="20" y="44" class="header" font-size="11" fill="{TEXT_MUTED}">Based on all repositories — updated via GitHub Actions</text>
+  <g transform="translate({padding}, 32)">
+    <text class="font-title" font-size="18" font-weight="800" fill="{THEME['text_primary']}">💻 Language Ecosystem</text>
+    <text class="font-title" font-size="11.5" font-weight="500" fill="{THEME['text_muted']}" y="18">Aggregated bytes across repositories</text>
+  </g>
 
-  <!-- Separator line -->
-  <line x1="20" y1="{y_start - 2}" x2="{total_width - 20}" y2="{y_start - 2}" stroke="{BORDER_COLOR}" stroke-width="1"/>
+  <g transform="translate({card_width - padding - 230}, 24)">
+    <rect x="0" y="0" width="105" height="24" rx="6" fill="#1e1e2e" stroke="{THEME['card_border']}" stroke-width="1"/>
+    <circle cx="12" cy="12" r="3.5" fill="{THEME['accent_green']}"/>
+    <text class="font-mono" font-size="10.5" font-weight="700" fill="{THEME['text_primary']}" x="22" y="16">Public: {public_count}</text>
 
-  <!-- Language rows -->
-{rows_xml}
+    <rect x="115" y="0" width="115" height="24" rx="6" fill="#1e1e2e" stroke="{THEME['card_border']}" stroke-width="1"/>
+    <circle cx="127" cy="12" r="3.5" fill="{THEME['accent_yellow']}"/>
+    <text class="font-mono" font-size="10.5" font-weight="700" fill="{THEME['text_primary']}" x="137" y="16">Private: {private_count}</text>
+  </g>
 
-  <!-- Footer with total count -->
-  <text x="20" y="{total_height + 10}" class="header" font-size="10" fill="{TEXT_MUTED}">
-    Total languages: {len(languages)} · Data sourced from GitHub API (bytes of code per repository)
+  <rect x="{padding}" y="88" width="{stack_width}" height="{stack_bar_height}" rx="4" fill="{THEME['bar_track']}"/>
+  <g>
+    {stack_xml}
+  </g>
+
+  <g>
+    {rows_xml}
+  </g>
+
+  <line x1="{padding}" y1="{final_height - 24}" x2="{card_width - padding}" y2="{final_height - 24}" stroke="{THEME['card_border']}" stroke-width="0.75" opacity="0.6"/>
+  <text class="font-title" font-size="10" fill="{THEME['text_muted']}" x="{padding}" y="{final_height - 10}">
+    Analyzed {format_bytes(total_bytes)} of code across {total_repos} repositories
+  </text>
+  <text class="font-mono" font-size="10" font-weight="700" fill="{THEME['accent_blue']}" x="{card_width - padding}" y="{final_height - 10}" text-anchor="end">
+    SyntX34
   </text>
 </svg>"""
 
-    return svg
-
 
 def main():
-    """Main function."""
-    print("=" * 55)
-    print("   Language Statistics SVG Generator")
-    print("=" * 55)
-
     token = get_github_token()
-    if token:
-        print("🔑 Using GitHub token for API requests")
-    else:
-        print("⚠️  No token found. Rate limits will be low (60 req/hr)")
+    repos, public_count, private_count = fetch_all_repos(GITHUB_USERNAME, token)
 
-    # Fetch repos
-    repos = fetch_all_repos(GITHUB_USERNAME, token)
     if not repos:
-        print("❌ No repositories found. Exiting.")
-        # Still generate an SVG with a message
-        svg = generate_svg([])
+        svg = generate_svg([], public_count, private_count)
         Path(OUTPUT_PATH).write_text(svg, encoding="utf-8")
-        print(f"⚠️  Empty SVG written to {OUTPUT_PATH}")
         return
 
-    # Fetch language data
-    print(f"\n🔍 Fetching language data for {len(repos)} repos...")
     lang_data = fetch_languages(repos, token)
-
-    if not lang_data:
-        print("❌ No language data found. Exiting.")
-        svg = generate_svg([])
-        Path(OUTPUT_PATH).write_text(svg, encoding="utf-8")
-        return
-
-    # Sort and calculate
     sorted_langs = sort_languages(lang_data)
-
-    # Print summary
-    print(f"\n📊 Language Summary (Top {len(sorted_langs)}):")
-    print("-" * 50)
-    total_bytes = sum(v for _, v, _ in sorted_langs)
-    for lang, bytes_count, pct in sorted_langs[:10]:
-        bar = "█" * int(pct / 5) + "░" * (20 - int(pct / 5))
-        print(f"  {lang:14s} {bar} {pct:5.1f}%  ({format_bytes(bytes_count)})")
-    print("-" * 50)
-    print(f"  Total: {format_bytes(total_bytes)} across {len(sorted_langs)} languages")
-
-    # Generate SVG
-    print("\n🎨 Generating SVG...")
-    svg = generate_svg(sorted_langs)
-
-    # Save
-    output_path = Path(OUTPUT_PATH)
-    output_path.write_text(svg, encoding="utf-8")
-    print(f"✅ Language stats SVG saved to {output_path.resolve()}")
-
-    # Verify
-    file_size = output_path.stat().st_size
-    print(f"   File size: {file_size:,} bytes")
+    svg = generate_svg(sorted_langs, public_count, private_count)
+    Path(OUTPUT_PATH).write_text(svg, encoding="utf-8")
+    print("Done")
 
 
 if __name__ == "__main__":
     try:
         main()
     except Exception as e:
-        print(f"❌ Error: {e}")
-        import traceback
-        traceback.print_exc()
+        print(f"Error: {e}")

@@ -46,8 +46,8 @@ jobs:
       - name: Commit and push if changed
         if: steps.verify_diff.outputs.changed == 'true'
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "97087641+SyntX34@users.noreply.github.com"
+          git config --local user.name "SyntX34"
           git add github-snake.svg
           (test -f github-snake-dark.svg && git add github-snake-dark.svg) || true
           git commit -m "🐍 Update contribution snake animation [skip ci]" || exit 0

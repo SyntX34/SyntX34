@@ -2,7 +2,7 @@ name: Update Language Stats
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -41,6 +41,7 @@ jobs:
       - name: Generate language stats SVG
         run: python lang_stats.py
         env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Check for changes
@@ -51,8 +52,8 @@ jobs:
       - name: Commit and push if changed
         if: steps.verify_diff.outputs.changed == 'true'
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "97087641+SyntX34@users.noreply.github.com"
+          git config --local user.name "SyntX34"
           git add lang-stats.svg
           git commit -m "📊 Update language stats SVG [skip ci]" || exit 0
           git push origin HEAD:main

@@ -1,89 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="510" viewBox="0 0 520 510">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 160" width="100%" height="160" style="max-width: 650px; background: transparent;">
   <defs>
+    <linearGradient id="langCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f17" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#181825" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#11111b" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="langBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#89b4fa" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#cba6f7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f5c2e7" stop-opacity="0.8"/>
+    </linearGradient>
+
     <style>
-      .header { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&amp;family=Outfit:wght@500;600;700;800&amp;display=swap');
+      .font-title { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
     </style>
   </defs>
 
-  <!-- Background -->
-  <rect x="0" y="0" width="520" height="510" rx="12" ry="12" fill="#1e1e2e"/>
+  <rect x="2" y="2" width="646" height="156" rx="16" ry="16" fill="url(#langCardBg)" stroke="url(#langBorderGrad)" stroke-width="1.5"/>
+  <rect x="10" y="16" width="3" height="128" rx="1.5" fill="#cba6f7"/>
 
-  <!-- Header -->
-  <text x="20" y="28" class="header" font-size="16" font-weight="700" fill="#cdd6f4">💻 Most Used Languages</text>
-  <text x="20" y="44" class="header" font-size="11" fill="#6c7086">Based on all repositories — updated via GitHub Actions</text>
+  <g transform="translate(24, 32)">
+    <text class="font-title" font-size="18" font-weight="800" fill="#cdd6f4">💻 Language Ecosystem</text>
+    <text class="font-title" font-size="11.5" font-weight="500" fill="#6c7086" y="18">Aggregated bytes across repositories</text>
+  </g>
 
-  <!-- Separator line -->
-  <line x1="20" y1="48" x2="500" y2="48" stroke="#313244" stroke-width="1"/>
+  <g transform="translate(396, 24)">
+    <rect x="0" y="0" width="105" height="24" rx="6" fill="#1e1e2e" stroke="#313244" stroke-width="1"/>
+    <circle cx="12" cy="12" r="3.5" fill="#a6e3a1"/>
+    <text class="font-mono" font-size="10.5" font-weight="700" fill="#cdd6f4" x="22" y="16">Public: 0</text>
 
-  <!-- Language rows -->
-  <rect x="0" y="42" width="520" height="40" rx="6" ry="6" fill="#181825" opacity="0.5"/>
-  <circle cx="30" cy="58" r="5" fill="#f69e1d"/>
-  <text x="45" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">SourcePawn</text>
-  <rect x="160" y="52" width="240" height="6" rx="3" ry="3" fill="#313244"/>
-  <rect x="160" y="52" width="124" height="6" rx="3" ry="3" fill="#f69e1d" opacity="0.9"/>
-  <text x="408" y="61" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">51.9%</text>
-  <text x="456" y="61" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">1.5MB</text>
-  <circle cx="30" cy="98" r="5" fill="#178600"/>
-  <text x="45" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">C#</text>
-  <rect x="160" y="92" width="240" height="6" rx="3" ry="3" fill="#313244"/>
-  <rect x="160" y="92" width="22" height="6" rx="3" ry="3" fill="#178600" opacity="0.9"/>
-  <text x="408" y="101" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">9.5%</text>
-  <text x="448" y="101" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">279KB</text>
-  <rect x="0" y="122" width="520" height="40" rx="6" ry="6" fill="#181825" opacity="0.5"/>
-  <circle cx="30" cy="138" r="5" fill="#f34b7d"/>
-  <text x="45" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">C++</text>
-  <rect x="160" y="132" width="240" height="6" rx="3" ry="3" fill="#313244"/>
-  <rect x="160" y="132" width="21" height="6" rx="3" ry="3" fill="#f34b7d" opacity="0.9"/>
-  <text x="408" y="141" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">9.0%</text>
-  <text x="448" y="141" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">265KB</text>
-  <circle cx="30" cy="178" r="5" fill="#e34c26"/>
-  <text x="45" y="182" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">HTML</text>
-  <rect x="160" y="172" width="240" height="6" rx="3" ry="3" fill="#313244"/>
-  <rect x="160" y="172" width="16" height="6" rx="3" ry="3" fill="#e34c26" opacity="0.9"/>
-  <text x="408" y="181" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">7.0%</text>
-  <text x="448" y="181" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">205KB</text>
-  <rect x="0" y="202" width="520" height="40" rx="6" ry="6" fill="#181825" opacity="0.5"/>
-  <circle cx="30" cy="218" r="5" fill="#6c7086"/>
-  <text x="45" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">Pawn</text>
-  <rect x="160" y="212" width="240" height="6" rx="3" ry="3" fill="#313244"/>
-  <rect x="160" y="212" width="16" height="6" rx="3" ry="3" fill="#6c7086" opacity="0.9"/>
-  <text x="408" y="221" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">6.7%</text>
-  <text x="448" y="221" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">198KB</text>
-  <circle cx="30" cy="258" r="5" fill="#f1e05a"/>
-  <text x="45" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">JavaScript</text>
-  <rect x="160" y="252" width="240" height="6" rx="3" ry="3" fill="#313244"/>
-  <rect x="160" y="252" width="13" height="6" rx="3" ry="3" fill="#f1e05a" opacity="0.9"/>
-  <text x="408" y="261" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">5.8%</text>
-  <text x="448" y="261" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">171KB</text>
-  <rect x="0" y="282" width="520" height="40" rx="6" ry="6" fill="#181825" opacity="0.5"/>
-  <circle cx="30" cy="298" r="5" fill="#3572A5"/>
-  <text x="45" y="302" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">Python</text>
-  <rect x="160" y="292" width="240" height="6" rx="3" ry="3" fill="#313244"/>
-  <rect x="160" y="292" width="8" height="6" rx="3" ry="3" fill="#3572A5" opacity="0.9"/>
-  <text x="408" y="301" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">3.5%</text>
-  <text x="448" y="301" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">102KB</text>
-  <circle cx="30" cy="338" r="5" fill="#563d7c"/>
-  <text x="45" y="342" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">CSS</text>
-  <rect x="160" y="332" width="240" height="6" rx="3" ry="3" fill="#313244"/>
-  <rect x="160" y="332" width="6" height="6" rx="3" ry="3" fill="#563d7c" opacity="0.9"/>
-  <text x="408" y="341" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">2.9%</text>
-  <text x="448" y="341" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">85KB</text>
-  <rect x="0" y="362" width="520" height="40" rx="6" ry="6" fill="#181825" opacity="0.5"/>
-  <circle cx="30" cy="378" r="5" fill="#4F5D95"/>
-  <text x="45" y="382" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">PHP</text>
-  <rect x="160" y="372" width="240" height="6" rx="3" ry="3" fill="#313244"/>
-  <rect x="160" y="372" width="4" height="6" rx="3" ry="3" fill="#4F5D95" opacity="0.9"/>
-  <text x="408" y="381" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">1.9%</text>
-  <text x="448" y="381" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">56KB</text>
-  <circle cx="30" cy="418" r="5" fill="#DA3434"/>
-  <text x="45" y="422" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cdd6f4">CMake</text>
-  <rect x="160" y="412" width="240" height="6" rx="3" ry="3" fill="#313244"/>
-  <rect x="160" y="412" width="2" height="6" rx="3" ry="3" fill="#DA3434" opacity="0.9"/>
-  <text x="408" y="421" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f5c2e7">1.0%</text>
-  <text x="448" y="421" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6c7086">29KB</text>
+    <rect x="115" y="0" width="115" height="24" rx="6" fill="#1e1e2e" stroke="#313244" stroke-width="1"/>
+    <circle cx="127" cy="12" r="3.5" fill="#f9e2af"/>
+    <text class="font-mono" font-size="10.5" font-weight="700" fill="#cdd6f4" x="137" y="16">Private: 0</text>
+  </g>
 
-  <!-- Footer with total count -->
-  <text x="20" y="500" class="header" font-size="10" fill="#6c7086">
-    Total languages: 10 · Data sourced from GitHub API (bytes of code per repository)
+  <rect x="24" y="88" width="602" height="14" rx="4" fill="#232336"/>
+  <g>
+    
+  </g>
+
+  <g>
+    
+  </g>
+
+  <line x1="24" y1="136" x2="626" y2="136" stroke="#313244" stroke-width="0.75" opacity="0.6"/>
+  <text class="font-title" font-size="10" fill="#6c7086" x="24" y="150">
+    Analyzed 0 B of code across 0 repositories
+  </text>
+  <text class="font-mono" font-size="10" font-weight="700" fill="#89b4fa" x="626" y="150" text-anchor="end">
+    SyntX34
   </text>
 </svg>
