@@ -22,23 +22,17 @@
 
 </div>
 
-<!-- Real-time Live Digital Clock -->
+<!-- Real-time Live Digital Clock (No Action Workflow Required) -->
 <div align="center">
 
-### 🕐 Live Digital Clock · Kathmandu, Nepal (NPT 🇳🇵)
+### 🕐 Live Nepal Standard Time (UTC +5:45) 🇳🇵
 
 <a href="https://time.is/Kathmandu">
-  <img src="https://see.fontimg.com/api/renderfont4/2On3j/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZiI6Izg5YjRmYSIsInNjcCI6MH0/TkVQQVNUIDogVVRDICs1OjQ1/digital-7-mono.png" alt="Nepal Standard Time" height="24"/>
-</a>
-
-<br/>
-
-<a href="https://time.is/Kathmandu">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=800&size=38&duration=2000&pause=500&color=F5C2E7&center=true&vCenter=true&width=500&height=70&lines=KATHMANDU+NPT+🇳🇵;UTC+%2B5%3A45+ATOMIC" alt="Digital Clock Time" />
+  <img src="https://clock.as93.net/api/Asia/Kathmandu?theme=matrix&size=200&padding=10" alt="Live Digital Clock - Asia/Kathmandu" />
 </a>
 
 <p align="center">
-  <sub>⚡ Live Kathmandu timekeeper · Real-time animated display</sub>
+  <sub>⚡ Live running digital clock (Kathmandu, Nepal) · Auto-updated on every page load</sub>
 </p>
 
 </div>
@@ -47,7 +41,7 @@
 
 ```yaml
 name: SyntX
-location: Kathmandu, Nepal 🇳🇵
+location: Kathmandu, Nepal 🇳🇵 (Rooftop of the World 🏔️)
 focus:
   - Game server systems and modding (Counter-Strike, Source engine)
   - Desktop utilities, backend tools, and media processing
@@ -100,7 +94,7 @@ philosophy: "Build things that actually solve problems and run efficiently."
 ## 🐍 Contribution Graph
 
 <div align="center">
-  <img src="https://github.com/SyntX34/SyntX34/blob/main/github-snake-dark.svg" alt="GitHub Contribution Snake" width="100%" />
+  <img src="https://raw.githubusercontent.com/SyntX34/SyntX34/output/github-snake-dark.svg" alt="GitHub Contribution Snake" width="100%" />
 </div>
 
 <br/>
