@@ -128,43 +128,6 @@ fun_fact: "Coding at the rooftop of the world 🌏"
   <img src="https://github-profile-trophy.vercel.app/?username=SyntX34&theme=tokyonight&no-frame=true&no-bg=true&row=2&column=4&margin-w=15&margin-h=15" alt="GitHub Trophies" />
 </div>
 
-<details>
-<summary><b>🔧 How to fix Achievements &amp; unlock full Metrics (METRICS_TOKEN setup)</b></summary>
-<br>
-
-The trophies &amp; detailed metrics need a <b>GitHub Personal Access Token</b> to show achievements, languages, and more. Here's how to set it up:
-
-<ol>
-  <li>Go to <b><a href="https://github.com/settings/tokens">github.com/settings/tokens</a></b> → <b>Generate new token (classic)</b></li>
-  <li>Give it a name like <code>METRICS_TOKEN</code></li>
-  <li>Enable these scopes:
-    <ul>
-      <li><b>☑ repo</b> (full control of private repositories)</li>
-      <li><b>☑ user</b> (read all profile data)</li>
-    </ul>
-  </li>
-  <li>Scroll down and click <b>Generate token</b></li>
-  <li><b>Copy the token</b> (it looks like <code>ghp_xxxxxxxxxxxx</code>)</li>
-  <li>Go to this repo's <b><a href="https://github.com/SyntX34/SyntX34/settings/secrets/actions">Settings → Secrets and variables → Actions</a></b></li>
-  <li>Click <b>New repository secret</b>
-    <ul>
-      <li>Name: <code>METRICS_TOKEN</code></li>
-      <li>Value: paste your token</li>
-    </ul>
-  </li>
-  <li>Go to the <b><a href="https://github.com/SyntX34/SyntX34/actions">Actions tab</a></b> and manually run:
-    <ul>
-      <li><b>Metrics</b> workflow → <code>Run workflow</code> (generates achievements + stats)</li>
-      <li><b>Update Language Stats</b> workflow → <code>Run workflow</code> (generates language chart)</li>
-      <li><b>Generate Snake Animation</b> → <code>Run workflow</code> (generates snake)</li>
-      <li><b>Update Nepal Clock</b> → <code>Run workflow</code> (generates clock)</li>
-    </ul>
-  </li>
-</ol>
-
-After that, everything updates automatically on schedule! 🎉
-</details>
-
 ---
 
 ## 📌 Featured Repositories
@@ -176,7 +139,7 @@ After that, everything updates automatically on schedule! 🎉
 ### 🌟 Most Starred
 <div align="center">
   <a href="https://github.com/SyntX34/CS2-Beacon">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495464" alt="CS2-Beacon" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496404" alt="CS2-Beacon" />
   </a>
   <br/>
   <sub>
@@ -191,49 +154,49 @@ After that, everything updates automatically on schedule! 🎉
 
 ### 💻 Most Active
 <div align="center">
-  <a href="https://github.com/SyntX34/SwiftlyS2-DuckCooldown">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SwiftlyS2-DuckCooldown&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495464" alt="SwiftlyS2-DuckCooldown" />
+  <a href="https://github.com/SyntX34/swiftlys2-AdminSounds">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=swiftlys2-AdminSounds&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496404" alt="swiftlys2-AdminSounds" />
   </a>
   <br/>
   <sub>
-    <a href="https://github.com/SyntX34/SwiftlyS2-DuckCooldown"><strong>SwiftlyS2-DuckCooldown</strong></a>
+    <a href="https://github.com/SyntX34/swiftlys2-AdminSounds"><strong>swiftlys2-AdminSounds</strong></a>
     <br/>
-    ⭐ 0 | 🍴 0 | 📝 C#
+    ⭐ 1 | 🍴 0 | 📝 C#
   </sub>
   <br/>
-  <em>Punishes duck-spam with a configurable cooldown for SwiftlyS2.</em>
+  <em>A CS2 plugin for SwiftlyS2 that allows administrators to play sounds for all players via an in-game menu.</em>
 </div>
 
 
 ### 🔥 Most Popular
 <div align="center">
-  <a href="https://github.com/SyntX34/SubtitleTool">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=SubtitleTool&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495464" alt="SubtitleTool" />
+  <a href="https://github.com/SyntX34/Calculator">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496404" alt="Calculator" />
   </a>
   <br/>
   <sub>
-    <a href="https://github.com/SyntX34/SubtitleTool"><strong>SubtitleTool</strong></a>
+    <a href="https://github.com/SyntX34/Calculator"><strong>Calculator</strong></a>
     <br/>
-    ⭐ 2 | 🍴 0 | 📝 C++
+    ⭐ 1 | 🍴 0 | 📝 JavaScript
   </sub>
   <br/>
-  <em>A high-performance C++ subtitle generator built on whisper.cpp, with automatic GPU acceleration and CPU fallback,...</em>
+  <em>Calculator Hub is a comprehensive web-based calculator application featuring 10 different calculator modes in a...</em>
 </div>
 
 
 ### 🆕 Latest Project
 <div align="center">
-  <a href="https://github.com/SyntX34/CookieMonster">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CookieMonster&theme=tokyonight&hide_border=true&cache_seconds=86400&v=495464" alt="CookieMonster" />
+  <a href="https://github.com/SyntX34/CS2-SwiftlyS2_SimpleAdvertisements">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-SwiftlyS2_SimpleAdvertisements&theme=tokyonight&hide_border=true&cache_seconds=86400&v=496404" alt="CS2-SwiftlyS2_SimpleAdvertisements" />
   </a>
   <br/>
   <sub>
-    <a href="https://github.com/SyntX34/CookieMonster"><strong>CookieMonster</strong></a>
+    <a href="https://github.com/SyntX34/CS2-SwiftlyS2_SimpleAdvertisements"><strong>CS2-SwiftlyS2_SimpleAdvertisements</strong></a>
     <br/>
-    ⭐ 1 | 🍴 0 | 📝 C++
+    ⭐ 2 | 🍴 0 | 📝 C#
   </sub>
   <br/>
-  <em>Cross-platform browser cookie extractor for yt-dlp. Windows, macOS, Linux.</em>
+  <em>A simple advertisements plugin for SwiftlyS2 CS2 servers.</em>
 </div>
 
 </div>
