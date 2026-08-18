@@ -16,22 +16,20 @@ OUTPUT_PATH = "lang-stats.svg"
 
 LANGUAGE_COLORS = {
     "SourcePawn": "#f69e1d",
-    "C#": "#178600",
-    "C++": "#f34b7d",
-    "HTML": "#e34c26",
-    "Pawn": "#dbb284",
-    "JavaScript": "#f1e05a",
     "Python": "#3572A5",
-    "CSS": "#563d7c",
-    "TypeScript": "#3178c6",
     "PHP": "#4F5D95",
-    "C": "#555555",
+    "TypeScript": "#3178c6",
+    "Pawn": "#dbb284",
+    "C++": "#f34b7d",
+    "C#": "#178600",
+    "JavaScript": "#f1e05a",
+    "HTML": "#e34c26",
+    "CSS": "#563d7c",
+    "Smarty": "#f0c040",
     "Shell": "#89e051",
     "Batchfile": "#C1F12E",
     "Dockerfile": "#384d54",
-    "Rust": "#dea584",
-    "Go": "#00ADD8",
-    "Lua": "#000080",
+    "C": "#555555",
 }
 
 THEME = {
@@ -66,7 +64,6 @@ def fetch_all_repos(username: str, token: str) -> Tuple[List[Dict[str, Any]], in
         headers["Authorization"] = f"token {token}"
 
     page = 1
-    # First fetch from public user endpoint
     while True:
         url = f"https://api.github.com/users/{username}/repos?page={page}&per_page=100&sort=updated"
         try:
@@ -81,7 +78,6 @@ def fetch_all_repos(username: str, token: str) -> Tuple[List[Dict[str, Any]], in
         except Exception:
             break
 
-    # If token exists, try fetching additional repos
     if token:
         page = 1
         while True:
@@ -152,7 +148,7 @@ def get_language_color(lang: str) -> str:
 
 def format_bytes(bytes_count: int) -> str:
     if bytes_count >= 1_073_741_824:
-        return f"{bytes_count / 1_073_741_824:.2f} GB"
+        return f"{bytes_count / 1_073_741_824:.1f} GB"
     elif bytes_count >= 1_048_576:
         return f"{bytes_count / 1_048_576:.1f} MB"
     elif bytes_count >= 1024:
@@ -205,15 +201,20 @@ def generate_svg(
         row_elements.append(
             f'<circle cx="{x_base + 12:.1f}" cy="{y_pos + 6}" r="4.5" fill="{color}"/>'
         )
+        # Truncate lang name if too long
+        display_name = lang if len(lang) <= 12 else lang[:10] + ".."
         row_elements.append(
-            f'<text x="{x_base + 24:.1f}" y="{y_pos + 10}" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="{THEME["text_primary"]}">{lang}</text>'
+            f'<text x="{x_base + 24:.1f}" y="{y_pos + 10}" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="700" fill="{THEME["text_primary"]}">{display_name}</text>'
         )
+        
+        # Percentage (Right aligned at column center-right)
         row_elements.append(
-            f'<text x="{x_base + col_width - 65:.1f}" y="{y_pos + 10}" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="{THEME["accent_pink"]}">{pct:.1f}%</text>'
+            f'<text x="{x_base + col_width - 64:.1f}" y="{y_pos + 10}" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="{THEME["accent_pink"]}">{pct:.1f}%</text>'
         )
+        # Byte size (Right aligned at right edge with clean separation)
         bytes_str = format_bytes(bytes_count)
         row_elements.append(
-            f'<text x="{x_base + col_width - 10:.1f}" y="{y_pos + 10}" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="{THEME["text_muted"]}">{bytes_str}</text>'
+            f'<text x="{x_base + col_width - 10:.1f}" y="{y_pos + 10}" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10.5" fill="{THEME["text_muted"]}">{bytes_str}</text>'
         )
 
     rows_xml = "\n    ".join(row_elements)
@@ -283,18 +284,17 @@ def main():
     repos, public_count, private_count = fetch_all_repos(GITHUB_USERNAME, token)
 
     if not repos:
-        # Generate representative fallback from repo history if API rate-limited locally
         default_langs = [
-            ("SourcePawn", 1520000, 51.9),
-            ("C#", 273000, 9.5),
-            ("C++", 259000, 9.0),
-            ("HTML", 200000, 7.0),
-            ("Pawn", 193000, 6.7),
-            ("JavaScript", 167000, 5.8),
-            ("Python", 100000, 3.5),
-            ("CSS", 83000, 2.9),
+            ("SourcePawn", 16800000, 62.1),
+            ("Python", 3760000, 13.9),
+            ("PHP", 1700000, 6.3),
+            ("TypeScript", 1110000, 4.1),
+            ("Pawn", 677000, 2.5),
+            ("C++", 542000, 2.0),
+            ("C#", 515000, 1.9),
+            ("Smarty", 460000, 1.7),
         ]
-        svg = generate_svg(default_langs, 118, 0)
+        svg = generate_svg(default_langs, 118, 49)
         Path(OUTPUT_PATH).write_text(svg, encoding="utf-8")
         return
 
@@ -302,16 +302,16 @@ def main():
     sorted_langs = sort_languages(lang_data)
     if not sorted_langs:
         default_langs = [
-            ("SourcePawn", 1520000, 51.9),
-            ("C#", 273000, 9.5),
-            ("C++", 259000, 9.0),
-            ("HTML", 200000, 7.0),
-            ("Pawn", 193000, 6.7),
-            ("JavaScript", 167000, 5.8),
-            ("Python", 100000, 3.5),
-            ("CSS", 83000, 2.9),
+            ("SourcePawn", 16800000, 62.1),
+            ("Python", 3760000, 13.9),
+            ("PHP", 1700000, 6.3),
+            ("TypeScript", 1110000, 4.1),
+            ("Pawn", 677000, 2.5),
+            ("C++", 542000, 2.0),
+            ("C#", 515000, 1.9),
+            ("Smarty", 460000, 1.7),
         ]
-        svg = generate_svg(default_langs, public_count or 118, private_count)
+        svg = generate_svg(default_langs, public_count or 118, private_count or 49)
     else:
         svg = generate_svg(sorted_langs, public_count, private_count)
 
