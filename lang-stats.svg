@@ -88,7 +88,7 @@
   <!-- 🔒 Private Repositories Section -->
   <g transform="translate(24, 270)">
     <text class="font-title" font-size="15" font-weight="800" fill="#cdd6f4">🔒 Private Repositories</text>
-    <text class="font-title" font-size="11" font-weight="500" fill="#6c7086" y="14">Aggregated 24.3 MB across private projects &amp; servers</text>
+    <text class="font-title" font-size="11" font-weight="500" fill="#6c7086" y="14">Aggregated 24.4 MB across private projects &amp; servers</text>
   </g>
   <g transform="translate(526, 256)">
     <rect x="0" y="0" width="100" height="22" rx="6" fill="#1e1e2e" stroke="#313244" stroke-width="1"/>
@@ -97,28 +97,28 @@
   </g>
   <rect x="24" y="288" width="602" height="12" rx="3" fill="#232336"/>
   <g>
-    <rect x="24.0" y="288" width="381.8" height="12" fill="#f69e1d" rx="2"/>
-    <rect x="405.8" y="288" width="90.9" height="12" fill="#3572A5" rx="2"/>
-    <rect x="496.6" y="288" width="40.7" height="12" fill="#4F5D95" rx="2"/>
-    <rect x="537.3" y="288" width="27.3" height="12" fill="#3178c6" rx="2"/>
+    <rect x="24.0" y="288" width="380.9" height="12" fill="#f69e1d" rx="2"/>
+    <rect x="404.9" y="288" width="92.0" height="12" fill="#3572A5" rx="2"/>
+    <rect x="496.8" y="288" width="40.6" height="12" fill="#4F5D95" rx="2"/>
+    <rect x="537.4" y="288" width="27.2" height="12" fill="#3178c6" rx="2"/>
     <rect x="564.7" y="288" width="11.9" height="12" fill="#dbb284" rx="2"/>
-    <rect x="576.5" y="288" width="11.3" height="12" fill="#f0c040" rx="2"/>
+    <rect x="576.6" y="288" width="11.3" height="12" fill="#f0c040" rx="2"/>
   </g>
   <g>
     <rect x="24.0" y="301" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="36.0" cy="316" r="4" fill="#f69e1d"/>
     <text x="48.0" y="320" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">SourcePawn</text>
-    <text x="253.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">63.4%</text>
+    <text x="253.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">63.3%</text>
     <text x="307.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">15.4 MB</text>
     <rect x="333.0" y="301" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="345.0" cy="316" r="4" fill="#3572A5"/>
     <text x="357.0" y="320" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">Python</text>
-    <text x="562.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">15.1%</text>
+    <text x="562.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">15.3%</text>
     <text x="616.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">3.7 MB</text>
     <rect x="24.0" y="339" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="36.0" cy="354" r="4" fill="#4F5D95"/>
     <text x="48.0" y="358" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">PHP</text>
-    <text x="253.0" y="358" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">6.8%</text>
+    <text x="253.0" y="358" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">6.7%</text>
     <text x="307.0" y="358" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">1.6 MB</text>
     <rect x="333.0" y="339" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="345.0" cy="354" r="4" fill="#3178c6"/>
