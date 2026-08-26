@@ -152,21 +152,6 @@ philosophy: "Build things that actually solve problems and run efficiently."
 
 ### 🔥 Most Popular
 <div align="center">
-  <a href="https://github.com/SyntX34/Calculator">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=Calculator&theme=tokyonight&hide_border=true&border_radius=8" alt="Calculator" />
-  </a>
-  <br/>
-  <sub>
-    <a href="https://github.com/SyntX34/Calculator"><strong>Calculator</strong></a>
-    <br/>
-    ⭐ 1 | 🍴 0 | 📝 JavaScript
-  </sub>
-  <br/>
-  <em>Calculator Hub is a comprehensive web-based calculator application featuring 10 different calculator modes...</em>
-</div>
-
-### 🆕 Latest Project
-<div align="center">
   <a href="https://github.com/SyntX34/CS2-SwiftlyS2_SimpleAdvertisements">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-SwiftlyS2_SimpleAdvertisements&theme=tokyonight&hide_border=true&border_radius=8" alt="CS2-SwiftlyS2_SimpleAdvertisements" />
   </a>
@@ -178,6 +163,21 @@ philosophy: "Build things that actually solve problems and run efficiently."
   </sub>
   <br/>
   <em>A simple advertisements plugin for SwiftlyS2 CS2 servers.</em>
+</div>
+
+### 🆕 Latest Project
+<div align="center">
+  <a href="https://github.com/SyntX34/sm-plugins-clantag-fix">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=sm-plugins-clantag-fix&theme=tokyonight&hide_border=true&border_radius=8" alt="sm-plugins-clantag-fix" />
+  </a>
+  <br/>
+  <sub>
+    <a href="https://github.com/SyntX34/sm-plugins-clantag-fix"><strong>sm-plugins-clantag-fix</strong></a>
+    <br/>
+    ⭐ 0 | 🍴 0 | 📝 SourcePawn
+  </sub>
+  <br/>
+  <em>A SourceMod plugin for Counter-Strike: Source that fixes clan tags broken by the August 24, 2026 engine...</em>
 </div>
 
 </div>
