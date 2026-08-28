@@ -174,7 +174,7 @@ philosophy: "Build things that actually solve problems and run efficiently."
   <sub>
     <a href="https://github.com/SyntX34/sm-plugins-clantag-fix"><strong>sm-plugins-clantag-fix</strong></a>
     <br/>
-    ⭐ 1 | 🍴 0 | 📝 SourcePawn
+    ⭐ 2 | 🍴 0 | 📝 SourcePawn
   </sub>
   <br/>
   <em>A SourceMod plugin for Counter-Strike: Source that fixes clan tags broken by the August 24, 2026 engine...</em>
