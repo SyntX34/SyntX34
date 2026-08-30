@@ -97,9 +97,9 @@
   </g>
   <rect x="24" y="288" width="602" height="12" rx="3" fill="#232336"/>
   <g>
-    <rect x="24.0" y="288" width="380.0" height="12" fill="#f69e1d" rx="2"/>
-    <rect x="404.0" y="288" width="91.8" height="12" fill="#3572A5" rx="2"/>
-    <rect x="495.8" y="288" width="40.5" height="12" fill="#4F5D95" rx="2"/>
+    <rect x="24.0" y="288" width="380.1" height="12" fill="#f69e1d" rx="2"/>
+    <rect x="404.1" y="288" width="91.8" height="12" fill="#3572A5" rx="2"/>
+    <rect x="495.9" y="288" width="40.4" height="12" fill="#4F5D95" rx="2"/>
     <rect x="536.3" y="288" width="27.1" height="12" fill="#3178c6" rx="2"/>
     <rect x="563.4" y="288" width="11.8" height="12" fill="#dbb284" rx="2"/>
     <rect x="575.3" y="288" width="11.3" height="12" fill="#f0c040" rx="2"/>
@@ -113,7 +113,7 @@
     <rect x="333.0" y="301" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="345.0" cy="316" r="4" fill="#3572A5"/>
     <text x="357.0" y="320" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">Python</text>
-    <text x="562.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">15.3%</text>
+    <text x="562.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">15.2%</text>
     <text x="616.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">3.7 MB</text>
     <rect x="24.0" y="339" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="36.0" cy="354" r="4" fill="#4F5D95"/>
