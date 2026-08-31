@@ -40,21 +40,32 @@ def get_user_repos(username: str) -> List[Dict]:
         if not r.get('fork') and not r.get('archived') and r.get('name') != username
     ]
 
-def get_repo_release_downloads(username: str, repo_name: str, headers: Dict) -> int:
+def get_repo_metrics(username: str, repo_name: str, headers: Dict) -> Tuple[int, int]:
+    downloads = 0
+    commits_count = 0
     try:
         url = f"https://api.github.com/repos/{username}/{repo_name}/releases"
         resp = requests.get(url, headers=headers, timeout=6)
         if resp.status_code == 200:
             releases = resp.json()
-            total_downloads = 0
             if isinstance(releases, list):
                 for rel in releases:
                     for asset in rel.get("assets", []):
-                        total_downloads += asset.get("download_count", 0)
-            return total_downloads
+                        downloads += asset.get("download_count", 0)
     except Exception:
         pass
-    return 0
+
+    try:
+        c_url = f"https://api.github.com/repos/{username}/{repo_name}/commits?author={username}&per_page=100"
+        c_resp = requests.get(c_url, headers=headers, timeout=6)
+        if c_resp.status_code == 200:
+            commits = c_resp.json()
+            if isinstance(commits, list):
+                commits_count = len(commits)
+    except Exception:
+        pass
+
+    return downloads, max(1, commits_count)
 
 def analyze_repositories(repos: List[Dict]) -> Tuple[Dict, Dict, Dict, Dict]:
     if not repos:
@@ -65,23 +76,24 @@ def analyze_repositories(repos: List[Dict]) -> Tuple[Dict, Dict, Dict, Dict]:
     if token:
         headers['Authorization'] = f'token {token}'
 
-    # Fetch release download counts for repos with releases
     for r in repos:
-        r['release_downloads'] = get_repo_release_downloads(GITHUB_USERNAME, r['name'], headers)
+        dl, commits = get_repo_metrics(GITHUB_USERNAME, r['name'], headers)
+        r['release_downloads'] = dl
+        r['user_commits'] = commits
 
-    # 1. Most Starred: repo with highest stargazers_count
+    # 1. Most Starred: Highest stargazers_count & forks
     sorted_by_stars = sorted(repos, key=lambda x: (x.get('stargazers_count', 0), x.get('forks_count', 0)), reverse=True)
     most_starred = sorted_by_stars[0]
 
-    # 2. Most Active: repo with recent commits / pushed_at timestamp
-    sorted_by_activity = sorted(repos, key=lambda x: x.get('pushed_at', x.get('updated_at', '')), reverse=True)
+    # 2. Most Active: Most recent commits / pushed_at timestamp & highest user commits
+    sorted_by_activity = sorted(repos, key=lambda x: (x.get('pushed_at', ''), x.get('user_commits', 0)), reverse=True)
     most_active = sorted_by_activity[0]
     if most_active['name'] == most_starred['name'] and len(sorted_by_activity) > 1:
         most_active = sorted_by_activity[1]
 
-    # 3. Most Popular: highest downloads + forks + stars
+    # 3. Most Popular: High downloads, forks, stars & commits engagement
     def pop_score(r):
-        return (r.get('release_downloads', 0) * 10) + (r.get('forks_count', 0) * 5) + (r.get('stargazers_count', 0) * 2)
+        return (r.get('release_downloads', 0) * 10) + (r.get('forks_count', 0) * 5) + (r.get('stargazers_count', 0) * 2) + r.get('user_commits', 0)
 
     sorted_by_popularity = sorted(repos, key=pop_score, reverse=True)
     most_popular = sorted_by_popularity[0]
@@ -91,7 +103,7 @@ def analyze_repositories(repos: List[Dict]) -> Tuple[Dict, Dict, Dict, Dict]:
                 most_popular = candidate
                 break
 
-    # 4. Latest Project: most recently created repo
+    # 4. Latest Project: Most recently created repo
     sorted_by_created = sorted(repos, key=lambda x: x.get('created_at', ''), reverse=True)
     latest = sorted_by_created[0]
     if latest['name'] in (most_starred['name'], most_active['name'], most_popular['name']) and len(sorted_by_created) > 1:
@@ -114,6 +126,7 @@ def generate_repo_card(username: str, repo: Dict, title: str, emoji: str, theme:
     stars = repo.get('stargazers_count', 0)
     forks = repo.get('forks_count', 0)
     downloads = repo.get('release_downloads', 0)
+    commits = repo.get('user_commits', 1)
     language = repo.get('language') or 'Code'
     
     enriched_desc = description
@@ -136,6 +149,7 @@ def generate_repo_card(username: str, repo: Dict, title: str, emoji: str, theme:
     <img src="https://img.shields.io/badge/{safe_badge_name}-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="{repo_name}" />
   </a>
   <br/>
+  <img src="https://img.shields.io/badge/Commits-🔨%20{commits}-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
   <img src="https://img.shields.io/badge/Stars-⭐%20{stars}-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
   <img src="https://img.shields.io/badge/Forks-🍴%20{forks}-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
 {downloads_badge}  <img src="https://img.shields.io/badge/Language-{safe_lang}-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
@@ -175,7 +189,7 @@ def main():
     most_starred, most_active, most_popular, latest = analyze_repositories(repos)
     if all([most_starred, most_active, most_popular, latest]):
         update_readme(GITHUB_USERNAME, most_starred, most_active, most_popular, latest, THEME)
-        print("Featured projects section in README.md updated successfully")
+        print("Featured projects with commits badges updated successfully")
 
 if __name__ == "__main__":
     try:
