@@ -32,11 +32,7 @@
   <!-- 🌐 Public Repositories Section -->
   <g transform="translate(24, 70)">
     <text class="font-title" font-size="15" font-weight="800" fill="#cdd6f4">🌐 Public Repositories</text>
-<<<<<<< HEAD
-    <text class="font-title" font-size="11" font-weight="500" fill="#6c7086" y="14">Aggregated 228 KB across open-source work</text>
-=======
-    <text class="font-title" font-size="11" font-weight="500" fill="#6c7086" y="14">Aggregated 386.2 MB across open-source work</text>
->>>>>>> 5df90ad6e1668d3ed3d0780b71a8e2dd5fb19e73
+    <text class="font-title" font-size="11" font-weight="500" fill="#6c7086" y="14">Aggregated 19.9 MB across open-source work</text>
   </g>
   <g transform="translate(526, 56)">
     <rect x="0" y="0" width="100" height="22" rx="6" fill="#1e1e2e" stroke="#313244" stroke-width="1"/>
@@ -45,85 +41,44 @@
   </g>
   <rect x="24" y="88" width="602" height="12" rx="3" fill="#232336"/>
   <g>
-<<<<<<< HEAD
-    <rect x="24.0" y="88" width="213.6" height="12" fill="#f1e05a" rx="2"/>
-    <rect x="237.6" y="88" width="143.7" height="12" fill="#4F5D95" rx="2"/>
-    <rect x="381.3" y="88" width="101.3" height="12" fill="#563d7c" rx="2"/>
-    <rect x="482.6" y="88" width="93.1" height="12" fill="#178600" rx="2"/>
-    <rect x="575.7" y="88" width="49.5" height="12" fill="#f69e1d" rx="2"/>
-    <rect x="625.2" y="88" width="0.8" height="12" fill="#89b4fa" rx="2"/>
+    <rect x="24.0" y="88" width="410.6" height="12" fill="#f69e1d" rx="2"/>
+    <rect x="434.6" y="88" width="52.4" height="12" fill="#178600" rx="2"/>
+    <rect x="486.9" y="88" width="47.6" height="12" fill="#f34b7d" rx="2"/>
+    <rect x="534.5" y="88" width="34.9" height="12" fill="#f1e05a" rx="2"/>
+    <rect x="569.4" y="88" width="31.9" height="12" fill="#3572A5" rx="2"/>
+    <rect x="601.3" y="88" width="24.7" height="12" fill="#4F5D95" rx="2"/>
   </g>
   <g>
     <rect x="24.0" y="101" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="36.0" cy="116" r="4" fill="#f1e05a"/>
-    <text x="48.0" y="120" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">JavaScript</text>
-    <text x="253.0" y="120" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">35.5%</text>
-    <text x="307.0" y="120" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">81 KB</text>
+    <circle cx="36.0" cy="116" r="4" fill="#f69e1d"/>
+    <text x="48.0" y="120" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">SourcePawn</text>
+    <text x="253.0" y="120" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">68.2%</text>
+    <text x="307.0" y="120" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">13.5 MB</text>
     <rect x="333.0" y="101" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="345.0" cy="116" r="4" fill="#4F5D95"/>
-    <text x="357.0" y="120" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">PHP</text>
-    <text x="562.0" y="120" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">23.9%</text>
-    <text x="616.0" y="120" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">54 KB</text>
+    <circle cx="345.0" cy="116" r="4" fill="#178600"/>
+    <text x="357.0" y="120" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">C#</text>
+    <text x="562.0" y="120" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">8.7%</text>
+    <text x="616.0" y="120" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">1.7 MB</text>
     <rect x="24.0" y="139" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="36.0" cy="154" r="4" fill="#563d7c"/>
-    <text x="48.0" y="158" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">CSS</text>
-    <text x="253.0" y="158" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">16.8%</text>
-    <text x="307.0" y="158" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">38 KB</text>
+    <circle cx="36.0" cy="154" r="4" fill="#f34b7d"/>
+    <text x="48.0" y="158" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">C++</text>
+    <text x="253.0" y="158" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">7.9%</text>
+    <text x="307.0" y="158" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">1.6 MB</text>
     <rect x="333.0" y="139" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="345.0" cy="154" r="4" fill="#178600"/>
-    <text x="357.0" y="158" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">C#</text>
-    <text x="562.0" y="158" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">15.5%</text>
-    <text x="616.0" y="158" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">35 KB</text>
-    <rect x="24.0" y="177" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="36.0" cy="192" r="4" fill="#f69e1d"/>
-    <text x="48.0" y="196" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">SourcePawn</text>
-    <text x="253.0" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">8.2%</text>
-    <text x="307.0" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">19 KB</text>
-    <rect x="333.0" y="177" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="345.0" cy="192" r="4" fill="#89b4fa"/>
-    <text x="357.0" y="196" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">Rust</text>
-    <text x="562.0" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">0.1%</text>
-    <text x="616.0" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">307 B</text>
-=======
-    <rect x="24.0" y="88" width="209.0" height="12" fill="#f34b7d" rx="2"/>
-    <rect x="233.0" y="88" width="126.8" height="12" fill="#555555" rx="2"/>
-    <rect x="359.8" y="88" width="98.5" height="12" fill="#178600" rx="2"/>
-    <rect x="458.4" y="88" width="50.4" height="12" fill="#3178c6" rx="2"/>
-    <rect x="508.8" y="88" width="23.3" height="12" fill="#3572A5" rx="2"/>
-    <rect x="532.1" y="88" width="18.5" height="12" fill="#f1e05a" rx="2"/>
-  </g>
-  <g>
-    <rect x="24.0" y="101" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="36.0" cy="116" r="4" fill="#f34b7d"/>
-    <text x="48.0" y="120" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">C++</text>
-    <text x="253.0" y="120" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">34.7%</text>
-    <text x="307.0" y="120" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">134.1 MB</text>
-    <rect x="333.0" y="101" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="345.0" cy="116" r="4" fill="#555555"/>
-    <text x="357.0" y="120" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">C</text>
-    <text x="562.0" y="120" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">21.1%</text>
-    <text x="616.0" y="120" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">81.3 MB</text>
-    <rect x="24.0" y="139" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="36.0" cy="154" r="4" fill="#178600"/>
-    <text x="48.0" y="158" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">C#</text>
-    <text x="253.0" y="158" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">16.4%</text>
-    <text x="307.0" y="158" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">63.2 MB</text>
-    <rect x="333.0" y="139" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="345.0" cy="154" r="4" fill="#3178c6"/>
-    <text x="357.0" y="158" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">TypeScript</text>
-    <text x="562.0" y="158" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">8.4%</text>
-    <text x="616.0" y="158" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">32.4 MB</text>
+    <circle cx="345.0" cy="154" r="4" fill="#f1e05a"/>
+    <text x="357.0" y="158" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">JavaScript</text>
+    <text x="562.0" y="158" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">5.8%</text>
+    <text x="616.0" y="158" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">1.2 MB</text>
     <rect x="24.0" y="177" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="36.0" cy="192" r="4" fill="#3572A5"/>
     <text x="48.0" y="196" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">Python</text>
-    <text x="253.0" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">3.9%</text>
-    <text x="307.0" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">15.0 MB</text>
+    <text x="253.0" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">5.3%</text>
+    <text x="307.0" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">1.0 MB</text>
     <rect x="333.0" y="177" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
-    <circle cx="345.0" cy="192" r="4" fill="#f1e05a"/>
-    <text x="357.0" y="196" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">JavaScript</text>
-    <text x="562.0" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">3.1%</text>
-    <text x="616.0" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">11.9 MB</text>
->>>>>>> 5df90ad6e1668d3ed3d0780b71a8e2dd5fb19e73
+    <circle cx="345.0" cy="192" r="4" fill="#4F5D95"/>
+    <text x="357.0" y="196" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">PHP</text>
+    <text x="562.0" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">4.1%</text>
+    <text x="616.0" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">830 KB</text>
   </g>
 
 
@@ -133,11 +88,7 @@
   <!-- 🔒 Private Repositories Section -->
   <g transform="translate(24, 270)">
     <text class="font-title" font-size="15" font-weight="800" fill="#cdd6f4">🔒 Private Repositories</text>
-<<<<<<< HEAD
     <text class="font-title" font-size="11" font-weight="500" fill="#6c7086" y="14">Aggregated 21.8 MB across private projects &amp; servers</text>
-=======
-    <text class="font-title" font-size="11" font-weight="500" fill="#6c7086" y="14">Aggregated 24.5 MB across private projects &amp; servers</text>
->>>>>>> 5df90ad6e1668d3ed3d0780b71a8e2dd5fb19e73
   </g>
   <g transform="translate(526, 256)">
     <rect x="0" y="0" width="100" height="22" rx="6" fill="#1e1e2e" stroke="#313244" stroke-width="1"/>
@@ -146,50 +97,29 @@
   </g>
   <rect x="24" y="288" width="602" height="12" rx="3" fill="#232336"/>
   <g>
-<<<<<<< HEAD
     <rect x="24.0" y="288" width="379.9" height="12" fill="#f69e1d" rx="2"/>
     <rect x="403.9" y="288" width="91.5" height="12" fill="#3572A5" rx="2"/>
     <rect x="495.4" y="288" width="40.3" height="12" fill="#4F5D95" rx="2"/>
     <rect x="535.7" y="288" width="27.1" height="12" fill="#3178c6" rx="2"/>
     <rect x="562.8" y="288" width="12.0" height="12" fill="#dbb284" rx="2"/>
     <rect x="574.8" y="288" width="11.4" height="12" fill="#f0c040" rx="2"/>
-=======
-    <rect x="24.0" y="288" width="380.1" height="12" fill="#f69e1d" rx="2"/>
-    <rect x="404.1" y="288" width="91.8" height="12" fill="#3572A5" rx="2"/>
-    <rect x="495.9" y="288" width="40.4" height="12" fill="#4F5D95" rx="2"/>
-    <rect x="536.3" y="288" width="27.1" height="12" fill="#3178c6" rx="2"/>
-    <rect x="563.4" y="288" width="11.8" height="12" fill="#dbb284" rx="2"/>
-    <rect x="575.3" y="288" width="11.3" height="12" fill="#f0c040" rx="2"/>
->>>>>>> 5df90ad6e1668d3ed3d0780b71a8e2dd5fb19e73
   </g>
   <g>
     <rect x="24.0" y="301" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="36.0" cy="316" r="4" fill="#f69e1d"/>
     <text x="48.0" y="320" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">SourcePawn</text>
     <text x="253.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">63.1%</text>
-<<<<<<< HEAD
     <text x="307.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">14.8 MB</text>
-=======
-    <text x="307.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">15.5 MB</text>
->>>>>>> 5df90ad6e1668d3ed3d0780b71a8e2dd5fb19e73
     <rect x="333.0" y="301" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="345.0" cy="316" r="4" fill="#3572A5"/>
     <text x="357.0" y="320" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">Python</text>
     <text x="562.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">15.2%</text>
-<<<<<<< HEAD
     <text x="616.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">3.5 MB</text>
-=======
-    <text x="616.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">3.7 MB</text>
->>>>>>> 5df90ad6e1668d3ed3d0780b71a8e2dd5fb19e73
     <rect x="24.0" y="339" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="36.0" cy="354" r="4" fill="#4F5D95"/>
     <text x="48.0" y="358" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">PHP</text>
     <text x="253.0" y="358" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">6.7%</text>
-<<<<<<< HEAD
     <text x="307.0" y="358" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">1.5 MB</text>
-=======
-    <text x="307.0" y="358" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">1.6 MB</text>
->>>>>>> 5df90ad6e1668d3ed3d0780b71a8e2dd5fb19e73
     <rect x="333.0" y="339" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="345.0" cy="354" r="4" fill="#3178c6"/>
     <text x="357.0" y="358" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">TypeScript</text>
@@ -211,11 +141,7 @@
   <!-- Footer Summary -->
   <line x1="24" y1="452" x2="626" y2="452" stroke="#313244" stroke-width="0.75" opacity="0.6"/>
   <text class="font-title" font-size="10" fill="#6c7086" x="24" y="466">
-<<<<<<< HEAD
-    Total Analyzed: 22.0 MB across 171 repositories (121 public · 50 private)
-=======
-    Total Analyzed: 410.7 MB across 171 repositories (121 public · 50 private)
->>>>>>> 5df90ad6e1668d3ed3d0780b71a8e2dd5fb19e73
+    Total Analyzed: 41.7 MB across 171 repositories (121 public · 50 private)
   </text>
   <text class="font-mono" font-size="10" font-weight="700" fill="#89b4fa" x="626" y="466" text-anchor="end">
     SyntX34
