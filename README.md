@@ -45,15 +45,15 @@
 
 ## 🧑‍💻 About Me
 
-```yaml
-name: SyntX
-location: Kathmandu, Nepal 🇳🇵 (Rooftop of the World 🏔️)
-focus:
-  - Game server systems and modding (Counter-Strike, Source engine)
-  - Desktop utilities, backend tools, and media processing
-  - Exploring C++, C#, TypeScript, and Python
-philosophy: "Build things that actually solve problems and run efficiently."
-```
+<div align="left">
+
+*⚡ **Name:** SyntX*  
+*📍 **Location:** Kathmandu, Nepal 🇳🇵 (Rooftop of the World 🏔️)*  
+*🎯 **Focus:** Game server systems & modding (Counter-Strike, Source engine), desktop utilities, backend tools, and media processing*  
+*🚀 **Core Languages:** C++, C#, SourcePawn, TypeScript, and Python*  
+*💡 **Philosophy:** "Build things that actually solve problems and run efficiently."*
+
+</div>
 
 ## 🛠️ Tech Stack
 
@@ -83,7 +83,7 @@ philosophy: "Build things that actually solve problems and run efficiently."
 
 <p align="center">
   <img src="https://img.shields.io/github/stars/SyntX34?style=flat-square&label=Total%20Stars%20Earned&color=f5c2e7&labelColor=181825" alt="Total Stars"/>
-  <img src="https://img.shields.io/github/forks/SyntX34/CS2-Beacon?style=flat-square&label=Project%20Forks&color=cba6f7&labelColor=181825" alt="Forks"/>
+  <img src="https://img.shields.io/badge/Total%20Project%20Forks-18-cba6f7?style=flat-square&labelColor=181825" alt="Forks"/>
   <img src="https://img.shields.io/github/repo-size/SyntX34/SyntX34?style=flat-square&label=Repo%20Size&color=89b4fa&labelColor=181825" alt="Repo Size"/>
   <img src="https://img.shields.io/badge/PRs-Welcome-a6e3a1?style=flat-square&labelColor=181825" alt="PRs Welcome"/>
   <img src="https://img.shields.io/badge/License-MIT-fab387?style=flat-square&labelColor=181825" alt="License"/>
@@ -128,61 +128,49 @@ philosophy: "Build things that actually solve problems and run efficiently."
 ### 🌟 Most Starred
 <div align="center">
   <a href="https://github.com/SyntX34/CS2-Beacon">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&border_radius=8" alt="CS2-Beacon" />
+    <img src="https://img.shields.io/badge/CS2--Beacon-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-Beacon" />
   </a>
   <br/>
-  <sub>
-    <a href="https://github.com/SyntX34/CS2-Beacon"><strong>CS2-Beacon</strong></a>
-    <br/>
-    ⭐ 4 | 🍴 0 | 📝 C#
-  </sub>
-  <br/>
-  <em>Beacon plugin for Counter-Strike 2.</em>
+  <img src="https://img.shields.io/badge/Stars-⭐%204-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
+  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
+  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>Beacon plugin for Counter-Strike 2.</em></p>
 </div>
 
 ### 💻 Most Active
 <div align="center">
   <a href="https://github.com/SyntX34/swiftlys2-AdminSounds">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=swiftlys2-AdminSounds&theme=tokyonight&hide_border=true&border_radius=8" alt="swiftlys2-AdminSounds" />
+    <img src="https://img.shields.io/badge/swiftlys2--AdminSounds-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="swiftlys2-AdminSounds" />
   </a>
   <br/>
-  <sub>
-    <a href="https://github.com/SyntX34/swiftlys2-AdminSounds"><strong>swiftlys2-AdminSounds</strong></a>
-    <br/>
-    ⭐ 1 | 🍴 0 | 📝 C#
-  </sub>
-  <br/>
-  <em>A CS2 plugin for SwiftlyS2 that allows administrators to play sounds for all players via an in-game menu.</em>
+  <img src="https://img.shields.io/badge/Stars-⭐%201-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
+  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
+  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>A CS2 plugin for SwiftlyS2 that allows administrators to play sounds for all players via an in-game menu.</em></p>
 </div>
 
 ### 🔥 Most Popular
 <div align="center">
   <a href="https://github.com/SyntX34/CS2-SwiftlyS2_SimpleAdvertisements">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-SwiftlyS2_SimpleAdvertisements&theme=tokyonight&hide_border=true&border_radius=8" alt="CS2-SwiftlyS2_SimpleAdvertisements" />
+    <img src="https://img.shields.io/badge/CS2--SwiftlyS2__SimpleAdvertisements-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-SwiftlyS2_SimpleAdvertisements" />
   </a>
   <br/>
-  <sub>
-    <a href="https://github.com/SyntX34/CS2-SwiftlyS2_SimpleAdvertisements"><strong>CS2-SwiftlyS2_SimpleAdvertisements</strong></a>
-    <br/>
-    ⭐ 2 | 🍴 0 | 📝 C#
-  </sub>
-  <br/>
-  <em>A simple advertisements plugin for SwiftlyS2 CS2 servers.</em>
+  <img src="https://img.shields.io/badge/Stars-⭐%202-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
+  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
+  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>A simple advertisements plugin for SwiftlyS2 CS2 servers.</em></p>
 </div>
 
 ### 🆕 Latest Project
 <div align="center">
   <a href="https://github.com/SyntX34/sm-plugins-clantag-fix">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=sm-plugins-clantag-fix&theme=tokyonight&hide_border=true&border_radius=8" alt="sm-plugins-clantag-fix" />
+    <img src="https://img.shields.io/badge/sm--plugins--clantag--fix-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="sm-plugins-clantag-fix" />
   </a>
   <br/>
-  <sub>
-    <a href="https://github.com/SyntX34/sm-plugins-clantag-fix"><strong>sm-plugins-clantag-fix</strong></a>
-    <br/>
-    ⭐ 2 | 🍴 0 | 📝 SourcePawn
-  </sub>
-  <br/>
-  <em>A SourceMod plugin for Counter-Strike: Source that fixes clan tags broken by the August 24, 2026 engine...</em>
+  <img src="https://img.shields.io/badge/Stars-⭐%202-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
+  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
+  <img src="https://img.shields.io/badge/Language-SourcePawn-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>A SourceMod plugin for Counter-Strike: Source that fixes clan tags broken by the engine update.</em></p>
 </div>
 
 </div>
