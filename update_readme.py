@@ -40,79 +40,72 @@ def get_user_repos(username: str) -> List[Dict]:
         if not r.get('fork') and not r.get('archived') and r.get('name') != username
     ]
 
+def get_repo_release_downloads(username: str, repo_name: str, headers: Dict) -> int:
+    try:
+        url = f"https://api.github.com/repos/{username}/{repo_name}/releases"
+        resp = requests.get(url, headers=headers, timeout=6)
+        if resp.status_code == 200:
+            releases = resp.json()
+            total_downloads = 0
+            if isinstance(releases, list):
+                for rel in releases:
+                    for asset in rel.get("assets", []):
+                        total_downloads += asset.get("download_count", 0)
+            return total_downloads
+    except Exception:
+        pass
+    return 0
+
 def analyze_repositories(repos: List[Dict]) -> Tuple[Dict, Dict, Dict, Dict]:
     if not repos:
         return None, None, None, None
-    now = datetime.now()
-    most_starred = max(repos, key=lambda x: x.get('stargazers_count', 0))
-    latest = max(repos, key=lambda x: x.get('created_at', ''))
     
-    for repo in repos:
-        try:
-            last_update = datetime.strptime(repo['updated_at'], '%Y-%m-%dT%H:%M:%SZ')
-            created_date = datetime.strptime(repo['created_at'], '%Y-%m-%dT%H:%M:%SZ')
-            days_since_update = (now - last_update).days
-            days_since_created = (now - created_date).days
-        except Exception:
-            days_since_update = 100
-            days_since_created = 100
+    token = os.environ.get('GITHUB_TOKEN') or os.environ.get('METRICS_TOKEN')
+    headers = {'Accept': 'application/vnd.github.v3+json'}
+    if token:
+        headers['Authorization'] = f'token {token}'
 
-        base_score = repo.get('stargazers_count', 0) * 3 + repo.get('forks_count', 0) * 2
-        if days_since_update <= 30:
-            base_score += max(0, 50 - (days_since_update * 1.5))
-        if days_since_created <= 90:
-            base_score += max(0, 30 - (days_since_created * 0.33))
-        if repo.get('description') and len(repo['description']) > 10:
-            base_score += 10
-        if repo.get('topics'):
-            base_score += len(repo['topics']) * 3
-        if days_since_update > 365:
-            base_score *= 0.8
-        
-        repo['popularity_score'] = int(base_score)
-    
-    repos_sorted_by_popularity = sorted(repos, key=lambda x: x.get('popularity_score', 0), reverse=True)
-    most_popular = repos_sorted_by_popularity[0]
-    if most_popular['name'] == most_starred['name'] and len(repos_sorted_by_popularity) > 1:
-        most_popular = repos_sorted_by_popularity[1]
-    
-    repos_sorted_by_activity = sorted(repos, key=lambda x: x.get('updated_at', ''), reverse=True)
-    most_active = repos_sorted_by_activity[0]
-    if most_active['name'] == latest['name'] and len(repos_sorted_by_activity) > 1:
-        for repo in repos_sorted_by_activity[1:]:
-            if repo['name'] != latest['name']:
-                most_active = repo
+    # Fetch release download counts for repos with releases
+    for r in repos:
+        r['release_downloads'] = get_repo_release_downloads(GITHUB_USERNAME, r['name'], headers)
+
+    # 1. Most Starred: repo with highest stargazers_count
+    sorted_by_stars = sorted(repos, key=lambda x: (x.get('stargazers_count', 0), x.get('forks_count', 0)), reverse=True)
+    most_starred = sorted_by_stars[0]
+
+    # 2. Most Active: repo with recent commits / pushed_at timestamp
+    sorted_by_activity = sorted(repos, key=lambda x: x.get('pushed_at', x.get('updated_at', '')), reverse=True)
+    most_active = sorted_by_activity[0]
+    if most_active['name'] == most_starred['name'] and len(sorted_by_activity) > 1:
+        most_active = sorted_by_activity[1]
+
+    # 3. Most Popular: highest downloads + forks + stars
+    def pop_score(r):
+        return (r.get('release_downloads', 0) * 10) + (r.get('forks_count', 0) * 5) + (r.get('stargazers_count', 0) * 2)
+
+    sorted_by_popularity = sorted(repos, key=pop_score, reverse=True)
+    most_popular = sorted_by_popularity[0]
+    if most_popular['name'] in (most_starred['name'], most_active['name']) and len(sorted_by_popularity) > 1:
+        for candidate in sorted_by_popularity:
+            if candidate['name'] not in (most_starred['name'], most_active['name']):
+                most_popular = candidate
                 break
-    
-    selected_repos = {
-        'most_starred': most_starred,
-        'latest': latest,
-        'most_popular': most_popular,
-        'most_active': most_active
-    }
-    
-    if len(set(r['name'] for r in selected_repos.values())) < 4:
-        all_methods = [
-            lambda r: r.get('stargazers_count', 0),
-            lambda r: r.get('created_at', ''),
-            lambda r: r.get('popularity_score', 0),
-            lambda r: r.get('updated_at', ''),
-        ]
-        used = set()
-        final_selections = {}
-        slots = ['most_starred', 'latest', 'most_popular', 'most_active']
-        for i, slot in enumerate(slots):
-            for r in sorted(repos, key=all_methods[i], reverse=True):
-                if r['name'] not in used:
-                    final_selections[slot] = r
-                    used.add(r['name'])
-                    break
-        most_starred = final_selections.get('most_starred', most_starred)
-        latest = final_selections.get('latest', latest)
-        most_popular = final_selections.get('most_popular', most_popular)
-        most_active = final_selections.get('most_active', most_active)
-    
+
+    # 4. Latest Project: most recently created repo
+    sorted_by_created = sorted(repos, key=lambda x: x.get('created_at', ''), reverse=True)
+    latest = sorted_by_created[0]
+    if latest['name'] in (most_starred['name'], most_active['name'], most_popular['name']) and len(sorted_by_created) > 1:
+        for candidate in sorted_by_created:
+            if candidate['name'] not in (most_starred['name'], most_active['name'], most_popular['name']):
+                latest = candidate
+                break
+
     return most_starred, most_active, most_popular, latest
+
+def format_badge_string(text: str) -> str:
+    """Escapes strings for shields.io badges correctly (replace '-' with '--' and '_' with '__')"""
+    safe = str(text).replace("-", "--").replace("_", "__")
+    return requests.utils.quote(safe)
 
 def generate_repo_card(username: str, repo: Dict, title: str, emoji: str, theme: str) -> str:
     repo_name = repo['name']
@@ -120,6 +113,7 @@ def generate_repo_card(username: str, repo: Dict, title: str, emoji: str, theme:
     description = repo.get('description') or 'No description available'
     stars = repo.get('stargazers_count', 0)
     forks = repo.get('forks_count', 0)
+    downloads = repo.get('release_downloads', 0)
     language = repo.get('language') or 'Code'
     
     enriched_desc = description
@@ -129,18 +123,22 @@ def generate_repo_card(username: str, repo: Dict, title: str, emoji: str, theme:
             truncated = truncated.rsplit(' ', 1)[0]
         enriched_desc = truncated + "..."
     
-    lang_encoded = requests.utils.quote(language)
-    repo_name_encoded = requests.utils.quote(repo_name)
+    safe_badge_name = format_badge_string(repo_name)
+    safe_lang = format_badge_string(language)
     
+    downloads_badge = ""
+    if downloads > 0:
+        downloads_badge = f"""  <img src="https://img.shields.io/badge/Downloads-📦%20{downloads}-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>\n"""
+
     return f"""### {emoji} {title}
 <div align="center">
   <a href="{repo_url}">
-    <img src="https://img.shields.io/badge/{repo_name_encoded}-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="{repo_name}" />
+    <img src="https://img.shields.io/badge/{safe_badge_name}-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="{repo_name}" />
   </a>
   <br/>
   <img src="https://img.shields.io/badge/Stars-⭐%20{stars}-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
   <img src="https://img.shields.io/badge/Forks-🍴%20{forks}-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Language-{lang_encoded}-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+{downloads_badge}  <img src="https://img.shields.io/badge/Language-{safe_lang}-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
   <p><em>{enriched_desc}</em></p>
 </div>
 """
@@ -177,6 +175,7 @@ def main():
     most_starred, most_active, most_popular, latest = analyze_repositories(repos)
     if all([most_starred, most_active, most_popular, latest]):
         update_readme(GITHUB_USERNAME, most_starred, most_active, most_popular, latest, THEME)
+        print("Featured projects section in README.md updated successfully")
 
 if __name__ == "__main__":
     try:
