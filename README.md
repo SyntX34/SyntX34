@@ -138,7 +138,7 @@
     <img src="https://img.shields.io/badge/CS2--Beacon-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-Beacon" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Commits-🔨%2014-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%203-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
   <img src="https://img.shields.io/badge/Stars-⭐%204-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
   <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
   <img src="https://img.shields.io/badge/Downloads-📦%2029-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
@@ -152,29 +152,25 @@
     <img src="https://img.shields.io/badge/sm--plugins--clantag--fix-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="sm-plugins-clantag-fix" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Commits-🔨%208-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%201-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
   <img src="https://img.shields.io/badge/Stars-⭐%202-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
   <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
   <img src="https://img.shields.io/badge/Language-SourcePawn-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
-  <p><em>A SourceMod plugin for Counter-Strike: Source that fixes clan tags broken by the August 24, 2026 engine update.</em></p>
+  <p><em>A SourceMod plugin for Counter-Strike: Source that fixes clan tags broken by the August 24, 2026 engine...</em></p>
 </div>
 
 ### 🔥 Most Popular
 <div align="center">
-  <a href="https://github.com/SyntX34/CS2-AdminSounds">
-    <img src="https://img.shields.io/badge/CS2--AdminSounds-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-AdminSounds" />
+  <a href="https://github.com/SyntX34/FastDLExtractor">
+    <img src="https://img.shields.io/badge/FastDLExtractor-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="FastDLExtractor" />
   </a>
   <br/>
-<<<<<<< HEAD
-  <img src="https://img.shields.io/badge/Commits-🔨%2019-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%2023-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
   <img src="https://img.shields.io/badge/Stars-⭐%201-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
-=======
-  <img src="https://img.shields.io/badge/Stars-⭐%203-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
->>>>>>> 85e84d6d5960eae5b65ea9a422592b39f3c0d13b
   <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Downloads-📦%2020-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
-  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
-  <p><em>AdminSounds is a CounterStrikeSharp plugin for CS2 that allows server admins to easily play sounds through...</em></p>
+  <img src="https://img.shields.io/badge/Downloads-📦%2019-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>A cross-platform CLI tool for syncing files from a FastDL server to your local game installation. Built...</em></p>
 </div>
 
 ### 🆕 Latest Project
@@ -183,7 +179,7 @@
     <img src="https://img.shields.io/badge/CS2--SwiftlyS2__SimpleAdvertisements-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-SwiftlyS2_SimpleAdvertisements" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Commits-🔨%206-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%2015-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
   <img src="https://img.shields.io/badge/Stars-⭐%202-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
   <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
   <img src="https://img.shields.io/badge/Downloads-📦%2011-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
