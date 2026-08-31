@@ -108,8 +108,8 @@ def fetch_all_repos(username: str, token: str) -> Tuple[List[Dict[str, Any]], in
         else:
             public_count += 1
 
-        # Check all repositories owned by user (exclude only empty or self-readme repo)
-        if not r.get("archived") and r.get("name") != username:
+        # Only analyze own original & active repos to avoid bloated forks
+        if not r.get("fork") and not r.get("archived") and r.get("name") != username:
             filtered.append(r)
 
     return filtered, public_count, private_count
@@ -268,7 +268,6 @@ def generate_svg(
     total_all_bytes = total_public_bytes + total_private_bytes
     total_repos = public_count + private_count
 
-    # Header
     current_y = 52
 
     # Public Section
@@ -364,12 +363,14 @@ def main():
             ("PHP", 850000, 4.1),
         ]
         default_private_langs = [
-            ("Python", 2660000, 42.5),
-            ("SourcePawn", 2600000, 41.6),
-            ("PHP", 850000, 13.6),
-            ("TypeScript", 140000, 2.3),
+            ("SourcePawn", 15500000, 63.1),
+            ("Python", 3700000, 15.2),
+            ("PHP", 1600000, 6.7),
+            ("TypeScript", 1100000, 4.5),
+            ("Pawn", 492000, 2.0),
+            ("Smarty", 469000, 1.9),
         ]
-        svg = generate_svg(default_public_langs, default_private_langs, 118, 49)
+        svg = generate_svg(default_public_langs, default_private_langs, 121, 50)
         Path(OUTPUT_PATH).write_text(svg, encoding="utf-8")
         return
 
@@ -388,13 +389,15 @@ def main():
         ]
     if not sorted_private:
         sorted_private = [
-            ("Python", 2660000, 42.5),
-            ("SourcePawn", 2600000, 41.6),
-            ("PHP", 850000, 13.6),
-            ("TypeScript", 140000, 2.3),
+            ("SourcePawn", 15500000, 63.1),
+            ("Python", 3700000, 15.2),
+            ("PHP", 1600000, 6.7),
+            ("TypeScript", 1100000, 4.5),
+            ("Pawn", 492000, 2.0),
+            ("Smarty", 469000, 1.9),
         ]
 
-    svg = generate_svg(sorted_public, sorted_private, public_count or 118, private_count or 49)
+    svg = generate_svg(sorted_public, sorted_private, public_count or 121, private_count or 50)
     Path(OUTPUT_PATH).write_text(svg, encoding="utf-8")
     print("Split Public/Private language stats SVG generated successfully")
 

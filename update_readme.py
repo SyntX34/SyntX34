@@ -129,19 +129,19 @@ def generate_repo_card(username: str, repo: Dict, title: str, emoji: str, theme:
             truncated = truncated.rsplit(' ', 1)[0]
         enriched_desc = truncated + "..."
     
+    lang_encoded = requests.utils.quote(language)
+    repo_name_encoded = requests.utils.quote(repo_name)
+    
     return f"""### {emoji} {title}
 <div align="center">
   <a href="{repo_url}">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username={username}&repo={repo_name}&theme={theme}&hide_border=true&border_radius=8" alt="{repo_name}" />
+    <img src="https://img.shields.io/badge/{repo_name_encoded}-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="{repo_name}" />
   </a>
   <br/>
-  <sub>
-    <a href="{repo_url}"><strong>{repo_name}</strong></a>
-    <br/>
-    ⭐ {stars} | 🍴 {forks} | 📝 {language}
-  </sub>
-  <br/>
-  <em>{enriched_desc}</em>
+  <img src="https://img.shields.io/badge/Stars-⭐%20{stars}-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
+  <img src="https://img.shields.io/badge/Forks-🍴%20{forks}-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
+  <img src="https://img.shields.io/badge/Language-{lang_encoded}-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>{enriched_desc}</em></p>
 </div>
 """
 

@@ -70,12 +70,23 @@ philosophy: "Build things that actually solve problems and run efficiently."
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code"/>
+  <img src="https://img.shields.io/badge/Visual%20Studio%202022-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white" alt="Visual Studio 2022"/>
+  <img src="https://img.shields.io/badge/Notepad%2B%2B-90E59A?style=for-the-badge&logo=notepadplusplus&logoColor=black" alt="Notepad++"/>
+  <img src="https://img.shields.io/badge/AntiGravity-89B4FA?style=for-the-badge&logo=google&logoColor=white" alt="AntiGravity"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/>
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/SyntX34?style=flat-square&label=Total%20Stars%20Earned&color=f5c2e7&labelColor=181825" alt="Total Stars"/>
+  <img src="https://img.shields.io/github/forks/SyntX34/CS2-Beacon?style=flat-square&label=Project%20Forks&color=cba6f7&labelColor=181825" alt="Forks"/>
+  <img src="https://img.shields.io/github/repo-size/SyntX34/SyntX34?style=flat-square&label=Repo%20Size&color=89b4fa&labelColor=181825" alt="Repo Size"/>
+  <img src="https://img.shields.io/badge/PRs-Welcome-a6e3a1?style=flat-square&labelColor=181825" alt="PRs Welcome"/>
+  <img src="https://img.shields.io/badge/License-MIT-fab387?style=flat-square&labelColor=181825" alt="License"/>
 </p>
 
 </div>
@@ -84,7 +95,7 @@ philosophy: "Build things that actually solve problems and run efficiently."
 
 <div align="center">
   <a href="https://github.com/SyntX34">
-    <img width="49.5%" src="https://github-readme-stats-fast.vercel.app/api?username=SyntX34&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&border_radius=12" alt="GitHub Stats" />
+    <img width="49.5%" src="https://github-readme-stats-fast.vercel.app/api?username=SyntX34&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&show=reviews,prs_merged,prs_merged_percentage&rank_icon=percentile&border_radius=12" alt="GitHub Stats" />
   </a>
   <a href="https://github.com/SyntX34">
     <img width="49.5%" src="https://streak-stats.demolab.com?user=SyntX34&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&border_radius=12" alt="Streak Stats" />
@@ -107,12 +118,6 @@ philosophy: "Build things that actually solve problems and run efficiently."
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/SyntX34/SyntX34/output/github-snake-dark.svg" alt="GitHub Contribution Snake" width="100%" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=SyntX34&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Graph&border_radius=12" alt="Activity Graph" />
 </div>
 
 ## 📌 Featured Projects
