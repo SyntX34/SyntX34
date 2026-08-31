@@ -128,49 +128,61 @@ philosophy: "Build things that actually solve problems and run efficiently."
 ### 🌟 Most Starred
 <div align="center">
   <a href="https://github.com/SyntX34/CS2-Beacon">
-    <img src="https://img.shields.io/badge/CS2--Beacon-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-Beacon" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-Beacon&theme=tokyonight&hide_border=true&border_radius=8" alt="CS2-Beacon" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Stars-⭐%204-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
-  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
-  <p><em>Beacon plugin for Counter-Strike 2.</em></p>
+  <sub>
+    <a href="https://github.com/SyntX34/CS2-Beacon"><strong>CS2-Beacon</strong></a>
+    <br/>
+    ⭐ 4 | 🍴 0 | 📝 C#
+  </sub>
+  <br/>
+  <em>Beacon plugin for Counter-Strike 2.</em>
 </div>
 
 ### 💻 Most Active
 <div align="center">
   <a href="https://github.com/SyntX34/swiftlys2-AdminSounds">
-    <img src="https://img.shields.io/badge/swiftlys2--AdminSounds-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="swiftlys2-AdminSounds" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=swiftlys2-AdminSounds&theme=tokyonight&hide_border=true&border_radius=8" alt="swiftlys2-AdminSounds" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Stars-⭐%201-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
-  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
-  <p><em>A CS2 plugin for SwiftlyS2 that allows administrators to play sounds for all players via an in-game menu.</em></p>
+  <sub>
+    <a href="https://github.com/SyntX34/swiftlys2-AdminSounds"><strong>swiftlys2-AdminSounds</strong></a>
+    <br/>
+    ⭐ 1 | 🍴 0 | 📝 C#
+  </sub>
+  <br/>
+  <em>A CS2 plugin for SwiftlyS2 that allows administrators to play sounds for all players via an in-game menu.</em>
 </div>
 
 ### 🔥 Most Popular
 <div align="center">
-  <a href="https://github.com/SyntX34/SubtitleTool">
-    <img src="https://img.shields.io/badge/SubtitleTool-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="SubtitleTool" />
+  <a href="https://github.com/SyntX34/CS2-SwiftlyS2_SimpleAdvertisements">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=CS2-SwiftlyS2_SimpleAdvertisements&theme=tokyonight&hide_border=true&border_radius=8" alt="CS2-SwiftlyS2_SimpleAdvertisements" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Stars-⭐%202-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
-  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Language-C%2B%2B-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
-  <p><em>A high-performance C++ subtitle generator built on whisper.cpp, with GPU acceleration and CPU fallback.</em></p>
+  <sub>
+    <a href="https://github.com/SyntX34/CS2-SwiftlyS2_SimpleAdvertisements"><strong>CS2-SwiftlyS2_SimpleAdvertisements</strong></a>
+    <br/>
+    ⭐ 2 | 🍴 0 | 📝 C#
+  </sub>
+  <br/>
+  <em>A simple advertisements plugin for SwiftlyS2 CS2 servers.</em>
 </div>
 
 ### 🆕 Latest Project
 <div align="center">
-  <a href="https://github.com/SyntX34/CookieMonster">
-    <img src="https://img.shields.io/badge/CookieMonster-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CookieMonster" />
+  <a href="https://github.com/SyntX34/sm-plugins-clantag-fix">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SyntX34&repo=sm-plugins-clantag-fix&theme=tokyonight&hide_border=true&border_radius=8" alt="sm-plugins-clantag-fix" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Stars-⭐%201-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
-  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Language-C%2B%2B-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
-  <p><em>Cross-platform browser cookie extractor for yt-dlp. Windows, macOS, Linux.</em></p>
+  <sub>
+    <a href="https://github.com/SyntX34/sm-plugins-clantag-fix"><strong>sm-plugins-clantag-fix</strong></a>
+    <br/>
+    ⭐ 2 | 🍴 0 | 📝 SourcePawn
+  </sub>
+  <br/>
+  <em>A SourceMod plugin for Counter-Strike: Source that fixes clan tags broken by the August 24, 2026 engine...</em>
 </div>
 
 </div>
