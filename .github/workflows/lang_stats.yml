@@ -58,4 +58,5 @@ jobs:
           git config --local user.name "SyntX34"
           git add lang-stats.svg lifetime-activity.svg
           git commit -m "📊 Update language & lifetime activity stats [skip ci]" || exit 0
+          git pull --rebase origin main || true
           git push origin HEAD:main
