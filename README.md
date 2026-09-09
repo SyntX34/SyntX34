@@ -148,15 +148,16 @@
 
 ### 💻 Most Active
 <div align="center">
-  <a href="https://github.com/SyntX34/CS2-SwiftlyS2-DiscordUtilities">
-    <img src="https://img.shields.io/badge/CS2--SwiftlyS2--DiscordUtilities-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-SwiftlyS2-DiscordUtilities" />
+  <a href="https://github.com/SyntX34/AutoFastDL">
+    <img src="https://img.shields.io/badge/AutoFastDL-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="AutoFastDL" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Commits-🔨%2010-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%2018-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
   <img src="https://img.shields.io/badge/Stars-⭐%200-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
   <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
-  <p><em>Full-featured Discord integration plugin for Counter-Strike 2 servers running SwiftlyS2.</em></p>
+  <img src="https://img.shields.io/badge/Downloads-📦%2017-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>High-performance C++ FastDL processor for Source engine games (CS:S, CS:GO, TF2). Monitors game servers,...</em></p>
 </div>
 
 ### 🔥 Most Popular
@@ -175,15 +176,15 @@
 
 ### 🆕 Latest Project
 <div align="center">
-  <a href="https://github.com/SyntX34/sm-plugins-clantag-fix">
-    <img src="https://img.shields.io/badge/sm--plugins--clantag--fix-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="sm-plugins-clantag-fix" />
+  <a href="https://github.com/SyntX34/CS2-SwiftlyS2-DiscordUtilities">
+    <img src="https://img.shields.io/badge/CS2--SwiftlyS2--DiscordUtilities-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-SwiftlyS2-DiscordUtilities" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Commits-🔨%201-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
-  <img src="https://img.shields.io/badge/Stars-⭐%203-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%2010-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Stars-⭐%200-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
   <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Language-SourcePawn-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
-  <p><em>A SourceMod plugin for Counter-Strike: Source that fixes clan tags broken by the August 24, 2026 engine...</em></p>
+  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>Full-featured Discord integration plugin for Counter-Strike 2 servers running SwiftlyS2.</em></p>
 </div>
 
 </div>
