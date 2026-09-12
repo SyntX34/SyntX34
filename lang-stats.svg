@@ -97,9 +97,9 @@
   </g>
   <rect x="24" y="288" width="602" height="12" rx="3" fill="#232336"/>
   <g>
-    <rect x="24.0" y="288" width="381.1" height="12" fill="#f69e1d" rx="2"/>
-    <rect x="405.1" y="288" width="91.4" height="12" fill="#3572A5" rx="2"/>
-    <rect x="496.5" y="288" width="40.0" height="12" fill="#4F5D95" rx="2"/>
+    <rect x="24.0" y="288" width="381.2" height="12" fill="#f69e1d" rx="2"/>
+    <rect x="405.2" y="288" width="91.4" height="12" fill="#3572A5" rx="2"/>
+    <rect x="496.6" y="288" width="40.0" height="12" fill="#4F5D95" rx="2"/>
     <rect x="536.5" y="288" width="26.8" height="12" fill="#3178c6" rx="2"/>
     <rect x="563.3" y="288" width="11.7" height="12" fill="#dbb284" rx="2"/>
     <rect x="575.0" y="288" width="11.1" height="12" fill="#f0c040" rx="2"/>
