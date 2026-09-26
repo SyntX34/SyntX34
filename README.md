@@ -152,7 +152,7 @@
     <img src="https://img.shields.io/badge/CS2--SwiftlyS2--DiscordUtilities-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-SwiftlyS2-DiscordUtilities" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Commits-🔨%2012-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%2013-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
   <img src="https://img.shields.io/badge/Stars-⭐%200-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
   <img src="https://img.shields.io/badge/Forks-🍴%201-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
   <img src="https://img.shields.io/badge/Downloads-📦%2015-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
