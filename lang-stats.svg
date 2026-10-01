@@ -88,7 +88,7 @@
   <!-- 🔒 Private Repositories Section -->
   <g transform="translate(24, 270)">
     <text class="font-title" font-size="15" font-weight="800" fill="#cdd6f4">🔒 Private Repositories</text>
-    <text class="font-title" font-size="11" font-weight="500" fill="#6c7086" y="14">Aggregated 24.9 MB across private projects &amp; servers</text>
+    <text class="font-title" font-size="11" font-weight="500" fill="#6c7086" y="14">Aggregated 25.0 MB across private projects &amp; servers</text>
   </g>
   <g transform="translate(526, 256)">
     <rect x="0" y="0" width="100" height="22" rx="6" fill="#1e1e2e" stroke="#313244" stroke-width="1"/>
@@ -97,23 +97,23 @@
   </g>
   <rect x="24" y="288" width="602" height="12" rx="3" fill="#232336"/>
   <g>
-    <rect x="24.0" y="288" width="380.6" height="12" fill="#f69e1d" rx="2"/>
-    <rect x="404.6" y="288" width="91.4" height="12" fill="#3572A5" rx="2"/>
-    <rect x="496.0" y="288" width="39.8" height="12" fill="#4F5D95" rx="2"/>
-    <rect x="535.8" y="288" width="26.7" height="12" fill="#3178c6" rx="2"/>
-    <rect x="562.4" y="288" width="11.6" height="12" fill="#dbb284" rx="2"/>
-    <rect x="574.1" y="288" width="11.1" height="12" fill="#f0c040" rx="2"/>
+    <rect x="24.0" y="288" width="381.5" height="12" fill="#f69e1d" rx="2"/>
+    <rect x="405.5" y="288" width="90.9" height="12" fill="#3572A5" rx="2"/>
+    <rect x="496.5" y="288" width="39.6" height="12" fill="#4F5D95" rx="2"/>
+    <rect x="536.0" y="288" width="26.6" height="12" fill="#3178c6" rx="2"/>
+    <rect x="562.6" y="288" width="11.7" height="12" fill="#dbb284" rx="2"/>
+    <rect x="574.3" y="288" width="11.0" height="12" fill="#f0c040" rx="2"/>
   </g>
   <g>
     <rect x="24.0" y="301" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="36.0" cy="316" r="4" fill="#f69e1d"/>
     <text x="48.0" y="320" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">SourcePawn</text>
-    <text x="253.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">63.2%</text>
-    <text x="307.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">15.7 MB</text>
+    <text x="253.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">63.4%</text>
+    <text x="307.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">15.9 MB</text>
     <rect x="333.0" y="301" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="345.0" cy="316" r="4" fill="#3572A5"/>
     <text x="357.0" y="320" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">Python</text>
-    <text x="562.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">15.2%</text>
+    <text x="562.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">15.1%</text>
     <text x="616.0" y="320" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">3.8 MB</text>
     <rect x="24.0" y="339" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="36.0" cy="354" r="4" fill="#4F5D95"/>
@@ -129,7 +129,7 @@
     <circle cx="36.0" cy="392" r="4" fill="#dbb284"/>
     <text x="48.0" y="396" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">Pawn</text>
     <text x="253.0" y="396" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#f5c2e7">1.9%</text>
-    <text x="307.0" y="396" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">492 KB</text>
+    <text x="307.0" y="396" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c7086">499 KB</text>
     <rect x="333.0" y="377" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
     <circle cx="345.0" cy="392" r="4" fill="#f0c040"/>
     <text x="357.0" y="396" font-family="Outfit, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#cdd6f4">Smarty</text>
@@ -141,7 +141,7 @@
   <!-- Footer Summary -->
   <line x1="24" y1="452" x2="626" y2="452" stroke="#313244" stroke-width="0.75" opacity="0.6"/>
   <text class="font-title" font-size="10" fill="#6c7086" x="24" y="466">
-    Total Analyzed: 27.9 MB across 173 repositories (122 public · 51 private)
+    Total Analyzed: 28.0 MB across 173 repositories (122 public · 51 private)
   </text>
   <text class="font-mono" font-size="10" font-weight="700" fill="#89b4fa" x="626" y="466" text-anchor="end">
     SyntX34
