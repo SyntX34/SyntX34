@@ -97,12 +97,12 @@
   </g>
   <rect x="24" y="288" width="602" height="12" rx="3" fill="#232336"/>
   <g>
-    <rect x="24.0" y="288" width="382.8" height="12" fill="#f69e1d" rx="2"/>
-    <rect x="406.8" y="288" width="90.4" height="12" fill="#3572A5" rx="2"/>
-    <rect x="497.2" y="288" width="39.4" height="12" fill="#4F5D95" rx="2"/>
+    <rect x="24.0" y="288" width="383.0" height="12" fill="#f69e1d" rx="2"/>
+    <rect x="407.0" y="288" width="90.3" height="12" fill="#3572A5" rx="2"/>
+    <rect x="497.3" y="288" width="39.3" height="12" fill="#4F5D95" rx="2"/>
     <rect x="536.6" y="288" width="26.4" height="12" fill="#3178c6" rx="2"/>
-    <rect x="563.0" y="288" width="11.7" height="12" fill="#dbb284" rx="2"/>
-    <rect x="574.6" y="288" width="11.0" height="12" fill="#f0c040" rx="2"/>
+    <rect x="563.0" y="288" width="11.6" height="12" fill="#dbb284" rx="2"/>
+    <rect x="574.7" y="288" width="10.9" height="12" fill="#f0c040" rx="2"/>
   </g>
   <g>
     <rect x="24.0" y="301" width="293.0" height="30" rx="7" fill="#181825" stroke="#313244" stroke-width="0.75"/>
@@ -141,7 +141,7 @@
   <!-- Footer Summary -->
   <line x1="24" y1="452" x2="626" y2="452" stroke="#313244" stroke-width="0.75" opacity="0.6"/>
   <text class="font-title" font-size="10" fill="#6c7086" x="24" y="466">
-    Total Analyzed: 28.1 MB across 173 repositories (122 public · 51 private)
+    Total Analyzed: 28.2 MB across 173 repositories (122 public · 51 private)
   </text>
   <text class="font-mono" font-size="10" font-weight="700" fill="#89b4fa" x="626" y="466" text-anchor="end">
     SyntX34
