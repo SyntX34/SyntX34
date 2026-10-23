@@ -134,16 +134,16 @@
 
 ### 🌟 Most Starred
 <div align="center">
-  <a href="https://github.com/SyntX34/CS2-Beacon">
-    <img src="https://img.shields.io/badge/CS2--Beacon-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-Beacon" />
+  <a href="https://github.com/SyntX34/CS2-SwiftlyS2_SimpleAdvertisements">
+    <img src="https://img.shields.io/badge/CS2--SwiftlyS2__SimpleAdvertisements-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-SwiftlyS2_SimpleAdvertisements" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Commits-🔨%203-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%2015-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
   <img src="https://img.shields.io/badge/Stars-⭐%204-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
-  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Downloads-📦%2029-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
+  <img src="https://img.shields.io/badge/Forks-🍴%201-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
+  <img src="https://img.shields.io/badge/Downloads-📦%2027-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
   <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
-  <p><em>Beacon plugin for Counter-Strike 2.</em></p>
+  <p><em>A simple advertisements plugin for SwiftlyS2 CS2 servers.</em></p>
 </div>
 
 ### 💻 Most Active
@@ -162,16 +162,16 @@
 
 ### 🔥 Most Popular
 <div align="center">
-  <a href="https://github.com/SyntX34/CS2-SwiftlyS2_SimpleAdvertisements">
-    <img src="https://img.shields.io/badge/CS2--SwiftlyS2__SimpleAdvertisements-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-SwiftlyS2_SimpleAdvertisements" />
+  <a href="https://github.com/SyntX34/CS2-Beacon">
+    <img src="https://img.shields.io/badge/CS2--Beacon-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-Beacon" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Commits-🔨%2015-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
-  <img src="https://img.shields.io/badge/Stars-⭐%203-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
-  <img src="https://img.shields.io/badge/Forks-🍴%201-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Downloads-📦%2027-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%203-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Stars-⭐%204-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
+  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
+  <img src="https://img.shields.io/badge/Downloads-📦%2029-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
   <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
-  <p><em>A simple advertisements plugin for SwiftlyS2 CS2 servers.</em></p>
+  <p><em>Beacon plugin for Counter-Strike 2.</em></p>
 </div>
 
 ### 🆕 Latest Project
