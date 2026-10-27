@@ -88,7 +88,7 @@
   <!-- 🔒 Private Repositories Section -->
   <g transform="translate(24, 270)">
     <text class="font-title" font-size="15" font-weight="800" fill="#cdd6f4">🔒 Private Repositories</text>
-    <text class="font-title" font-size="11" font-weight="500" fill="#6c7086" y="14">Aggregated 27.6 MB across private projects &amp; servers</text>
+    <text class="font-title" font-size="11" font-weight="500" fill="#6c7086" y="14">Aggregated 27.7 MB across private projects &amp; servers</text>
   </g>
   <g transform="translate(526, 256)">
     <rect x="0" y="0" width="100" height="22" rx="6" fill="#1e1e2e" stroke="#313244" stroke-width="1"/>
@@ -99,7 +99,7 @@
   <g>
     <rect x="24.0" y="288" width="383.0" height="12" fill="#f69e1d" rx="2"/>
     <rect x="407.0" y="288" width="95.1" height="12" fill="#3572A5" rx="2"/>
-    <rect x="502.1" y="288" width="35.8" height="12" fill="#4F5D95" rx="2"/>
+    <rect x="502.2" y="288" width="35.8" height="12" fill="#4F5D95" rx="2"/>
     <rect x="538.0" y="288" width="27.6" height="12" fill="#3178c6" rx="2"/>
     <rect x="565.6" y="288" width="13.2" height="12" fill="#dbb284" rx="2"/>
     <rect x="578.8" y="288" width="10.0" height="12" fill="#f0c040" rx="2"/>
