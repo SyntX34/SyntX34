@@ -148,15 +148,15 @@
 
 ### 💻 Most Active
 <div align="center">
-  <a href="https://github.com/SyntX34/shopkill_core">
-    <img src="https://img.shields.io/badge/shopkill__core-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="shopkill_core" />
+  <a href="https://github.com/SyntX34/CS2-SwiftlyS2-SpecMe">
+    <img src="https://img.shields.io/badge/CS2--SwiftlyS2--SpecMe-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-SwiftlyS2-SpecMe" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Commits-🔨%2010-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
-  <img src="https://img.shields.io/badge/Stars-⭐%201-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%204-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Stars-⭐%200-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
   <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Downloads-📦%202-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
-  <img src="https://img.shields.io/badge/Language-SourcePawn-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <img src="https://img.shields.io/badge/Downloads-📦%206-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
+  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
   <p><em>No description available</em></p>
 </div>
 
