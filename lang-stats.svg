@@ -93,14 +93,14 @@
   <g transform="translate(526, 256)">
     <rect x="0" y="0" width="100" height="22" rx="6" fill="#1e1e2e" stroke="#313244" stroke-width="1"/>
     <circle cx="10" cy="11" r="3" fill="#f9e2af"/>
-    <text class="font-mono" font-size="10" font-weight="700" fill="#cdd6f4" x="18" y="15">Private: 57</text>
+    <text class="font-mono" font-size="10" font-weight="700" fill="#cdd6f4" x="18" y="15">Private: 56</text>
   </g>
   <rect x="24" y="288" width="602" height="12" rx="3" fill="#232336"/>
   <g>
-    <rect x="24.0" y="288" width="383.0" height="12" fill="#f69e1d" rx="2"/>
-    <rect x="407.0" y="288" width="95.1" height="12" fill="#3572A5" rx="2"/>
-    <rect x="502.1" y="288" width="35.8" height="12" fill="#4F5D95" rx="2"/>
-    <rect x="537.9" y="288" width="27.6" height="12" fill="#3178c6" rx="2"/>
+    <rect x="24.0" y="288" width="383.1" height="12" fill="#f69e1d" rx="2"/>
+    <rect x="407.1" y="288" width="95.0" height="12" fill="#3572A5" rx="2"/>
+    <rect x="502.2" y="288" width="35.8" height="12" fill="#4F5D95" rx="2"/>
+    <rect x="538.0" y="288" width="27.6" height="12" fill="#3178c6" rx="2"/>
     <rect x="565.5" y="288" width="13.2" height="12" fill="#dbb284" rx="2"/>
     <rect x="578.7" y="288" width="10.0" height="12" fill="#f0c040" rx="2"/>
   </g>
@@ -141,7 +141,7 @@
   <!-- Footer Summary -->
   <line x1="24" y1="452" x2="626" y2="452" stroke="#313244" stroke-width="0.75" opacity="0.6"/>
   <text class="font-title" font-size="10" fill="#6c7086" x="24" y="466">
-    Total Analyzed: 31.2 MB across 187 repositories (130 public · 57 private)
+    Total Analyzed: 31.2 MB across 186 repositories (130 public · 56 private)
   </text>
   <text class="font-mono" font-size="10" font-weight="700" fill="#89b4fa" x="626" y="466" text-anchor="end">
     SyntX34
