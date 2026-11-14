@@ -148,15 +148,16 @@
 
 ### 💻 Most Active
 <div align="center">
-  <a href="https://github.com/SyntX34/WiFiLab">
-    <img src="https://img.shields.io/badge/WiFiLab-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="WiFiLab" />
+  <a href="https://github.com/SyntX34/CS2-SwiftlyS2-DiscordUtilities">
+    <img src="https://img.shields.io/badge/CS2--SwiftlyS2--DiscordUtilities-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-SwiftlyS2-DiscordUtilities" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Commits-🔨%201-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%2015-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
   <img src="https://img.shields.io/badge/Stars-⭐%200-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
-  <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Language-Kotlin-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
-  <p><em>No description available</em></p>
+  <img src="https://img.shields.io/badge/Forks-🍴%201-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
+  <img src="https://img.shields.io/badge/Downloads-📦%2026-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
+  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <p><em>Full-featured Discord integration plugin for Counter-Strike 2 servers running SwiftlyS2.</em></p>
 </div>
 
 ### 🔥 Most Popular
@@ -175,15 +176,14 @@
 
 ### 🆕 Latest Project
 <div align="center">
-  <a href="https://github.com/SyntX34/CS2-SwiftlyS2-SpecMe">
-    <img src="https://img.shields.io/badge/CS2--SwiftlyS2--SpecMe-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-SwiftlyS2-SpecMe" />
+  <a href="https://github.com/SyntX34/WiFiLab">
+    <img src="https://img.shields.io/badge/WiFiLab-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="WiFiLab" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Commits-🔨%204-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%201-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
   <img src="https://img.shields.io/badge/Stars-⭐%200-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
   <img src="https://img.shields.io/badge/Forks-🍴%200-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Downloads-📦%206-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
-  <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
+  <img src="https://img.shields.io/badge/Language-Kotlin-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
   <p><em>No description available</em></p>
 </div>
 
