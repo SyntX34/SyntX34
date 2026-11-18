@@ -152,10 +152,10 @@
     <img src="https://img.shields.io/badge/CS2--SwiftlyS2--DiscordUtilities-181825?style=for-the-badge&logo=github&logoColor=white&labelColor=89b4fa" alt="CS2-SwiftlyS2-DiscordUtilities" />
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Commits-🔨%2016-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
+  <img src="https://img.shields.io/badge/Commits-🔨%2017-1e1e2e?style=flat-square&color=89dceb" alt="commits"/>
   <img src="https://img.shields.io/badge/Stars-⭐%201-1e1e2e?style=flat-square&color=f5c2e7" alt="stars"/>
   <img src="https://img.shields.io/badge/Forks-🍴%202-1e1e2e?style=flat-square&color=cba6f7" alt="forks"/>
-  <img src="https://img.shields.io/badge/Downloads-📦%2030-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
+  <img src="https://img.shields.io/badge/Downloads-📦%2032-1e1e2e?style=flat-square&color=a6e3a1" alt="downloads"/>
   <img src="https://img.shields.io/badge/Language-C%23-1e1e2e?style=flat-square&color=89b4fa" alt="language"/>
   <p><em>Full-featured Discord integration plugin for Counter-Strike 2 servers running SwiftlyS2.</em></p>
 </div>
